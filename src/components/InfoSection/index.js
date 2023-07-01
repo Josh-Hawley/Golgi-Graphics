@@ -2,11 +2,11 @@ import React from 'react'
 import { Button } from '../ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './InfoElements';
 // import { ReactComponent as SvgImage } from '../../images/svg1.svg';
-import {useTheme} from 'styled-components';
+// import {useTheme} from 'styled-components';
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
   
-  const theme = useTheme();
+// const theme = useTheme();
 
   return (
     <>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { theme } from '../../Theme';
+
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
