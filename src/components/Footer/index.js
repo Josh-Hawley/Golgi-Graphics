@@ -1,8 +1,9 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import {FaYoutube, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, FooterLogoImage } from './FooterElements';
 import { IconContext } from 'react-icons/lib';
+import logo_and_text from '../../images/logo and text 2 white.png';
 
 const Footer = () => {
 
@@ -65,7 +66,7 @@ const Footer = () => {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        ink vivo
+                        <FooterLogoImage src={logo_and_text} />
                     </SocialLogo>
                     <WebsiteRights>ink vivo © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                 <SocialIcons>

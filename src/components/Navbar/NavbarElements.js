@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  padding: 0 10px;
   /* max-width: 1400px; */
 `;
 
@@ -41,11 +41,15 @@ export const NavLogo = styled(LinkR)`
   font-size: 30px;
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 0px;
   font-weight: bold;
   text-decoration: none;
-  max-width:200px;
+  /* max-width:200px; */
 `;
+
+export const NavLogoImage = styled.img`
+  height: 90%;
+` 
 
 export const MobileIcon = styled.div`
   display: none;

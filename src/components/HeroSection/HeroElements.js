@@ -5,15 +5,15 @@ import { theme } from '../../Theme';
 
 export const HeroH1 = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 60px;
+    font-size: 70px;
     text-align: left;
 
     @media screen and (max-width: 768px) {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 40px;
     }
 `;
 

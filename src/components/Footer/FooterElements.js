@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { theme } from '../../Theme';
 
 export const FooterContainer = styled.footer`
-    background: #101522;
+    background: ${theme.colors.accentDark};
 `
 
 export const FooterWrap = styled.div`
@@ -113,5 +114,9 @@ export const SocialIconLink = styled.a`
     color: #fff;
     font-size: 24px;
 `
+
+export const FooterLogoImage = styled.img`
+  height: 70px;
+` 
 
 

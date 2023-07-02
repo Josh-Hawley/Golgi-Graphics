@@ -36,7 +36,7 @@ export const theme = {
     accent: '#FF9E36',
     accentLight: '#FFC689',
     accentSuperLight: '#FFFAF7',
-    accentDark: '#7D2D00',
+    accentDark: '#421800',
   },
   fonts: ['Roboto', 'sans-serif'],
   fontSizes: {
