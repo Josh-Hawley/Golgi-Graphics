@@ -72,7 +72,7 @@ export const NavMenu = styled.ul`
   /* justify-content: center; */
   list-style: none;
   text-align: center;
-  margin-right: 25px;
+  /* margin-right: 0vw; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -111,7 +111,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 5vw;
 
   @media screen and (max-width: 768px) {
     display: none;
