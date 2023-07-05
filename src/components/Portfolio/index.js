@@ -1,12 +1,12 @@
 import React from 'react';
-import Icon1 from '../../images/svg1.svg';
-import Icon2 from '../../images/svg2.svg';
-import Icon3 from '../../images/svg3.svg';
+// import Icon1 from '../../images/svg1.svg';
+// import Icon2 from '../../images/svg2.svg';
+// import Icon3 from '../../images/svg3.svg';
 // import ImageGallery from 'react-image-gallery';
 // import images from './Images';
-import PortfolioPage from '../../pages/gallery';
+// import PortfolioPage from '../../pages/gallery';
 
-import { PortfolioContainer, PortfolioH1, PortfolioWrapper, PortfolioCard, PortfolioIcon, PortfolioH2, PortfolioP } from './PortfolioElements';
+import { PortfolioContainer, PortfolioH1 } from './PortfolioElements';
 
 // const images = [
 //   {
