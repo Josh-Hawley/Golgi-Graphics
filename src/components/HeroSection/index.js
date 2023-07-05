@@ -35,11 +35,11 @@ const HeroSection = () => {
                     <HeroH1>Scientific illustration for publication</HeroH1>
                     <HeroP>Communicate your research with clear, accurate, and visually pleasing illustration.</HeroP>
                 
-                    {/* <HeroBtnWrapper>
+                    <HeroBtnWrapper>
                         <Button to="/gallery" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                             Illustrate my research! {hover ?  <ArrowRight /> : <ArrowForward />}
                         </Button>
-                    </HeroBtnWrapper> */}
+                    </HeroBtnWrapper>
                     {/* <NavBtn>
                         <NavBtnLink to="/contact">Contact</NavBtnLink>
                     </NavBtn> */}
