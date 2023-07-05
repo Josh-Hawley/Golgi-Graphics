@@ -4,6 +4,7 @@ import Icon2 from '../../images/svg2.svg';
 import Icon3 from '../../images/svg3.svg';
 // import ImageGallery from 'react-image-gallery';
 // import images from './Images';
+import PortfolioPage from '../../pages/gallery';
 
 import { PortfolioContainer, PortfolioH1, PortfolioWrapper, PortfolioCard, PortfolioIcon, PortfolioH2, PortfolioP } from './PortfolioElements';
 
@@ -26,32 +27,32 @@ const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio">
       <PortfolioH1>Portfolio</PortfolioH1>
-      
-      <PortfolioWrapper>
-      
-        <PortfolioCard>
-            {/* <ImageGallery items={images}></ImageGallery> */}
+      {/* <PortfolioPage /> */}
 
-            <PortfolioIcon src={Icon1} />
+      {/* <PortfolioWrapper> */}
+      
+        {/* <PortfolioCard>
+
+            
 
             <PortfolioH2>Graphical abstracts</PortfolioH2>
             <PortfolioP>We help reduce your fees and increase your overall revenue</PortfolioP>
         
-        </PortfolioCard>
+        </PortfolioCard> */}
         
-        <PortfolioCard>
+        {/* <PortfolioCard>
           <PortfolioIcon src={Icon2} />
             <PortfolioH2>Figures</PortfolioH2>
             <PortfolioP>We help reduce your fees and increase your overall revenue</PortfolioP>
-        </PortfolioCard>
+        </PortfolioCard> */}
 
-        <PortfolioCard>
+        {/* <PortfolioCard>
           <PortfolioIcon src={Icon3} />
             <PortfolioH2>Animation</PortfolioH2>
             <PortfolioP>We help reduce your fees and increase your overall revenue</PortfolioP>
-        </PortfolioCard>
+        </PortfolioCard> */}
 
-      </PortfolioWrapper>
+      {/* </PortfolioWrapper> */}
     </PortfolioContainer>
   )
 }

@@ -3,7 +3,7 @@ import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjThree } from '../components/InfoSection/Data';
+import { homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 import Portfolio from '../components/Portfolio';
@@ -24,7 +24,7 @@ const Home = () => {
         {/* <InfoSection {...homeObjOne}/> */}
         <Services />
         <Portfolio />
-        {/* <InfoSection {...homeObjTwo}/> */}
+        <InfoSection {...homeObjTwo}/>
         <InfoSection {...homeObjThree}/>
         <Footer />
         </>

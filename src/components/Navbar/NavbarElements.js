@@ -18,6 +18,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
   transition: 0.8s all ease;
+  overflow:hidden;
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
@@ -31,6 +32,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 10px;
+  overflow:hidden;
   /* max-width: 1400px; */
 `;
 
@@ -72,7 +74,7 @@ export const NavMenu = styled.ul`
   /* justify-content: center; */
   list-style: none;
   text-align: center;
-  margin-right: 25px;
+  margin-right: 0px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -111,7 +113,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  /* margin-right: 10px; */
+  margin-right: 25px;
 
   @media screen and (max-width: 768px) {
     display: none;
