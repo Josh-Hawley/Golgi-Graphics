@@ -17,8 +17,8 @@ export const SidebarContainer = styled.aside`
     left: 0;
     transition: 0.6s cubic-bezier(.62,.13,.54,.85);
     /* opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')}; */
-    left: ${({ isOpen }) => (isOpen ? '100%' : '50%')};
-    box-shadow: inset 80px 0px 50px  -50px rgba(0,0,0,0.25);
+    left: ${({ isOpen }) => (isOpen ? '50%' : '100%')};
+    box-shadow: inset 20px 0px 30px  -5px rgba(0,0,0,0.25);
   
 
 `;
@@ -58,7 +58,7 @@ export const SidebarLink = styled(LinkS)`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 1.5rem;
+   font-size: 1.2rem;
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
@@ -82,15 +82,15 @@ export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
     background-color: ${theme.colors.accent};
     white-space: nowrap;
-    padding: 16px 64px;
+    padding: 16px 50px;
     color: ${theme.colors.superLightTxt};
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     outline: none;
     border: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
-    box-shadow:  20px 10px 40px rgba(0, 0, 0, 0.25);
+    /* box-shadow:  20px 10px 40px rgba(0, 0, 0, 0.25); */
     
 
     &:hover {
