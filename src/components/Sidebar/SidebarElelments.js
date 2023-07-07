@@ -8,16 +8,18 @@ import { theme } from '../../Theme';
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background: ${theme.colors.lightestBg};
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
-    transition: 0.3s ease-in-out;
-    opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    transition: 0.6s cubic-bezier(.62,.13,.54,.85);
+    /* opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')}; */
+    left: ${({ isOpen }) => (isOpen ? '100%' : '50%')};
+    box-shadow: inset 80px 0px 50px  -50px rgba(0,0,0,0.25);
+  
 
 `;
 
@@ -33,6 +35,7 @@ export const Icon = styled.div`
     font-size: 2rem;
     cursor: pointer;
     outline: none;
+    opacity: ${({ isOpen }) => (isOpen ? '0' : '1')};
 `;
 
 export const SidebarWrapper = styled.div`
@@ -44,6 +47,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    
 
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 60px);
@@ -61,6 +65,7 @@ export const SidebarLink = styled(LinkS)`
    text-decoration: none;
    color: ${theme.colors.darkTxt};
    cursor: pointer; 
+   
 
    &:hover {
     color: ${theme.colors.accent};
@@ -85,6 +90,8 @@ export const SidebarRoute = styled(LinkR)`
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    box-shadow:  20px 10px 40px rgba(0, 0, 0, 0.25);
+    
 
     &:hover {
         transition: all 0.2s ease-in-out;

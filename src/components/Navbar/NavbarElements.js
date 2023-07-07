@@ -7,18 +7,18 @@ import { theme } from '../../Theme';
 
 
 export const Nav = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? `${theme.colors.lightestBg}` : 'transparent')};
-  height: 80px;
+ height: 80px;
   margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  top: 0;
+  top: 0px;
   z-index: 10;
   transition: 0.8s all ease;
-  overflow:hidden;
+  overflow: hidden;
+  
 
   @media screen and (max-width: 960px){
     transition: 0.8s all ease;
@@ -26,6 +26,8 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+background: ${({scrollNav}) => (scrollNav ? `${theme.colors.lightestBg}` : 'transparent')};
+ 
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -33,6 +35,11 @@ export const NavbarContainer = styled.div`
   width: 100%;
   padding: 0 10px;
   overflow:hidden;
+  position: fixed;
+  top: 0px;
+  transition: 0.8s all ease;
+  
+  
   /* max-width: 1400px; */
 `;
 
