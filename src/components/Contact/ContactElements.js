@@ -71,7 +71,7 @@ export const Form = styled.form`
 `
 
 export const FormH1 = styled.h1`
-    margin-bottom: 40px;
+    margin-bottom: 8px;
     color: ${theme.colors.darkTxt};
     font-size: 40px;
     font-weight: 300;
@@ -80,13 +80,15 @@ export const FormH1 = styled.h1`
 
 export const FormLabel = styled.label`
     margin-bottom: 8px;
+    margin-top: 26px;
     font-size: 18px;
     color: ${theme.colors.darkTxt};
 `
 
 export const FormInput = styled.input`
     padding: 16px 16px;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
+    
     border: 1px solid grey;
     border-radius: 8px;
     font-size: 18px;
@@ -101,6 +103,7 @@ export const FormButton = styled.button`
     font-size: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    margin-top: 32px;
 
     &:hover{
     transition: 0.2 ease-in-out;
@@ -119,9 +122,16 @@ export const Text = styled.span`
 
 export const FormTextArea = styled.textarea`
     padding: 16px 16px;
-    margin-bottom: 32px;
+    
     border: 1px solid grey;
     border-radius: 8px;
     font-size: 18px;
+    font-weight: 300;
+`
+
+export const FormError = styled.p`
+    color: red;
+    margin-bottom: 0px;
+    margin-top:10px;
     font-weight: 300;
 `
