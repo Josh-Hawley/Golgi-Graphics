@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md';
 import { theme } from '../../Theme';
-// import { Link as LinkR} from 'react-router-dom';
+import { Link as LinkS} from 'react-scroll';
 
 
 export const HeroH1 = styled.h1`
@@ -132,25 +132,27 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size: 20px;
 `;
 
-// export const HeroBtnLink = styled(LinkR)`
-//   border-radius: 50px;
-//   background: ${theme.colors.accent};
-//   white-space: nowrap;
-//   padding: 10px 22px;
-//   color: ${theme.colors.superLightTxt};
-//   font-size: 20px;
-//   outline: none;
-//   border: none;
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-//   text-decoration: none;
+export const HeroBtnLink = styled(LinkS)`
+  border-radius: 50px;
+  
+  white-space: nowrap;
+  padding: 10px 22px;
+  
+  font-size: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background: ${theme.colors.accentLight};
+  color: ${theme.colors.darkTxt};
 
-//   &:hover{
-//     transition: 0.2 ease-in-out;
-//     background: ${theme.colors.accentLight};
-//     color: ${theme.colors.darkTxt};
-//   }
-// `
+  &:hover{
+    transition: 0.2 ease-in-out;
+    color: ${theme.colors.superLightTxt};
+    background: ${theme.colors.accent};
+  }
+`
 
 // export const HeroBtn = styled.nav`
 //   display: flex;

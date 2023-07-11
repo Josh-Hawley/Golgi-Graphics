@@ -1,6 +1,7 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import {FaYoutube, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
+// import {FaYoutube, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
+import { FaTwitter } from 'react-icons/fa';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, FooterLogoImage } from './FooterElements';
 import { IconContext } from 'react-icons/lib';
 import logo_and_text from '../../images/logo and text 2 white.png';
@@ -68,20 +69,25 @@ const Footer = () => {
                     <SocialLogo to='/' onClick={toggleHome}>
                         <FooterLogoImage src={logo_and_text} />
                     </SocialLogo>
-                    <WebsiteRights>ink vivo © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+                    <WebsiteRights>Golgi Graphics © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                 <SocialIcons>
-                    <SocialIconLink href="/" target="_blank" aria-label="Youtube">
+                    
+                    {/* <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                         <FaYoutube />
-                    </SocialIconLink>
-                    <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+                    </SocialIconLink> */}
+                    
+                    {/* <SocialIconLink href="/" target="_blank" aria-label="Instagram">
                         <FaInstagram />
-                    </SocialIconLink>
+                    </SocialIconLink> */}
+                    
                     <SocialIconLink href="//www.twitter.com/ItsJoshSurely" target="_blank" aria-label="Twitter">
                         <FaTwitter />
                     </SocialIconLink>
-                    <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+                    
+                    {/* <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                         <FaLinkedin />
-                    </SocialIconLink>
+                    </SocialIconLink> */}
+
                 </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>

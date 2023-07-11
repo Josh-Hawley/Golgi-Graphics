@@ -21,43 +21,58 @@ import { theme } from '../../Theme';
 //     /* background: linear-gradient(108deg, rgba(1,147,86,1) 0%, rgba(10,201,122,1)100%); */
 // `;
 export const PortfolioPgContainer = styled.div`
-    background: ${theme.colors.lighterBg};
+    background: ${theme.colors.lightBg};
     display: flex;
     justify-content: center;
     align-items: center;
     /* padding: 0 10px; */
-    height: 500px;
+    height: 400px;
     position: relative;
     z-index: 1;
     justify-content: center;
+    
 `;
 
 export const ImageGalleryContainer = styled.div`
-    /* background: ${theme.colors.lighterBg}; */
+    /* background: ${theme.colors.lightBg}; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 10px; */
-    /* height: 100vh; */
-    /* position: relative; */
-    /* z-index: 1; */
-    /* justify-content: center; */
-
-         /* min-height: 692px; */
-     /* position: fixed; */
-    /* bottom: 0; */
+    
      left: 0;
      right: 0;
      top: 0;
     z-index: 0;
      overflow: hidden;
     
-    /* align-items: center; */
-     /* padding-left: 20px; 
-     padding-right: 30px; */
-     margin: 0 auto;
      padding-top: 0px;
-     width: 80%;
+     padding-left: 40px;
+     padding-right: 40px;
+     width: 100%;
+     max-width: 1200px;
+     /* width: 80%; */
+     /* margin-bottom: 0px; */
+`;
+export const ImageGalleryWrap = styled.div`
+    background: ${theme.colors.lightBg};
+    /* background: red; */
+    padding-bottom: 100px;
+    /* margin-bottom: 50px; */
+    display: flex; 
+    justify-content: center;
+    /* align-items: center; */
+    
+     /* left: 0;
+     right: 0;
+     top: 0;
+    z-index: 0;
+     overflow: hidden;
+    
+     padding-top: 0px;
+     padding-left: 40px;
+     padding-right: 40px;
+     width: 100%;
+     margin-bottom: 50px; */ 
 `;
 
 export const PortfolioPgContent = styled.div`
@@ -69,6 +84,8 @@ export const PortfolioPgContent = styled.div`
     flex-direction: column;
     align-items: stretch;
     
+    
+    
 `;
 
 
@@ -76,6 +93,7 @@ export const PortfolioPgH1 = styled.h1`
     color: ${theme.colors.darkTxt};
     font-size: 70px;
     text-align: left;
+    padding-top: 50px;
 
 
     @media screen and (max-width: 768px) {

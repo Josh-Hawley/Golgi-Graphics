@@ -30,6 +30,7 @@ export const theme = {
   colors: {
     lightestBg: 'white',
     lightBg: '#FCFBFA',
+    darkBg: '#36332F',
     superLightTxt: '#fff',
     lightTxt: '#86837D ',
     darkTxt: '#323130',

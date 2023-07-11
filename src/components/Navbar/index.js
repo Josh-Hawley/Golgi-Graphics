@@ -9,7 +9,7 @@ import logo_and_text from '../../images/logo and text 2.png'
 const Navbar = ({ toggle }) => {
     
     const [scrollNav, setScrollNav] = useState(false);
-
+    
     const changeNav = () => {
         if(window.scrollY >= 80) {
             setScrollNav(true)
@@ -26,6 +26,7 @@ const Navbar = ({ toggle }) => {
         scroll.scrollToTop()
     }
 
+
   return (
     <>
     <IconContext.Provider value = {{color: `${theme.colors.darkTxt}`}}>
@@ -34,6 +35,7 @@ const Navbar = ({ toggle }) => {
                 <NavLogo to='/' onClick={toggleHome}>
                     <NavLogoImage src={logo_and_text} />
                 </NavLogo>
+                
                 
                 <MobileIcon onClick={toggle}>
                     <FaBars />

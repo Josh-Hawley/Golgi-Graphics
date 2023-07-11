@@ -1,25 +1,28 @@
 import styled from 'styled-components';
 import { theme } from '../../Theme';
+import {Link} from 'react-router-dom';
 
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
+    /* width: 100vw; */
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        /* padding: 100px 0; */
     } 
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
-    width: 100%;
-    max-width: 1100px;
+    height: 100vh;
+    /* width: 100vw; */
+    /* max-width: 1500px; */
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     justify-content: center;
+    overflow: hidden;
 `;
 
 export const InfoRow = styled.div`
@@ -36,14 +39,15 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 25px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col2;
+    /* margin-bottom: 15px; */
+    /* padding: 0 0px; */
+    /* grid-area: col2; */
+    width:120vw;
 `;
 
 export const TextWrapper = styled.div`
@@ -53,7 +57,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: ${theme.colors.accentLight};
+    /* color: ${theme.colors.accentLight}; */
+    color: #FFC0C9;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -77,8 +82,9 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
+    font-weight: 300;
     color: ${theme.colors.lightTxt}
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
@@ -89,12 +95,50 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
-    height: 100%;
+  
+    height: 100vh;
+
+    @media screen and (max-width: 768px){
+        height: 70vh;
+    }
+
+ 
+
+
 `;
+
+export const ImgConstrainBox = styled.div`
+/* overflow: hidden; */
+`
 
 export const Img = styled.img`
     width: 100%;
-    margin: 0 0 10px 0;
-    padding-right: 0;
+   
+    /* padding-right: 0; */
+`;
+
+export const Button = styled(Link)`
+    border-radius: 50px;
+    /* background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)}; */
+    white-space: nowrap;
+    background: #FFC0C9;
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
+    /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
+        /* background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)}; */
+    background: #FA6A80;
+    }
 `;

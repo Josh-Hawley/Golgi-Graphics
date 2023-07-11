@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
-import {Button} from '../ButtonElements';
+// import React, {useState} from 'react';
+import React from 'react';
+// import {Button} from '../ButtonElements';
 import { Parallax } from 'react-parallax';
-import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnWrapper, ArrowForward, ArrowRight} from './HeroElements';
+import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, } from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
 import cellArt from '../../images/cell art 2.png'
 
 const HeroSection = () => {
 
-    const [hover, setHover] = useState(false);
+    // const [hover, setHover] = useState(false);
 
-    const onHover = () => {
-        setHover(!hover)
-    };
+    // const onHover = () => {
+    //     setHover(!hover)
+    // };
 
     return (
         <Parallax bgImage={cellArt} strength={200}>
@@ -33,16 +34,19 @@ const HeroSection = () => {
                 <HeroContent>
                     
                     <HeroH1>Scientific illustration for publication</HeroH1>
-                    <HeroP>Communicate your research with clear, accurate, and visually pleasing illustration.</HeroP>
+                    <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
                 
-                    <HeroBtnWrapper>
+                    {/* <HeroBtnWrapper>
                         <Button to="/gallery" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
                             Illustrate my research! {hover ?  <ArrowRight /> : <ArrowForward />}
                         </Button>
-                    </HeroBtnWrapper>
+                    </HeroBtnWrapper> */}
                     {/* <NavBtn>
                         <NavBtnLink to="/contact">Contact</NavBtnLink>
                     </NavBtn> */}
+                    <HeroBtnWrapper>
+                        <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
+                    </HeroBtnWrapper>
 
                 </HeroContent>
             

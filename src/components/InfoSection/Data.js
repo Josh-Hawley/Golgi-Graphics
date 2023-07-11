@@ -17,34 +17,36 @@ export const homeObjOne = {
 
 export const homeObjTwo = {
     id: 'portfolio',
-    lightBg: true,
+    lightBg: false,
     lightText: false,
     lightTextDesc: true,
     topLine: 'Gallery of past work',
     headline: 'Portfolio',
-    description: 'Lots of amazing portfolio work to oggle at and be convinced to hire me!',
-    buttonLabel: 'Get Started',
+    description: 'Click the button below to explore a portfolio of past work and get inspiration for your graphic design project.',
+    buttonLabel: 'See full portfolio',
     imgStart: true,
-    img: require('../../images/svg2.svg').default, // .default was important here, doesn't load image without 
+    img: require('../../images/Gallery/Neurulation.jpg'), // .default was important here, doesn't load image without 
     alt: 'svg2',
-    dark: false,
-    primary: false,
-    darkText: true
+    dark: true,
+    primary: true,
+    darkText: true,
+    imgWidth: '100%'
 }
 
 export const homeObjThree = {
     id: 'about',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: false,
-    topLine: 'ink vivo Design',
+    topLine: 'Dr. Josh Hawley',
     headline: 'About',
-    description: 'The illustrator blah blah blah',
+    description: "Welcome! I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design. With a background in Quantitative and Biophysical Biology at The University of Manchester, I have honed my expertise in understanding the intricacies of mathematically modelling biological systems, with a focus on embryonic development. \n However, my curiosity extends beyond just doing the science and as a graphic designer, I channel my creativity and love for aesthetics to convey the complexity of science in visually appealing and easy-to-understand graphics. I believe that bridging the gap between science and art is crucial for fostering scientific literacy and engaging a broader audience, as well as communicating amongst scientific peers. ",
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/svg3.svg').default, // .default was important here, doesn't load image without 
+    img: require('../../images/website profile pic.jpg'), // .default was important here, doesn't load image without 
     alt: 'svg3',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    imgWidth: '70%'
 }

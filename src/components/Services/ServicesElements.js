@@ -1,30 +1,35 @@
 import styled from 'styled-components';
 import { theme } from '../../Theme';
+import { Link } from 'react-scroll';
 
 export const ServicesContainer = styled.div`
-    height: 800px;
+    /* height: 800px; */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: ${theme.colors.darkerBg};
+    background: ${theme.colors.lightBg};
+
 
     @media screen and (max-width: 768px){
-        height: 1100px;
+        /* height: 1100px; */
+        min-height: 1100px;
     }
 
     @media screen and (max-width: 480px){
-        height: 1300px;
+        /* height: 1300px; */
+        min-height: 1300px;
     }
 `
 
 export const ServicesWrapper = styled.div`
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 16px;
+    grid-gap: 20px;
     padding: 0 50px;
 
     @media screen and (max-width: 1000px){
@@ -37,7 +42,7 @@ export const ServicesWrapper = styled.div`
     }
 `
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled(Link)`
     background: white;
     display: flex;
     flex-direction: column;
@@ -46,19 +51,19 @@ export const ServicesCard = styled.div`
     border-radius: 10px;
     max-height: 340px;
     padding: 30px;
-    box-shadow: 10px 10px 10px rgba(0 0 0 0.5);
+    box-shadow:  0px 0px 20px rgba(0,0,0,0.1);
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.02);
+        transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
 `
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    /* height: 200px; */
+    width: 200px;
     margin-bottom: 10px;
 `
 

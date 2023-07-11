@@ -72,6 +72,7 @@ export const MobileIcon = styled.div`
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    /* display:${({ isOpen }) => (isOpen ? 'none' : 'block')}; */
   }
 `;
 
@@ -105,7 +106,7 @@ export const NavLinks = styled(LinkS)`
 
 
   &.active {
-    border-bottom: 3px solid ${theme.colors.accent};
+    border-bottom: 3px solid ${theme.colors.darkBg};
   }
 
   &:hover {
@@ -129,10 +130,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: ${theme.colors.accent};
+  background: ${theme.colors.accentLight};
   white-space: nowrap;
   padding: 10px 22px;
-  color: ${theme.colors.superLightTxt};
+  color: ${theme.colors.darkTxt};
   font-size: 20px;
   outline: none;
   border: none;
@@ -142,7 +143,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover{
     transition: 0.2 ease-in-out;
-    background: ${theme.colors.accentLight};
-    color: ${theme.colors.darkTxt};
+    background: ${theme.colors.accent};
+    color: ${theme.colors.superLightTxt};
   }
 `

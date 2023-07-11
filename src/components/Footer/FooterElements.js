@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { theme } from '../../Theme';
 
 export const FooterContainer = styled.footer`
-    background: ${theme.colors.accentDark};
+    background: ${theme.colors.darkBg};
 `
 
 export const FooterWrap = styled.div`
@@ -62,7 +62,7 @@ export const FooterLink = styled(Link)`
     font-size: 14px;
 
     &:hover {
-        color: #01bf71;
+        color: ${theme.colors.accent};
         transition: 0.3s ease-out;
     }
 `
@@ -105,7 +105,7 @@ export const WebsiteRights = styled.small`
 
 export  const SocialIcons = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 240px;
 `
