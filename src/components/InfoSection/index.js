@@ -26,7 +26,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     </BtnWrap>
                 </TextWrapper>
                 </Column1>
-                <Parallax bgImage={portfolioBackground} strength={300}>
+                <Parallax bgImage={portfolioBackground} strength={400}>
                 <Column2>
                     <ImgWrap>
                     {/* <ImgConstrainBox> */}
