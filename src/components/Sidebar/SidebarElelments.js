@@ -9,7 +9,7 @@ export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background: ${theme.colors.lightestBg};
     display: grid;
     align-items: center;
@@ -82,9 +82,9 @@ export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
     background-color: ${theme.colors.accentLight};
     white-space: nowrap;
-    padding: 16px 50px;
+    padding: 10px 22px;
     color: ${theme.colors.darkTxt};
-    font-size: 1.2rem;
+    font-size: 20px;
     outline: none;
     border: none;
     cursor: pointer;
