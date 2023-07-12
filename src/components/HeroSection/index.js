@@ -1,11 +1,13 @@
 // import React, {useState} from 'react';
 import React from 'react';
 // import {Button} from '../ButtonElements';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, } from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
-import cellArt from '../../images/cell art 2.png'
+// import cellArt from '../../images/cell art 2.png'
+// import { Parallax} from 'react-scroll-parallax';
+
 
 const HeroSection = () => {
 
@@ -16,7 +18,7 @@ const HeroSection = () => {
     // };
 
     return (
-        <Parallax bgImage={cellArt} strength={200}>
+        // <Parallax bgImage={cellArt} speed={500}>
         <HeroContainer id="home">
         
             {/* <HeroBg> */}
@@ -55,7 +57,7 @@ const HeroSection = () => {
             
 
         </HeroContainer>
-        </Parallax>
+        // </Parallax>
     )
 }
 
