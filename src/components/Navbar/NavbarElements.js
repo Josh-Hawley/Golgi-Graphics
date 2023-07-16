@@ -7,8 +7,8 @@ import { theme } from '../../Theme';
 
 
 export const Nav = styled.nav`
- height: 80px;
-  margin-top: -80px;
+ height: 60px;
+  margin-top: -60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@ background: ${({scrollNav}) => (scrollNav ? `${theme.colors.lightestBg}` : 'tran
  
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   z-index: 1;
   width: 100%;
   padding: 0 10px;
@@ -68,7 +68,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(-75%, 45%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
@@ -90,7 +90,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 60px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -132,7 +132,7 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: ${theme.colors.accentLight};
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 8px 18px;
   color: ${theme.colors.darkTxt};
   font-size: 20px;
   outline: none;

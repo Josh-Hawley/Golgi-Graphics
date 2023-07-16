@@ -6,6 +6,7 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
+    min-height: 100vh;
     /* width: 100vw; */
     @media screen and (max-width: 768px) {
         /* padding: 100px 0; */
@@ -15,20 +16,22 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 100vh;
+    min-height: 100vh;
     /* width: 100vw; */
     /* max-width: 1500px; */
     margin-right: auto;
     margin-left: auto;
-    /* padding: 0 24px; */
+    padding: 0 24px;
     justify-content: center;
-    overflow: hidden;
+    
+    /* overflow: hidden; */
 `;
 
 export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
@@ -38,8 +41,13 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 25px;
+    /* margin-bottom: 15px;  */
+     padding: 0 15px;
+     margin-right: auto;
+    margin-left: auto;
+    
+    
+
     grid-area: col1;
 `;
 
@@ -47,13 +55,21 @@ export const Column2 = styled.div`
     /* margin-bottom: 15px; */
     /* padding: 0 0px; */
     /* grid-area: col2; */
-    width:120vw;
+    /* width:120vw; */
+    width: 50vw;
+    /* align-items: center; */
+    overflow: hidden;  
+    @media screen and (max-width: 768px){
+        /* height: 70vh; */
+        width: 100vw;
+    }
 `;
 
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
     padding-bottom: 60px;
+    padding-top: 60px;
 `;
 
 export const TopLine = styled.p`
@@ -97,9 +113,15 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   
     height: 100vh;
+    /* width: 50vw; */
+    /* background: red; */
+    /* align-items: center; */
+    
+    /* overflow: hidden; */
 
     @media screen and (max-width: 768px){
         height: 70vh;
+        width: 100vw;
     }
 
  
@@ -107,14 +129,23 @@ export const ImgWrap = styled.div`
 
 `;
 
-export const ImgConstrainBox = styled.div`
-/* overflow: hidden; */
-`
+/* export const ImgConstrainBox = styled.div`
+overflow: hidden;
+
+` */
 
 export const Img = styled.img`
+  
     width: 100%;
-   
-    /* padding-right: 0; */
+    top:-100px;
+    @media screen and (max-width: 768px){
+        top: -100px;
+
+    }
+    
+ 
+    position: relative;
+    
 `;
 
 export const Button = styled(Link)`

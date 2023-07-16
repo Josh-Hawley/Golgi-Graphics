@@ -54,7 +54,11 @@ export const ImageBg = styled.img`
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
-    background: #232a34;
+    /* background: #232a34; */
+    /* position: absolute;
+
+    overflow: hidden; */
+    z-index:1;
     
     /* position: absolute; */
     width:100%;

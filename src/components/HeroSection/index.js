@@ -6,14 +6,20 @@ import React from 'react';
 import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBg, HeroBg} from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
-import cellArt from '../../images/cell art 2.png'
+import cellArt from '../../images/cell art 2 compressed.jpg'
 // import { Parallax} from 'react-scroll-parallax';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 
 const HeroSection = () => {
-    let {scrollYProgress} = useScroll();
-    let y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
+    
+    let ref = useRef(null);
+    let {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["end end", "end start"]
+    });
+    let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
     // const [hover, setHover] = useState(false);
 
     // const onHover = () => {
@@ -24,13 +30,13 @@ const HeroSection = () => {
         
 
             
-                <HeroContainer id="home">
+                <HeroContainer ref={ref} id="home">
                 
                     
                     <HeroBg>
                         {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
                         
-                        <motion.div style={{ y }}>
+                        <motion.div style={{ y }} >
                             {/* <ImageContainer >  */}
                                 <ImageBg src={cellArt} />  
                             {/* </ImageContainer> */}

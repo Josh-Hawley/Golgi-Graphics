@@ -28,7 +28,7 @@ export const PortfolioPgContainer = styled.div`
     /* padding: 0 10px; */
     height: 400px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
     justify-content: center;
     
 `;
@@ -42,7 +42,7 @@ export const ImageGalleryContainer = styled.div`
      left: 0;
      right: 0;
      top: 0;
-    z-index: 0;
+    /* z-index: 0; */
      overflow: hidden;
     
      padding-top: 0px;

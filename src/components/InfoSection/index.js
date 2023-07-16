@@ -1,19 +1,27 @@
 import React from 'react'
 // import { Button } from '../ButtonElements';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Button} from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Button, Img} from './InfoElements';
 // import { ReactComponent as SvgImage } from '../../images/svg1.svg';
 // import {useTheme} from 'styled-components';
-import { Parallax } from 'react-parallax';
-import portfolioBackground from '../../images/portfolio background.jpg'
+// import { Parallax } from 'react-parallax';
+import portfolioBackground from '../../images/portfolio background.jpg';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, primary, dark, dark2}) => {
   
-// const theme = useTheme();
+
+let ref = useRef(null);
+    let {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["start end", "end start"]
+    });
+    let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
 
   return (
     <>
     
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer ref={ref} lightBg={lightBg} id={id}>
         <InfoWrapper>
             <InfoRow imgStart={imgStart}> 
                 <Column1>
@@ -26,16 +34,20 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     </BtnWrap>
                 </TextWrapper>
                 </Column1>
-                <Parallax bgImage={portfolioBackground} strength={400}>
+                {/* <Parallax bgImage={portfolioBackground} strength={400}> */}
                 <Column2>
-                    <ImgWrap>
+                    {/* <ImgWrap> */}
+
                     {/* <ImgConstrainBox> */}
-                      {/* <Img src={img} alt={alt} /> */}
+                    <motion.div style={{ y }}>
+                      <Img src={portfolioBackground} alt={'Portfolio image'} />
+                    </motion.div>
+                     
                     {/* </ImgConstrainBox> */}
                         
-                    </ImgWrap>
+                    {/* </ImgWrap> */}
                 </Column2>
-                </Parallax>
+                {/* </Parallax> */}
             </InfoRow>
         </InfoWrapper>
       </InfoContainer>

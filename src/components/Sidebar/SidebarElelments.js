@@ -82,7 +82,7 @@ export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
     background-color: ${theme.colors.accentLight};
     white-space: nowrap;
-    padding: 10px 22px;
+    padding: 8px 18px;
     color: ${theme.colors.darkTxt};
     font-size: 20px;
     outline: none;

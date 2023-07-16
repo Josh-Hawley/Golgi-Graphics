@@ -13,6 +13,7 @@
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   overscroll-behavior: none;
+  /* scroll-behavior: smooth; */
 }
 
 
@@ -52,6 +53,7 @@
 ::-webkit-scrollbar-thumb:active {
   background: #888;
 }
+
 
 /* Optional: Add some padding to the right of the element to prevent content from being hidden by the scrollbar */
 /* .your-container {
