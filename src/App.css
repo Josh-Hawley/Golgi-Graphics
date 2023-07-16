@@ -12,7 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
   /* scroll-behavior: smooth; */
 }
 
