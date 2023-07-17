@@ -3,12 +3,16 @@ import React from 'react';
 // import {Button} from '../ButtonElements';
 // import { Parallax } from 'react-parallax';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBg, HeroBg} from './HeroElements';
+import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBgBackground, ImageBgVesicles, HeroBg, ImageBgGolgi} from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
-import cellArt from '../../images/cell art 2 compressed.jpg'
+// import cellArt from '../../images/cell art 2 compressed.jpg'
+import artBackground from '../../images/Hero Background/cell art background.jpg';
+import artVesicles from '../../images/Hero Background/vesicles.png';
+import artGolgi from '../../images/Hero Background/golgi.png';
+
 // import { Parallax} from 'react-scroll-parallax';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 
@@ -19,12 +23,18 @@ const HeroSection = () => {
         target: ref,
         offset: ["end end", "end start"]
     });
-    let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
-    // const [hover, setHover] = useState(false);
-
-    // const onHover = () => {
-    //     setHover(!hover)
-    // };
+    const scaleX = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+    // const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+    const vesiclesY = useTransform(scaleX, [0, 1], ['0%', '30%']);
+    const golgiY = useTransform(scaleX, [0, 1], ['0%', '60%']);
+    // const backgroundRotate = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+    // const vesiclesRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
+    // const golgiRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
+    const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
 
     return (
         
@@ -34,43 +44,36 @@ const HeroSection = () => {
                 
                     
                     <HeroBg>
-                        {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
-                        
-                        <motion.div style={{ y }} >
-                            {/* <ImageContainer >  */}
-                                <ImageBg src={cellArt} />  
-                            {/* </ImageContainer> */}
+         
+                        {/* <motion.div style={{ y: backgroundY }} >
+                                <ImageBgBackground src={artBackground} />   
+                        </motion.div> */}
+                        <motion.div style = {{ y: vesiclesY }}>
+                            {/* <motion.div style={{ x: vesiclesX }} >  */}
+                                    <ImageBgVesicles src={artVesicles} />  
+                            {/* </motion.div> */}
                         </motion.div>
                         
-                        
-                        {/* <img src={cellArt} alt="Background" /> */}
+
+                        <motion.div style={{ x: golgiY }} >
+                                <ImageBgGolgi src={artGolgi} />   
+                        </motion.div>
 
                     </HeroBg>
 
                 
-                        <HeroContent>
-                            
-                            <HeroH1>Scientific illustration for publication</HeroH1>
-                            <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
+                    <HeroContent>
                         
-                            {/* <HeroBtnWrapper>
-                                <Button to="/gallery" onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'>
-                                    Illustrate my research! {hover ?  <ArrowRight /> : <ArrowForward />}
-                                </Button>
-                            </HeroBtnWrapper> */}
-                            {/* <NavBtn>
-                                <NavBtnLink to="/contact">Contact</NavBtnLink>
-                            </NavBtn> */}
-                            <HeroBtnWrapper>
-                                <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
-                            </HeroBtnWrapper>
-
-                        </HeroContent>
+                        <HeroH1>Scientific illustration for publication</HeroH1>
+                        <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
                     
                         
+                        <HeroBtnWrapper>
+                            <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
+                        </HeroBtnWrapper>
 
+                    </HeroContent>
                     
-
                 </HeroContainer>
     )
 }

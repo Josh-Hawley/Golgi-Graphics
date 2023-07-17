@@ -24,7 +24,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    height: 100vh;
+    height: 100%;
     position: relative;
     z-index: 1;
     justify-content: flex-start;
@@ -49,16 +49,17 @@ export const VideoBg = styled.video`
     background: #232a34;
 `;
 
-export const ImageBg = styled.img`
+export const ImageBgBackground = styled.img`
     width: 100%;
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
+    /* background: blue; */
     /* background: #232a34; */
     /* position: absolute;
 
     overflow: hidden; */
-    z-index:1;
+ 
     
     /* position: absolute; */
     width:100%;
@@ -72,6 +73,63 @@ export const ImageBg = styled.img`
     background-size: contain;
     background-position: top left; 
     z-index:1;
+    overflow: hidden;
+    position: relative;
+`;
+export const ImageBgVesicles = styled.img`
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* background: blue; */
+    /* background: #232a34; */
+    /* position: absolute;
+
+    overflow: hidden; */
+    z-index: 2;
+    
+    /* position: absolute; */
+    width:100%;
+    position: relative;
+
+    
+    top: 0;
+    left: 0;
+    bottom: 0;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left; 
+    
+    overflow: hidden;
+`;
+
+export const ImageBgGolgi = styled.img`
+    width: 100%;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* background: blue; */
+    /* background: #232a34; */
+    /* position: absolute;
+    
+
+    overflow: hidden; */
+    z-index: 3;
+    position: relative;
+    
+    /* position: absolute; */
+    width:100%;
+
+    
+    top: -100vh;
+    left: 0;
+    bottom: 0;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left; 
+    
     overflow: hidden;
 `;
 
