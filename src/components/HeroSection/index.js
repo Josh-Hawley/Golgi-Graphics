@@ -3,13 +3,19 @@ import React from 'react';
 // import {Button} from '../ButtonElements';
 // import { Parallax } from 'react-parallax';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBgVesicles, HeroBg, ImageBgGolgi} from './HeroElements';
+import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle1, ImageVesicle2, ImageVesicle3, ImageVesicle4} from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
 // import cellArt from '../../images/cell art 2 compressed.jpg'
 // import artBackground from '../../images/Hero Background/cell art background.jpg';
-import artVesicles from '../../images/Hero Background/vesicles.png';
-import artGolgi from '../../images/Hero Background/golgi.png';
+// import artVesicles from '../../images/Hero Background/vesicles.png';
+// import artGolgi from '../../images/Hero Background/golgi.png';
+import vesicle1 from '../../images/Hero Background/vesicle1.png'
+import vesicle2 from '../../images/Hero Background/vesicle2.png'
+import vesicle3 from '../../images/Hero Background/vesicle3.png'
+import vesicle4 from '../../images/Hero Background/vesicle4.png'
+
+import golgi from '../../images/Hero Background/golgi corner.png'
 
 // import { Parallax} from 'react-scroll-parallax';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
@@ -23,18 +29,53 @@ const HeroSection = () => {
         target: ref,
         offset: ["end end", "end start"]
     });
-    const scaleX = useSpring(scrollYProgress, {
+
+    const golgiScale = useSpring(scrollYProgress, {
+        stiffness: 30,
+        damping: 60,
+        restDelta: 0.001
+    });
+
+    const vesicle1Scale = useSpring(scrollYProgress, {
+        stiffness: 50,
+        damping: 40,
+        restDelta: 0.001
+    });
+
+    const vesicle2Scale = useSpring(scrollYProgress, {
+        stiffness: 150,
+        damping: 40,
+        restDelta: 0.001
+    });
+
+    const vesicle3Scale = useSpring(scrollYProgress, {
         stiffness: 100,
+        damping: 40,
+        restDelta: 0.001
+    });
+
+    const vesicle4Scale = useSpring(scrollYProgress, {
+        stiffness: 50,
         damping: 30,
         restDelta: 0.001
     });
-    // const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
-    const vesiclesY = useTransform(scaleX, [0, 1], ['0%', '30%']);
-    const golgiY = useTransform(scaleX, [0, 1], ['0%', '60%']);
-    // const backgroundRotate = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
-    // const vesiclesRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
-    // const golgiRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
-    // const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
+
+
+    const golgiX = useTransform(golgiScale, [0, 1], ['0vw', '4vw']);
+    const golgiY = useTransform(golgiScale, [0, 1], ['100vh', '110vh']);
+
+    const vesicle1X = useTransform(vesicle1Scale, [0, 1], ['40vw', '70%']);
+    const vesicle1Y = useTransform(vesicle1Scale, [0, 1], ['50vh', '70vh']);
+
+    const vesicle2X = useTransform(vesicle2Scale, [0, 1], ['0px', '60%']);
+    const vesicle2Y = useTransform(vesicle2Scale, [0, 1], ['90vh', '80vh']);
+
+    const vesicle3X = useTransform(vesicle3Scale, [0, 1], ['0vw', '80%']);
+    const vesicle3Y = useTransform(vesicle3Scale, [0, 1], ['10vh', '85vh']);
+    
+    const vesicle4X = useTransform(vesicle4Scale, [0, 1], ['60vw', '80%']);
+    const vesicle4Y = useTransform(vesicle4Scale, [0, 1], ['30vh', '80vh']);
+
 
     return (
         
@@ -45,19 +86,38 @@ const HeroSection = () => {
                     
                     <HeroBg>
          
-                        {/* <motion.div style={{ y: backgroundY }} >
-                                <ImageBgBackground src={artBackground} />   
-                        </motion.div> */}
-                        <motion.div style = {{ y: vesiclesY }}>
-                            {/* <motion.div style={{ x: vesiclesX }} >  */}
-                                    <ImageBgVesicles src={artVesicles} />  
-                            {/* </motion.div> */}
+                      <motion.div style = {{ x: vesicle1X}}>
+                        <motion.div style = {{ y: vesicle1Y }}>     
+                                <ImageVesicle1 src={vesicle1} />  
                         </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: vesicle2X}}>
+                        <motion.div style = {{ y: vesicle2Y }}>     
+                                <ImageVesicle2 src={vesicle2} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: vesicle3X}}>
+                        <motion.div style = {{ y: vesicle3Y }}>     
+                                <ImageVesicle3 src={vesicle3} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: vesicle4X}}>
+                        <motion.div style = {{ y: vesicle4Y }}>     
+                                <ImageVesicle4 src={vesicle4} />  
+                        </motion.div>
+                      </motion.div>
+                        
+                      <motion.div style = {{ x: golgiX}}>
+                        <motion.div style = {{ y: golgiY }}>     
+                                <ImageGolgi src={golgi} />  
+                        </motion.div>
+                      </motion.div>
                         
 
-                        <motion.div style={{ x: golgiY }} >
-                                <ImageBgGolgi src={artGolgi} />   
-                        </motion.div>
+                        
 
                     </HeroBg>
 
@@ -79,3 +139,93 @@ const HeroSection = () => {
 }
 
 export default HeroSection
+
+
+
+// // import React, {useState} from 'react';
+// import React from 'react';
+// // import {Button} from '../ButtonElements';
+// // import { Parallax } from 'react-parallax';
+// // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+// import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageVesicles, HeroBg, ImageGolgi} from './HeroElements';
+// // import Video from '../../videos/video.mp4';
+// // import astrocyte from '../../images/astrocyte.svg'
+// // import cellArt from '../../images/cell art 2 compressed.jpg'
+// // import artBackground from '../../images/Hero Background/cell art background.jpg';
+// import artVesicles from '../../images/Hero Background/vesicles.png';
+// import artGolgi from '../../images/Hero Background/golgi.png';
+// import vesicle1 from '../../images/Hero Background'
+
+// // import { Parallax} from 'react-scroll-parallax';
+// import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+// import { useRef } from 'react';
+
+
+// const HeroSection = () => {
+    
+//     let ref = useRef(null);
+//     let {scrollYProgress} = useScroll({
+//         target: ref,
+//         offset: ["end end", "end start"]
+//     });
+//     const vesiclesSpring = useSpring(scrollYProgress, {
+//         stiffness: 50,
+//         damping: 30,
+//         restDelta: 0.001
+//     });
+//     const golgiSpring = useSpring(scrollYProgress, {
+//         stiffness: 100,
+//         damping: 30,
+//         restDelta: 0.001
+//     });
+//     // const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+//     const vesiclesY = useTransform(vesiclesSpring, [0, 1], ['0%', '60%']);
+//     const golgiY = useTransform(golgiSpring, [0, 1], ['0%', '60%']);
+//     // const backgroundRotate = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+//     // const vesiclesRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
+//     // const golgiRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
+//     // const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
+
+//     return (
+        
+
+            
+//                 <HeroContainer ref={ref} id="home">
+                
+                    
+//                     <HeroBg>
+         
+//                         {/* <motion.div style={{ y: backgroundY }} >
+//                                 <ImageBgBackground src={artBackground} />   
+//                         </motion.div> */}
+//                         <motion.div style = {{ y: vesiclesY }}>
+//                             {/* <motion.div style={{ x: vesiclesX }} >  */}
+//                                     <ImageVesicles src={artVesicles} />  
+//                             {/* </motion.div> */}
+//                         </motion.div>
+                        
+
+//                         <motion.div style={{ x: golgiY }} >
+//                                 <ImageGolgi src={artGolgi} />   
+//                         </motion.div>
+
+//                     </HeroBg>
+
+                
+//                     <HeroContent>
+                        
+//                         <HeroH1>Scientific illustration for publication</HeroH1>
+//                         <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
+                    
+                        
+//                         <HeroBtnWrapper>
+//                             <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
+//                         </HeroBtnWrapper>
+
+//                     </HeroContent>
+                    
+//                 </HeroContainer>
+//     )
+// }
+
+// export default HeroSection

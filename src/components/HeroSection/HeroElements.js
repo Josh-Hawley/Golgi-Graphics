@@ -76,7 +76,7 @@ export const ImageBgBackground = styled.img`
     overflow: hidden;
     position: relative;
 `;
-export const ImageBgVesicles = styled.img`
+export const ImageVesicles = styled.img`
     width: 100%;
     height: 100vh;
     -o-object-fit: cover;
@@ -104,34 +104,91 @@ export const ImageBgVesicles = styled.img`
     overflow: hidden;
 `;
 
-export const ImageBgGolgi = styled.img`
-    width: 100%;
-    height: 100vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    /* background: blue; */
-    /* background: #232a34; */
-    /* position: absolute;
-    
+export const ImageVesicle1 = styled.img`
+    width: 100px;
+  z-index: 1;
+  position: absolute;
+  
+  @media screen and (max-width: 768px) {
+       width: 50px;
+    }
 
-    overflow: hidden; */
-    z-index: 3;
-    position: relative;
-    
-    /* position: absolute; */
-    width:100%;
-
-    
-    top: -100vh;
-    left: 0;
-    bottom: 0;
-    
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top left; 
-    
-    overflow: hidden;
 `;
+
+export const ImageVesicle2 = styled.img`
+    width: 100px;
+  z-index: 1;
+  position: absolute;
+  
+  @media screen and (max-width: 768px) {
+       width: 50px;
+    }
+
+`;
+
+export const ImageVesicle3 = styled.img`
+    width: 100px;
+  z-index: 1;
+  position: absolute;
+
+  @media screen and (max-width: 768px) {
+       width: 50px;
+    }
+
+`;
+
+export const ImageVesicle4 = styled.img`
+    width: 100px;
+  z-index: 1;
+  position: absolute;
+
+  @media screen and (max-width: 768px) {
+       width: 50px;
+    }
+
+`;
+
+export const ImageGolgi = styled.img`
+  width: 600px;
+  z-index: 4;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  @media screen and (max-width: 768px) {
+       width: 300px;
+    }
+
+`;
+
+// export const ImageGolgi = styled.img`
+//     width: 100%;
+//     height: 100vh;
+//     -o-object-fit: cover;
+//     object-fit: cover;
+//     /* background: blue; */
+//     /* background: #232a34; */
+//     /* position: absolute;
+    
+
+//     overflow: hidden; */
+//     z-index: 3;
+//     position: relative;
+    
+//     /* position: absolute; */
+//     width:100%;
+
+    
+//     top: -100vh;
+//     left: 0;
+//     bottom: 0;
+    
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: top left; 
+    
+//     overflow: hidden;
+// `;
 
 export const ImageContainer = styled.div`
   /* position: relative;
