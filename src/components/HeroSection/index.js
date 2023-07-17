@@ -3,11 +3,11 @@ import React from 'react';
 // import {Button} from '../ButtonElements';
 // import { Parallax } from 'react-parallax';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBgBackground, ImageBgVesicles, HeroBg, ImageBgGolgi} from './HeroElements';
+import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageBgVesicles, HeroBg, ImageBgGolgi} from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
 // import cellArt from '../../images/cell art 2 compressed.jpg'
-import artBackground from '../../images/Hero Background/cell art background.jpg';
+// import artBackground from '../../images/Hero Background/cell art background.jpg';
 import artVesicles from '../../images/Hero Background/vesicles.png';
 import artGolgi from '../../images/Hero Background/golgi.png';
 
@@ -34,7 +34,7 @@ const HeroSection = () => {
     // const backgroundRotate = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
     // const vesiclesRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
     // const golgiRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
-    const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
+    // const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
 
     return (
         
