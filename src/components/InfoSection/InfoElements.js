@@ -7,6 +7,7 @@ export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
     min-height: 100vh;
+    position: relative;
     /* width: 100vw; */
     @media screen and (max-width: 768px) {
         /* padding: 100px 0; */
@@ -57,6 +58,7 @@ export const Column2 = styled.div`
     /* grid-area: col2; */
     /* width:120vw; */
     width: 50vw;
+    height: 100vh;
     /* align-items: center; */
     overflow: hidden;  
     @media screen and (max-width: 768px){
@@ -172,4 +174,100 @@ export const Button = styled(Link)`
         /* background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)}; */
     background: #FA6A80;
     }
+`;
+
+
+
+
+
+export const Layer0 = styled.img`
+    width: 85%;
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+export const Layer1 = styled.img`
+    width: 85%;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+export const Layer2 = styled.img`
+    width: 85%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+export const Layer3 = styled.img`
+    width: 85%;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+export const Layer4 = styled.img`
+    width: 85%;
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+`;
+
+
+
+
+
+
+
+
+export const ImageTop = styled.img`
+    width: 85%;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /* bottom: 700px; */
+  
+  /* @media screen and (max-width: 768px) {
+       width: 70px;
+    } */
+
+`;
+
+export const ImageMid = styled.img`
+    width: 85%;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /* bottom: -600px; */
+  
+  /* @media screen and (max-width: 768px) {
+       width: 70px;
+    } */
+
+`;
+
+export const ImageBottom = styled.img`
+  width: 85%;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 50%;
+  /* transform: translateY(-50%); */
+  /* bottom: 5px */
+  /* bottom: 0; */
+  
+  /* @media screen and (max-width: 768px) {
+       width: 70px;
+    } */
+
 `;

@@ -3,7 +3,7 @@ import React from 'react';
 // import {Button} from '../ButtonElements';
 // import { Parallax } from 'react-parallax';
 // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle1, ImageVesicle2, ImageVesicle3, ImageVesicle4} from './HeroElements';
+import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle} from './HeroElements';
 // import Video from '../../videos/video.mp4';
 // import astrocyte from '../../images/astrocyte.svg'
 // import cellArt from '../../images/cell art 2 compressed.jpg'
@@ -14,8 +14,11 @@ import vesicle1 from '../../images/Hero Background/vesicle1.png'
 import vesicle2 from '../../images/Hero Background/vesicle2.png'
 import vesicle3 from '../../images/Hero Background/vesicle3.png'
 import vesicle4 from '../../images/Hero Background/vesicle4.png'
+import vesicle5 from '../../images/Hero Background/vesicle5.png'
+import vesicle6 from '../../images/Hero Background/vesicle6.png'
 
 import golgi from '../../images/Hero Background/golgi corner.png'
+// import noiseBackground from '../../images/Hero Background/noise background.jpg'
 
 // import { Parallax} from 'react-scroll-parallax';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
@@ -31,19 +34,19 @@ const HeroSection = () => {
     });
 
     const golgiScale = useSpring(scrollYProgress, {
-        stiffness: 30,
-        damping: 60,
+        stiffness: 40,
+        damping: 40,
         restDelta: 0.001
     });
 
     const vesicle1Scale = useSpring(scrollYProgress, {
-        stiffness: 50,
+        stiffness: 35,
         damping: 40,
         restDelta: 0.001
     });
 
     const vesicle2Scale = useSpring(scrollYProgress, {
-        stiffness: 150,
+        stiffness: 120,
         damping: 40,
         restDelta: 0.001
     });
@@ -55,26 +58,44 @@ const HeroSection = () => {
     });
 
     const vesicle4Scale = useSpring(scrollYProgress, {
-        stiffness: 50,
+        stiffness: 40,
+        damping: 30,
+        restDelta: 0.001
+    });
+
+    const vesicle5Scale = useSpring(scrollYProgress, {
+        stiffness: 100,
+        damping: 30,
+        restDelta: 0.001
+    });
+
+    const vesicle6Scale = useSpring(scrollYProgress, {
+        stiffness: 40,
         damping: 30,
         restDelta: 0.001
     });
 
 
     const golgiX = useTransform(golgiScale, [0, 1], ['0vw', '4vw']);
-    const golgiY = useTransform(golgiScale, [0, 1], ['100vh', '110vh']);
+    const golgiY = useTransform(golgiScale, [0, 1], ['99vh', '110vh']);
 
-    const vesicle1X = useTransform(vesicle1Scale, [0, 1], ['40vw', '70%']);
-    const vesicle1Y = useTransform(vesicle1Scale, [0, 1], ['50vh', '70vh']);
+    const vesicle1X = useTransform(vesicle1Scale, [0, 1], ['20vw', '65vw']);
+    const vesicle1Y = useTransform(vesicle1Scale, [0, 1], ['65vh', '80vh']);
 
-    const vesicle2X = useTransform(vesicle2Scale, [0, 1], ['0px', '60%']);
-    const vesicle2Y = useTransform(vesicle2Scale, [0, 1], ['90vh', '80vh']);
+    const vesicle2X = useTransform(vesicle2Scale, [0, 1], ['0vw', '50vw']);
+    const vesicle2Y = useTransform(vesicle2Scale, [0, 1], ['90vh', '90vh']);
 
-    const vesicle3X = useTransform(vesicle3Scale, [0, 1], ['0vw', '80%']);
+    const vesicle3X = useTransform(vesicle3Scale, [0, 1], ['10vw', '80vw']);
     const vesicle3Y = useTransform(vesicle3Scale, [0, 1], ['10vh', '85vh']);
     
-    const vesicle4X = useTransform(vesicle4Scale, [0, 1], ['60vw', '80%']);
+    const vesicle4X = useTransform(vesicle4Scale, [0, 1], ['60vw', '80vw']);
     const vesicle4Y = useTransform(vesicle4Scale, [0, 1], ['30vh', '80vh']);
+
+    const vesicle5X = useTransform(vesicle5Scale, [0, 1], ['75vw', '80vw']);
+    const vesicle5Y = useTransform(vesicle5Scale, [0, 1], ['15vh', '85vh']);
+
+    const vesicle6X = useTransform(vesicle6Scale, [0, 1], ['47vw', '70vw']);
+    const vesicle6Y = useTransform(vesicle6Scale, [0, 1], ['60vh', '80vh']);
 
 
     return (
@@ -85,28 +106,44 @@ const HeroSection = () => {
                 
                     
                     <HeroBg>
+
+                        {/* <ImageBgBackground src={noiseBackground}/> */}
+
+                 
          
                       <motion.div style = {{ x: vesicle1X}}>
                         <motion.div style = {{ y: vesicle1Y }}>     
-                                <ImageVesicle1 src={vesicle1} />  
+                                <ImageVesicle src={vesicle1} />  
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle2X}}>
                         <motion.div style = {{ y: vesicle2Y }}>     
-                                <ImageVesicle2 src={vesicle2} />  
+                                <ImageVesicle src={vesicle2} />  
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle3X}}>
                         <motion.div style = {{ y: vesicle3Y }}>     
-                                <ImageVesicle3 src={vesicle3} />  
+                                <ImageVesicle src={vesicle3} />  
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle4X}}>
                         <motion.div style = {{ y: vesicle4Y }}>     
-                                <ImageVesicle4 src={vesicle4} />  
+                                <ImageVesicle src={vesicle4} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: vesicle5X}}>
+                        <motion.div style = {{ y: vesicle5Y }}>     
+                                <ImageVesicle src={vesicle5} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: vesicle6X}}>
+                        <motion.div style = {{ y: vesicle6Y }}>     
+                                <ImageVesicle src={vesicle6} />  
                         </motion.div>
                       </motion.div>
                         
@@ -115,6 +152,8 @@ const HeroSection = () => {
                                 <ImageGolgi src={golgi} />  
                         </motion.div>
                       </motion.div>
+
+                      
                         
 
                         

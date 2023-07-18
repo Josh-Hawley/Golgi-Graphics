@@ -24,7 +24,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    height: 100%;
+    height: 100vh;
     position: relative;
     z-index: 1;
     justify-content: flex-start;
@@ -50,7 +50,7 @@ export const VideoBg = styled.video`
 `;
 
 export const ImageBgBackground = styled.img`
-    width: 100%;
+    /* width: 100%;
     height: 100vh;
     -o-object-fit: cover;
     object-fit: cover;
@@ -62,19 +62,25 @@ export const ImageBgBackground = styled.img`
  
     
     /* position: absolute; */
-    width:100%;
+    /* width:100%; */ 
+    z-index:0;
+    width: 600px;
+  /* z-index: 4; */
+  position: static;
+  right: 0;
+  bottom: 0;
 
     
-    top: 0px;
+    /* top: 0px;
     left: 0;
     bottom: 0;
     
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top left; 
-    z-index:1;
+    z-index:0;
     overflow: hidden;
-    position: relative;
+    position: relative; */
 `;
 export const ImageVesicles = styled.img`
     width: 100%;
@@ -104,49 +110,49 @@ export const ImageVesicles = styled.img`
     overflow: hidden;
 `;
 
-export const ImageVesicle1 = styled.img`
+export const ImageVesicle = styled.img`
     width: 100px;
   z-index: 1;
   position: absolute;
   
   @media screen and (max-width: 768px) {
-       width: 50px;
+       width: 70px;
     }
 
 `;
 
-export const ImageVesicle2 = styled.img`
-    width: 100px;
-  z-index: 1;
-  position: absolute;
+// export const ImageVesicle2 = styled.img`
+//     width: 100px;
+//   z-index: 1;
+//   position: absolute;
   
-  @media screen and (max-width: 768px) {
-       width: 50px;
-    }
+//   @media screen and (max-width: 768px) {
+//        width: 70px;
+//     }
 
-`;
+// `;
 
-export const ImageVesicle3 = styled.img`
-    width: 100px;
-  z-index: 1;
-  position: absolute;
+// export const ImageVesicle3 = styled.img`
+//     width: 100px;
+//   z-index: 1;
+//   position: absolute;
 
-  @media screen and (max-width: 768px) {
-       width: 50px;
-    }
+//   @media screen and (max-width: 768px) {
+//        width: 70px;
+//     }
 
-`;
+// `;
 
-export const ImageVesicle4 = styled.img`
-    width: 100px;
-  z-index: 1;
-  position: absolute;
+// export const ImageVesicle4 = styled.img`
+//     width: 100px;
+//   z-index: 1;
+//   position: absolute;
 
-  @media screen and (max-width: 768px) {
-       width: 50px;
-    }
+//   @media screen and (max-width: 768px) {
+//        width: 70px;
+//     }
 
-`;
+// `;
 
 export const ImageGolgi = styled.img`
   width: 600px;
@@ -156,7 +162,7 @@ export const ImageGolgi = styled.img`
   bottom: 0;
 
   @media screen and (max-width: 768px) {
-       width: 300px;
+       width: 400px;
     }
 
 `;

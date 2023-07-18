@@ -1,22 +1,70 @@
 import React from 'react'
 // import { Button } from '../ButtonElements';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Button, Img} from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Button, Layer0, Layer1, Layer2, Layer3, Layer4} from './InfoElements';
 // import { ReactComponent as SvgImage } from '../../images/svg1.svg';
 // import {useTheme} from 'styled-components';
 // import { Parallax } from 'react-parallax';
-import portfolioBackground from '../../images/portfolio background.jpg';
+// import portfolioBackground from '../../images/portfolio background.jpg';
 import { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
 
+import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+
+
+import layer0 from '../../images/portfolio background/Layer0.png'
+import layer1 from '../../images/portfolio background/Layer1.png'
+import layer2 from '../../images/portfolio background/Layer2.png'
+import layer3 from '../../images/portfolio background/Layer3.png'
+import layer4 from '../../images/portfolio background/Layer4.png'
+
+
+
+// import top from '../../images/portfolio background/top.png'
+// import bottom from '../../images/portfolio background/bottom.png'
+// import mid from '../../images/portfolio background/mid.png'
 const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, primary, dark, dark2}) => {
   
 
-let ref = useRef(null);
+// let ref = useRef(null);
+//     let {scrollYProgress} = useScroll({
+//         target: ref,
+//         offset: ["start end", "end start"]
+//     });
+//     let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+
+
+    let ref = useRef(null);
     let {scrollYProgress} = useScroll({
         target: ref,
         offset: ["start end", "end start"]
     });
-    let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+
+    const outerScale = useSpring(scrollYProgress, {
+        stiffness: 150,
+        damping: 40,
+        restDelta: 0.001
+    });
+
+    const inner1Scale = useSpring(scrollYProgress, {
+      stiffness: 150,
+      damping: 40,
+      restDelta: 0.001
+    });
+
+    const inner2Scale = useSpring(scrollYProgress, {
+      stiffness: 150,
+      damping: 40,
+      restDelta: 0.001
+    });
+
+    
+    const outerX = useTransform(outerScale, [0, 1], ['0', '60px']);
+    const outerY = useTransform(outerScale, [0, 1], ['100vh', '-10px']);
+
+    const inner1X = useTransform(inner1Scale, [0, 1], ['0%', '-100px']);
+    const inner1Y = useTransform(inner1Scale, [0, 1], ['100vh', '50px']);
+
+    const inner2X = useTransform(inner2Scale, [0, 1], ['0%', '-40px']);
+    const inner2Y = useTransform(inner2Scale, [0, 1], ['100vh', '20px']);
 
   return (
     <>
@@ -39,9 +87,45 @@ let ref = useRef(null);
                     {/* <ImgWrap> */}
 
                     {/* <ImgConstrainBox> */}
-                    <motion.div style={{ y }}>
+                    {/* <motion.div style={{ y }}>
                       <Img src={portfolioBackground} alt={'Portfolio image'} />
-                    </motion.div>
+                    </motion.div> */}
+
+                    <motion.div style = {{ x: outerX}}>
+                    <motion.div style = {{ y: outerY }}>     
+                                <Layer0 src={layer0} /> 
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: inner1X}}>
+                      <motion.div style = {{ y: inner1Y }}>     
+                                <Layer1 src={layer1} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: outerX}}>
+                      <motion.div style = {{ y: outerY }}>     
+                                <Layer2 src={layer2} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: inner2X}}>
+                      <motion.div style = {{ y: inner2Y }}>     
+                                <Layer3 src={layer3} />  
+                        </motion.div>
+                      </motion.div>
+
+                      <motion.div style = {{ x: outerX}}>
+                      <motion.div style = {{ y: outerY }}>     
+                                <Layer4 src={layer4} />  
+                        </motion.div>
+                      </motion.div>
+
+                    
+
+                      
+
+                    
                      
                     {/* </ImgConstrainBox> */}
                         

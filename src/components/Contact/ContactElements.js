@@ -96,11 +96,13 @@ export const FormInput = styled.input`
     font-weight: 300;
 `
 export const FormButton = styled.button`
-    background: ${theme.colors.accent};
+    
+    background: ${theme.colors.accentLight};
+    color: ${theme.colors.darkTxt};
     padding: 16px 0;
     border: none;
     border-radius: 8px;
-    color: #fff;
+    
     font-size: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -108,8 +110,8 @@ export const FormButton = styled.button`
 
     &:hover{
     transition: 0.2 ease-in-out;
-    background: ${theme.colors.accentLight};
-    color: ${theme.colors.darkTxt};
+    background: ${theme.colors.accent};
+    color: ${theme.colors.accentSuperLight};
     }
 `
 
