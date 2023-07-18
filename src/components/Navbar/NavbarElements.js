@@ -32,7 +32,7 @@ background: ${({scrollNav}) => (scrollNav ? `${theme.colors.lightestBg}` : 'tran
   justify-content: space-between;
   height: 60px;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   padding: 0 10px;
   overflow:hidden;
   position: fixed;
