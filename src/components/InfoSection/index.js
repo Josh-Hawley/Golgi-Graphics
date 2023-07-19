@@ -88,7 +88,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
   return (
     <>
     
-      <InfoContainer ref={ref} lightBg={lightBg} id={id}>
+      <InfoContainer  lightBg={lightBg} id={id}>
         <InfoWrapper>
             <InfoRow imgStart={imgStart}> 
                 <Column1>
@@ -102,7 +102,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                 </TextWrapper>
                 </Column1>
               
-                <Column2>
+                <Column2 ref={ref}>
 
                     <motion.div style = {{ x: offsetX, y: offsetY }}>
                       <motion.div style = {{ x: outerX, y: outerY}}>

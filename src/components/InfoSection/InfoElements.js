@@ -6,7 +6,7 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     position: relative;
     /* width: 100vw; */
     @media screen and (max-width: 768px) {
@@ -24,6 +24,11 @@ export const InfoWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        min-height: 50vh;
+
+    }
     
     /* overflow: hidden; */
 `;
@@ -47,6 +52,10 @@ export const Column1 = styled.div`
      margin-right: auto;
     margin-left: auto;
     
+    /* @media screen and (max-width: 768px) {
+        height: 30vh;
+    } */
+    /* background: red; */
     
 
     grid-area: col1;
@@ -58,13 +67,15 @@ export const Column2 = styled.div`
     /* grid-area: col2; */
     /* width:120vw; */
     width: 50vw;
-    height: 100vh;
+    height: 100%;
+    /* border: solid 1px black; */
     
     /* align-items: center; */
     overflow: hidden;  
     @media screen and (max-width: 768px){
         /* height: 70vh; */
         width: 100vw;
+        height: 50vh;
     }
 `;
 
@@ -188,6 +199,10 @@ export const Layer0 = styled.img`
   left: 50%;
   /* top: 50%; */
   transform: translate(-50%, -50%);
+  /* @media screen and (max-width: 768px) {
+    
+    transform: translate(-50%, -50%);
+ } */
  
 `;
 
@@ -198,6 +213,11 @@ export const Layer1 = styled.img`
   left: 50%;
   /* top: 50%; */
   transform: translate(-50%, -50%);
+
+  /* @media screen and (max-width: 768px) {
+    
+    transform: translate(-50%, -100%);
+ } */
 `;
 
 export const Layer2 = styled.img`
@@ -207,6 +227,11 @@ export const Layer2 = styled.img`
   left: 50%;
   /* top: 50%; */
   transform: translate(-50%, -50%);
+
+  /* @media screen and (max-width: 768px) {
+    
+    transform: translate(-50%, -100%);
+ } */
 `;
 
 export const Layer3 = styled.img`
@@ -216,6 +241,11 @@ export const Layer3 = styled.img`
   left: 50%;
   /* top: 50%; */
   transform: translate(-50%, -50%);
+
+  /* @media screen and (max-width: 768px) {
+    
+    transform: translate(-50%, -100%);
+ } */
 `;
 
 export const Layer4 = styled.img`
@@ -225,6 +255,10 @@ export const Layer4 = styled.img`
   left: 50%;
 
   transform: translate(-50%, -50%);
+  /* @media screen and (max-width: 768px) {
+    
+    transform: translate(-50%, -100%);
+ } */
 `;
 
 
@@ -256,9 +290,7 @@ export const ImageMid = styled.img`
   transform: translate(-50%);
   /* bottom: -600px; */
   
-  /* @media screen and (max-width: 768px) {
-       width: 70px;
-    } */
+
 
 `;
 

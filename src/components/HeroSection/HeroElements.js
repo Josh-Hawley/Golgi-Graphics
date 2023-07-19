@@ -31,6 +31,7 @@ export const HeroContainer = styled.div`
     z-index: 1;
     justify-content: center;
     offset:-60px;
+    /* background: red; */
 `;
 
 export const HeroBg = styled.div`
@@ -125,6 +126,10 @@ export const ImageVesicle = styled.img`
     width: 70px;
   }
 
+  @media screen and (max-width: 450px) {
+    width: 55px;
+  }
+
 `;
 
 
@@ -143,36 +148,13 @@ export const ImageGolgi = styled.img`
     width: 350px;
   }
 
+  @media screen and (max-width: 450px) {
+    width: 250px;
+  }
+
 `;
 
-// export const ImageGolgi = styled.img`
-//     width: 100%;
-//     height: 100vh;
-//     -o-object-fit: cover;
-//     object-fit: cover;
-//     /* background: blue; */
-//     /* background: #232a34; */
-//     /* position: absolute;
-    
 
-//     overflow: hidden; */
-//     z-index: 3;
-//     position: relative;
-    
-//     /* position: absolute; */
-//     width:100%;
-
-    
-//     top: -100vh;
-//     left: 0;
-//     bottom: 0;
-    
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: top left; 
-    
-//     overflow: hidden;
-// `;
 
 export const ImageContainer = styled.div`
   /* position: relative;

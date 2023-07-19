@@ -106,7 +106,8 @@ export const NavLinks = styled(LinkS)`
 
 
   &.active {
-    border-bottom: 3px solid ${theme.colors.darkBg};
+    border-bottom: 3px solid ${theme.colors.accent};
+    color: ${theme.colors.accent};
   }
 
   &:hover {
