@@ -76,7 +76,7 @@ const HeroSection = () => {
     });
 
 
-    const golgiX = useTransform(golgiScale, [0, 1], ['0vw', '4vw']);
+    const golgiX = useTransform(golgiScale, [0, 1], ['0vw', '8vw']);
     const golgiY = useTransform(golgiScale, [0, 1], ['99vh', '110vh']);
 
     const vesicle1X = useTransform(vesicle1Scale, [0, 1], ['20vw', '65vw']);
@@ -91,7 +91,7 @@ const HeroSection = () => {
     const vesicle4X = useTransform(vesicle4Scale, [0, 1], ['60vw', '80vw']);
     const vesicle4Y = useTransform(vesicle4Scale, [0, 1], ['30vh', '80vh']);
 
-    const vesicle5X = useTransform(vesicle5Scale, [0, 1], ['75vw', '80vw']);
+    const vesicle5X = useTransform(vesicle5Scale, [0, 1], ['80vw', '90vw']);
     const vesicle5Y = useTransform(vesicle5Scale, [0, 1], ['15vh', '85vh']);
 
     const vesicle6X = useTransform(vesicle6Scale, [0, 1], ['47vw', '70vw']);

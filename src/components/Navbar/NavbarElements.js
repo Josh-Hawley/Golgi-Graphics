@@ -34,7 +34,7 @@ background: ${({scrollNav}) => (scrollNav ? `${theme.colors.lightestBg}` : 'tran
   z-index: 1;
   width: 100vw;
   padding: 0 10px;
-  overflow:hidden;
+  overflow: hidden;
   position: fixed;
   top: 0px;
   transition: 0.8s all ease;

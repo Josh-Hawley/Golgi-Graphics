@@ -5,7 +5,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 // import {useTheme} from 'styled-components';
 // import { Parallax } from 'react-parallax';
 // import portfolioBackground from '../../images/portfolio background.jpg';
-import { useRef } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 
@@ -31,12 +31,20 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
 //     });
 //     let y = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
 
-
+    const [divHeight, setDivHeight] = useState(0);
     let ref = useRef(null);
     let {scrollYProgress} = useScroll({
         target: ref,
         offset: ["start end", "end start"]
     });
+
+    useEffect(() => {
+      if (ref.current) {
+        const height = ref.current.offsetHeight;
+        setDivHeight(height);
+        console.log('Div height:', height);
+      }
+    }, []);
 
     const outerScale = useSpring(scrollYProgress, {
         stiffness: 150,
@@ -56,15 +64,20 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
       restDelta: 0.001
     });
 
-    
+    const offsetX = useTransform(scrollYProgress, [0,1], ['0', '0'])
+    const offsetY = useTransform(scrollYProgress, [0,1], [40*divHeight/100, 60*divHeight/100])
+
     const outerX = useTransform(outerScale, [0, 1], ['0', '60px']);
-    const outerY = useTransform(outerScale, [0, 1], ['100vh', '-10px']);
+    const outerY = useTransform(outerScale, [0, 1], ['0vh', '-10px']);
 
     const inner1X = useTransform(inner1Scale, [0, 1], ['0%', '-100px']);
-    const inner1Y = useTransform(inner1Scale, [0, 1], ['100vh', '50px']);
+    const inner1Y = useTransform(inner1Scale, [0, 1], ['0vh', '50px']);
 
     const inner2X = useTransform(inner2Scale, [0, 1], ['0%', '-40px']);
-    const inner2Y = useTransform(inner2Scale, [0, 1], ['100vh', '20px']);
+    const inner2Y = useTransform(inner2Scale, [0, 1], ['0vh', '20px']);
+
+    // const inner2X = useTransform(inner2Scale, [0, 1], ['-0px', '0%']);
+    // const inner2Y = useTransform(inner2Scale, [0, 1], ['20px', '0vh']);
 
   return (
     <>
@@ -82,44 +95,31 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     </BtnWrap>
                 </TextWrapper>
                 </Column1>
-                {/* <Parallax bgImage={portfolioBackground} strength={400}> */}
+              
                 <Column2>
-                    {/* <ImgWrap> */}
 
-                    {/* <ImgConstrainBox> */}
-                    {/* <motion.div style={{ y }}>
-                      <Img src={portfolioBackground} alt={'Portfolio image'} />
-                    </motion.div> */}
-
-                    <motion.div style = {{ x: outerX}}>
-                    <motion.div style = {{ y: outerY }}>     
+                    <motion.div style = {{ x: offsetX, y: offsetY }}>
+                      <motion.div style = {{ x: outerX, y: outerY}}>
                                 <Layer0 src={layer0} /> 
-                        </motion.div>
                       </motion.div>
 
-                      <motion.div style = {{ x: inner1X}}>
-                      <motion.div style = {{ y: inner1Y }}>     
+                      <motion.div style = {{ x: inner1X, y: inner1Y}}>
                                 <Layer1 src={layer1} />  
-                        </motion.div>
                       </motion.div>
 
-                      <motion.div style = {{ x: outerX}}>
-                      <motion.div style = {{ y: outerY }}>     
+                      <motion.div style = {{ x: outerX, y: outerY }}>  
                                 <Layer2 src={layer2} />  
-                        </motion.div>
                       </motion.div>
 
-                      <motion.div style = {{ x: inner2X}}>
-                      <motion.div style = {{ y: inner2Y }}>     
+                      <motion.div style = {{ x: inner2X, y: inner2Y }}>    
                                 <Layer3 src={layer3} />  
-                        </motion.div>
                       </motion.div>
 
-                      <motion.div style = {{ x: outerX}}>
-                      <motion.div style = {{ y: outerY }}>     
+                      <motion.div style = {{ x: outerX, y: outerY}}>   
                                 <Layer4 src={layer4} />  
-                        </motion.div>
                       </motion.div>
+                    </motion.div>
+                    
 
                     
 

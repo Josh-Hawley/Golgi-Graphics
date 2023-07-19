@@ -59,6 +59,7 @@ export const Column2 = styled.div`
     /* width:120vw; */
     width: 50vw;
     height: 100vh;
+    
     /* align-items: center; */
     overflow: hidden;  
     @media screen and (max-width: 768px){
@@ -185,7 +186,9 @@ export const Layer0 = styled.img`
   z-index: 0;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
+ 
 `;
 
 export const Layer1 = styled.img`
@@ -193,7 +196,8 @@ export const Layer1 = styled.img`
   z-index: 1;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
 `;
 
 export const Layer2 = styled.img`
@@ -201,7 +205,8 @@ export const Layer2 = styled.img`
   z-index: 2;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
 `;
 
 export const Layer3 = styled.img`
@@ -209,7 +214,8 @@ export const Layer3 = styled.img`
   z-index: 3;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+  /* top: 50%; */
+  transform: translate(-50%, -50%);
 `;
 
 export const Layer4 = styled.img`
@@ -217,7 +223,8 @@ export const Layer4 = styled.img`
   z-index: 4;
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
+
+  transform: translate(-50%, -50%);
 `;
 
 

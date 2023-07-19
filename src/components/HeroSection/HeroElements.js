@@ -6,15 +6,17 @@ import { Link as LinkS} from 'react-scroll';
 
 export const HeroH1 = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 70px;
-    text-align: left;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 700;
+    /* max-width: 700px; */
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        font-size: 65px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 40px;
+        font-size: 50px;
     }
 `;
 
@@ -27,7 +29,8 @@ export const HeroContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
-    justify-content: flex-start;
+    justify-content: center;
+    offset:-60px;
 `;
 
 export const HeroBg = styled.div`
@@ -115,55 +118,30 @@ export const ImageVesicle = styled.img`
   z-index: 1;
   position: absolute;
   
-  @media screen and (max-width: 768px) {
-       width: 70px;
+  @media screen and (max-width: 1300px) {
+       width: 90px;
     }
+    @media screen and (max-width: 700px) {
+    width: 70px;
+  }
 
 `;
 
-// export const ImageVesicle2 = styled.img`
-//     width: 100px;
-//   z-index: 1;
-//   position: absolute;
-  
-//   @media screen and (max-width: 768px) {
-//        width: 70px;
-//     }
 
-// `;
-
-// export const ImageVesicle3 = styled.img`
-//     width: 100px;
-//   z-index: 1;
-//   position: absolute;
-
-//   @media screen and (max-width: 768px) {
-//        width: 70px;
-//     }
-
-// `;
-
-// export const ImageVesicle4 = styled.img`
-//     width: 100px;
-//   z-index: 1;
-//   position: absolute;
-
-//   @media screen and (max-width: 768px) {
-//        width: 70px;
-//     }
-
-// `;
 
 export const ImageGolgi = styled.img`
-  width: 600px;
+  width: 550px;
   z-index: 4;
   position: absolute;
   right: 0;
   bottom: 0;
 
-  @media screen and (max-width: 768px) {
-       width: 400px;
-    }
+  @media screen and (max-width: 1300px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 700px) {
+    width: 350px;
+  }
 
 `;
 
@@ -216,7 +194,7 @@ export const HeroContent = styled.div`
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     
 `;
 
@@ -226,9 +204,10 @@ export const HeroContent = styled.div`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: ${theme.colors.darkTxt};
-    font-size: 24px;
-    text-align: left;
-    max-width: 600px;
+    font-size: 30px;
+    text-align: center;
+    max-width: 700px;
+    font-weight: 300;
 
     @media screen and (max-width: 768px) {
         font-size: 24px;
