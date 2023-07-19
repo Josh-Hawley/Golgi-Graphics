@@ -46,6 +46,12 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
       }
     }, []);
 
+    const offsetScale = useSpring(scrollYProgress, {
+      stiffness: 40,
+      damping: 40,
+      restDelta: 0.001
+  });
+
     const outerScale = useSpring(scrollYProgress, {
         stiffness: 150,
         damping: 40,
@@ -64,8 +70,8 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
       restDelta: 0.001
     });
 
-    const offsetX = useTransform(scrollYProgress, [0,1], ['0', '0'])
-    const offsetY = useTransform(scrollYProgress, [0,1], [40*divHeight/100, 60*divHeight/100])
+    const offsetX = useTransform(offsetScale, [0,1], ['0', '0'])
+    const offsetY = useTransform(offsetScale, [0,1], [40*divHeight/100, 60*divHeight/100])
 
     const outerX = useTransform(outerScale, [0, 1], ['0', '60px']);
     const outerY = useTransform(outerScale, [0, 1], ['0vh', '-10px']);
