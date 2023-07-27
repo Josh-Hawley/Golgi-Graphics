@@ -310,13 +310,17 @@ export const IconTitle = styled.h2`
     background: transparent;
     position: absolute;
     z-index: 10;
-    text-shadow:  0px 0px 20px rgba(0, 0, 0, 1); 
+    text-shadow:  0px 0px 20px rgba(0, 0, 0, 0.8); 
     font-weight: 600;
     font-size: 55px;
     pointer-events: none;
 
     @media screen and (max-width: 1000px){
         font-size: 40px;
+    }
+
+    @media screen and (max-width: 768px){
+        font-size: 30px;
     }
     
     /* @media screen and (max-width: 768px){
