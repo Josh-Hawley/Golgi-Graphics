@@ -8,7 +8,7 @@ export const InfoContainer = styled.div`
     z-index: 5;
     /* min-height: 100vh; */
     position: relative;
-    /* width: 100vw; */
+    width: 100%;
     @media screen and (max-width: 768px) {
         /* padding: 100px 0; */
     } 
@@ -17,12 +17,12 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* width: 100vw; */
     /* max-width: 1500px; */
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 0 0px;
     justify-content: center;
 
     @media screen and (max-width: 768px) {
@@ -48,7 +48,8 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     /* margin-bottom: 15px;  */
-     padding: 0 15px;
+    padding-left: 20px;
+     padding-right: 20px;
      margin-right: auto;
     margin-left: auto;
     
@@ -67,15 +68,15 @@ export const Column2 = styled.div`
     /* grid-area: col2; */
     /* width:120vw; */
     width: 50vw;
-    height: 100%;
+    height: calc(100vh - 60px);
     /* border: solid 1px black; */
     
     /* align-items: center; */
     overflow: hidden;  
     @media screen and (max-width: 768px){
         /* height: 70vh; */
-        width: 100vw;
-        height: 50vh;
+        width: 100%;
+        height: 60vh;
     }
 `;
 
@@ -88,7 +89,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
     /* color: ${theme.colors.accentLight}; */
-    color: #FFC0C9;
+    color: #ffa8b5;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -167,7 +168,8 @@ export const Button = styled(Link)`
     /* background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)}; */
     white-space: nowrap;
     background: #FFC0C9;
-    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
+    padding: 10px 22px;
     color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: 20px;

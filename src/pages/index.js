@@ -69,6 +69,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { homeObjTwo } from '../components/InfoSection/Data';
+import { servicesData } from '../components/Services/Data';
 import Services from '../components/Services';
 import Footer from '../components/Footer';
 // import Portfolio from '../components/Portfolio';
@@ -91,11 +92,8 @@ const Home = () => {
             
             <Navbar toggle={toggle} isOpen={isOpen}/>     
             <HeroSection />
-            {/* <InfoSection {...homeObjOne}/> */}
-            <Services />
-            {/* <Portfolio /> */}
+            <Services {...servicesData}/>
             <InfoSection {...homeObjTwo}/>
-            {/* <InfoSection {...homeObjThree}/> */}
             <About />
             <Footer />
         </PageContainer>

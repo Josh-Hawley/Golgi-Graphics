@@ -102,12 +102,17 @@ export const NavLinks = styled(LinkS)`
   font-size: 20px;
   height: 100%;
   cursor: pointer;
+  transition: ease-in-out 0.08s;
 
 
 
   &.active {
-    border-bottom: 3px solid ${theme.colors.accent};
-    color: ${theme.colors.accent};
+    /* border-bottom: 3px solid ${theme.colors.accent};
+    color: ${theme.colors.accent}; */
+    /* border-bottom: 3px solid ${theme.colors.darkTxt}; */
+    color:${theme.colors.darkTxt};
+    font-weight: 700;
+    font-size: 24px;
   }
 
   &:hover {

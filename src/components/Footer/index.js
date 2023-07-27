@@ -29,38 +29,9 @@ const Footer = () => {
                         
                     </FooterLinkItems>
 
-                    <FooterLinkItems>
-                        
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to='/contact'>Contact</FooterLink>
-                            <FooterLink to='/contact'>How it works</FooterLink>
-                            <FooterLink to='/contact'>Testimonials</FooterLink>
-                            <FooterLink to='/contact'>Terms of service</FooterLink>
-                        
-                    </FooterLinkItems>
                 </FooterLinksWrapper>
 
-                <FooterLinksWrapper>
-                    <FooterLinkItems>
-
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to='/contact'>Contact</FooterLink>
-                            <FooterLink to='/contact'>How it works</FooterLink>
-                            <FooterLink to='/contact'>Testimonials</FooterLink>
-                            <FooterLink to='/contact'>Terms of service</FooterLink>
-                        
-                    </FooterLinkItems>
-
-                    <FooterLinkItems>
-                        
-                        <FooterLinkTitle>About us</FooterLinkTitle>
-                            <FooterLink to='/contact'>Contact</FooterLink>
-                            <FooterLink to='/contact'>How it works</FooterLink>
-                            <FooterLink to='/contact'>Testimonials</FooterLink>
-                            <FooterLink to='/contact'>Terms of service</FooterLink>
-                        
-                    </FooterLinkItems>
-                </FooterLinksWrapper>
+                
 
             </FooterLinksContainer>
 

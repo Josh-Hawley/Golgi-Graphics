@@ -25,13 +25,13 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px;
+    /* padding: 0 10px; */
     height: 100vh;
     position: relative;
     z-index: 1;
     justify-content: center;
-    offset:-60px;
-    /* background: red; */
+    /* offset:-60px; */
+    /* background: orange; */
 `;
 
 export const HeroBg = styled.div`

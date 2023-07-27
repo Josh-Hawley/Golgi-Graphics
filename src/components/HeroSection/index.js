@@ -34,7 +34,7 @@ const HeroSection = () => {
     });
 
     const golgiScale = useSpring(scrollYProgress, {
-        stiffness: 40,
+        stiffness: 70,
         damping: 40,
         restDelta: 0.001
     });
@@ -168,7 +168,7 @@ const HeroSection = () => {
                     
                         
                         <HeroBtnWrapper>
-                            <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
+                            <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-60}>Illustrate my research</HeroBtnLink>
                         </HeroBtnWrapper>
 
                     </HeroContent>

@@ -18,7 +18,7 @@ export const SidebarContainer = styled.aside`
     transition: 0.3s cubic-bezier(.62,.13,.54,.85);
     /* opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')}; */
     left: ${({ isOpen }) => (isOpen ? '50%' : '100%')};
-    box-shadow: inset 20px 0px 30px  -5px rgba(0,0,0,0.25);
+    box-shadow: inset 20px 0px 30px  -5px rgba(0,0,0,0.1);
   
 
 `;

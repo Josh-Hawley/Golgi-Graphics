@@ -19,7 +19,7 @@ const About = () => {
                     <TopLine>Dr. Josh Hawley</TopLine>
                     <Heading lightText={true}>About</Heading>
                     <Subtitle darkText={true}>
-                        Welcome! I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design. With a background in Quantitative and Biophysical Biology, I have honed my expertise in understanding the intricacies of embryonic development and stem cell fate decisions through a combination of mathematically modelling and experimental work.
+                        Welcome! I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design. With a background in Quantitative and Biophysical Biology, I have honed my expertise in understanding the intricacies of embryonic development and stem cell fate decisions through a combination of mathematical modelling and experimental work.
                     </Subtitle>
 
                     <Subtitle>

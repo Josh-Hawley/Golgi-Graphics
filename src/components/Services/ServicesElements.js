@@ -1,94 +1,340 @@
+
+
 import styled from 'styled-components';
 import { theme } from '../../Theme';
-import { Link } from 'react-scroll';
+import {Link} from 'react-router-dom';
+import { Link as LinkS} from 'react-scroll';
 
-export const ServicesContainer = styled.div`
-    /* height: 800px; */
-    min-height: 100vh;
+
+
+export const InfoContainer = styled.div`
+    color: #fff;
+    background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
+    z-index: 5;
+    /* min-height: 100vh; */
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /* height: 100vh; */
+    /* height: calc(100vh - 60px); */
+   
+`;
+
+export const InfoWrapper = styled.div`
+    display: grid;
+    z-index: 1;
+    /* height: 1000px;; */
+
+    /* margin-right: auto;
+    margin-left: auto; */
+
+    justify-content: center;
+
+
+`;
+
+export const InfoRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+
+    }
+`;
+
+export const Column1 = styled.div`
+    /* margin-bottom: 15px;  */
+     padding-left: 20px;
+     padding-right: 20px;
+     margin-right: auto;
+    margin-left: auto;
+    
+    /* @media screen and (max-width: 768px) {
+        height: 30vh;
+    } */
+    /* background: red; */
+    
+
+    grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+ 
+    width: 100%;
+    height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: ${theme.colors.lightBg};
-
-
-    @media screen and (max-width: 768px){
-        /* height: 1100px; */
-        min-height: 1100px;
-    }
-
-    @media screen and (max-width: 480px){
-        /* height: 1300px; */
-        min-height: 1300px;
-    }
-`
-
-export const ServicesWrapper = styled.div`
-    max-width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    grid-gap: 20px;
-    padding: 0 50px;
+    overflow: hidden;  
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
 
-    @media screen and (max-width: 1000px){
-        grid-template-columns: 1fr 1fr;
-    }
 
     @media screen and (max-width: 768px){
-        grid-template-columns: 1fr;
-        padding: 0 20px;
+        width: 100vw;
+        height: 70vh;
+        padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    padding-left: 30px;
     }
-`
+`;
 
-export const ServicesCard = styled(Link)`
-    background: white;
+export const TextWrapper = styled.div`
+    max-width: 540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+    padding-top: 60px;
+`;
+
+export const TopLine = styled.p`
+    /* color: ${theme.colors.accentLight}; */
+    color: ${theme.colors.accent};
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+`;
+
+export const Heading = styled.h1`
+    color: ${theme.colors.darkTxt};
+    margin-bottom: 24px;
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
+`;
+
+export const Subtitle = styled.p`
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: ${theme.colors.lightTxt}
+    /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
+`;
+
+export const BtnWrap = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
+`;
+
+export const ImgWrap = styled.div`
+  
+    /* height: 100vh; */
+    /* width: 50vw; */
+    /* background: red; */
+    /* align-items: center; */
+    
+    /* overflow: hidden; */
+
+    @media screen and (max-width: 768px){
+        height: 70vh;
+        width: 100vw;
+    }
+
+ 
+
+
+`;
+
+/* export const ImgConstrainBox = styled.div`
+overflow: hidden;
+
+` */
+
+
+
+export const Button = styled(Link)`
+    border-radius: 50px;
+    /* background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)}; */
+    white-space: nowrap;
+    background: ${theme.colors.accentLight};
+    /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
+    padding: 10px 22px;
+    color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
+    /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
+    font-size: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    max-height: 340px;
-    padding: 30px;
-    box-shadow:  0px 0px 20px rgba(0,0,0,0.1);
+    text-decoration: none;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        transform: scale(1.05);
         transition: all 0.2s ease-in-out;
+        color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
+        /* background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)}; */
+    background: ${theme.colors.accent};
+    }
+`;
+
+export const DiagonalDiv = styled.div`
+    
+    width: 100%;
+    height: 150px; /* Adjust the height as per your requirements */
+    /* background-image: url('path_to_your_image.jpg'); Replace 'path_to_your_image.jpg' with your image file path */
+    /* background-size: cover; */
+    background: red;
+    position: absolute;
+    bottom: 0;
+    transform: perspective(25px) rotateX(15deg);
+`
+
+
+export const TrapezoidContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust this to your desired height */   
+`
+
+export const Trapezoid = styled.div`
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent; /* Adjust the width of the top base */
+  border-right: 100px solid transparent; /* Adjust the width of the bottom base */
+  border-bottom: 200px solid #555; /* Adjust the height (slant) of the trapezoid and the background color */
+  /* background-image: url('../../images/graphical abstract icon.png');  */
+  /* background-size: cover; */
+  background-position: center;
+  background: red;
+`
+
+export const Container = styled(LinkS)`
+    width: 100%;
+    height: 33.3%;
+    background: transparent;
+    /* overflow: hidden; */
+    /* margin-top: -5%; */
+    /* margin-bottom: 10%; */
+`
+export const ContainerTop = styled(LinkS)`
+    width: 100%;
+    height: 33%;
+    background: transparent;
+    overflow: hidden;
+
+    
+
+`
+export const ContainerBottom = styled(LinkS)`
+    width: 100%;
+    height: 33%;
+    background: transparent;
+    overflow: hidden;
+    /* margin-top: -10%; */
+
+`
+
+export const Inner = styled.div`
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    
+   
+    justify-content: center;
+    align-items: center;
+    clip-path:  polygon(100% -10%, 100% 90%, -0% 110%, 0 10%);
+    transition: clip-path .3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+`
+export const InnerTop = styled.div`
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    clip-path:  polygon(100% 0, 100% 80%, 0% 100%, 0 0%);
+    transition: clip-path .3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+`
+export const InnerBottom = styled.div`
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    clip-path:  polygon(100% 0, 100% 100%, 0% 100%, 0 20%);
+    transition: clip-path .3s ease-in-out;
+
+    &:hover {
         cursor: pointer;
     }
 `
 
-export const ServicesIcon = styled.img`
-    /* height: 200px; */
-    width: 200px;
-    margin-bottom: 10px;
-`
+export const Img = styled.img`
+  
+  /* height: 100%; */
+  width: 110%;
+  object-fit: cover;
+  transition: 0.2s all ease-in-out;
 
-export const ServicesH1 = styled.h1`
-    font-size: 60px;
-    color: ${theme.colors.darkTxt};
-    margin-bottom: 64px;
+  &:hover{
+    width: 116%;
+    /* height: 110%; */
+  }
+    
+`;
 
-    @media screen and (max-width: 768px){
-        font-size: 50px;
-    }
+export const IconTitle = styled.h2`
+    color: ${theme.colors.superLightTxt};
+    background: transparent;
+    position: absolute;
+    z-index: 10;
+    text-shadow:  0px 0px 20px rgba(0, 0, 0, 1); 
+    font-weight: 600;
+    font-size: 55px;
+    pointer-events: none;
 
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 1000px){
         font-size: 40px;
     }
+    
+    /* @media screen and (max-width: 768px){
+        font-size: 40px;
+    } */
 `
 
-export const ServicesH2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
-    color: ${theme.colors.darkTxt};
-`
 
-export const ServicesP = styled.p`
-    font-size: 1rem;
-    text-align: center;
-    color: ${theme.colors.lightTxt};
-`
+export const DarkOverlay = styled.div`
+  /* Full-screen overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Dark background with transparency */
+  background-color: rgba(100, 100, 100, 0.4);
+  /* Change the last value (0.5) to adjust the darkness level (0 = fully transparent, 1 = fully opaque) */
+  pointer-events: none;
+  `;

@@ -42,12 +42,12 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
       if (ref.current) {
         const height = ref.current.offsetHeight;
         setDivHeight(height);
-        console.log('Div height:', height);
+        // console.log('Div height:', height);
       }
     }, []);
 
     const offsetScale = useSpring(scrollYProgress, {
-      stiffness: 40,
+      stiffness: 100,
       damping: 40,
       restDelta: 0.001
   });

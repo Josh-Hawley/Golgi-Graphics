@@ -30,29 +30,30 @@
   border-radius: 1em;
 } */
 
-::-webkit-scrollbar {
-  width: 0em;
-}
+/* ::-webkit-scrollbar {
+  width: 0.5em;
+} */
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: transparent;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: #35322f;
-}
+  border-radius: 1em;
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
+} */
 
 /* Handle when active (being clicked on) */
-::-webkit-scrollbar-thumb:active {
+/* ::-webkit-scrollbar-thumb:active {
   background: #888;
-}
+} */
 
 
 /* Optional: Add some padding to the right of the element to prevent content from being hidden by the scrollbar */
