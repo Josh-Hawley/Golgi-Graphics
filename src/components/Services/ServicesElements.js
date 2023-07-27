@@ -82,8 +82,8 @@ export const Column2 = styled.div`
         height: 70vh;
         padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     }
 `;
 
@@ -185,37 +185,7 @@ export const Button = styled(Link)`
     }
 `;
 
-export const DiagonalDiv = styled.div`
-    
-    width: 100%;
-    height: 150px; /* Adjust the height as per your requirements */
-    /* background-image: url('path_to_your_image.jpg'); Replace 'path_to_your_image.jpg' with your image file path */
-    /* background-size: cover; */
-    background: red;
-    position: absolute;
-    bottom: 0;
-    transform: perspective(25px) rotateX(15deg);
-`
 
-
-export const TrapezoidContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 400px; /* Adjust this to your desired height */   
-`
-
-export const Trapezoid = styled.div`
-  width: 0;
-  height: 0;
-  border-left: 100px solid transparent; /* Adjust the width of the top base */
-  border-right: 100px solid transparent; /* Adjust the width of the bottom base */
-  border-bottom: 200px solid #555; /* Adjust the height (slant) of the trapezoid and the background color */
-  /* background-image: url('../../images/graphical abstract icon.png');  */
-  /* background-size: cover; */
-  background-position: center;
-  background: red;
-`
 
 export const Container = styled(LinkS)`
     width: 100%;
@@ -294,12 +264,13 @@ export const InnerBottom = styled.div`
 export const Img = styled.img`
   
   /* height: 100%; */
-  width: 110%;
+  width: 120%;
   object-fit: cover;
   transition: 0.2s all ease-in-out;
 
   &:hover{
-    width: 116%;
+    width: 130%;
+    /* height: 120%; */
     /* height: 110%; */
   }
     
@@ -310,13 +281,17 @@ export const IconTitle = styled.h2`
     background: transparent;
     position: absolute;
     z-index: 10;
-    text-shadow:  0px 0px 20px rgba(0, 0, 0, 0.8); 
-    font-weight: 600;
+    text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7); 
+    box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
     font-size: 55px;
     pointer-events: none;
+    /* background: rgba(0, 0, 0, 0.2); */
+    padding: 4px 8px;
+    border-radius: 10px;
 
-    @media screen and (max-width: 1000px){
-        font-size: 40px;
+    @media screen and (max-width: 1200px){
+        font-size: 35px;
     }
 
     @media screen and (max-width: 768px){
@@ -338,7 +313,14 @@ export const DarkOverlay = styled.div`
   height: 100%;
 
   /* Dark background with transparency */
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(100, 100, 100, 0.1);
   /* Change the last value (0.5) to adjust the darkness level (0 = fully transparent, 1 = fully opaque) */
   pointer-events: none;
+
+  /* &:hover{
+    background-color: rgba(100, 100, 100, 0);
+
+  } */
+
+  
   `;

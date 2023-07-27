@@ -101,6 +101,7 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   font-size: 20px;
   height: 100%;
+  /* width: 110px; */
   cursor: pointer;
   transition: ease-in-out 0.08s;
 
@@ -117,7 +118,7 @@ export const NavLinks = styled(LinkS)`
 
   &:hover {
     color: ${theme.colors.accent};
-    transition: 0.2s ease-in-out;
+    /* transition: 0.2s ease-in-out; */
     /* border-bottom: 1px solid #01bf71; */
   } 
 
