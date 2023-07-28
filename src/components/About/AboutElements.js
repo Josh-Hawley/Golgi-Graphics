@@ -54,9 +54,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    /* color: ${theme.colors.accentLight}; */
+    color: ${theme.colors.accent};
     /* color: #FFC234; */
-    color: #ffd166;
+    /* color: #ffd166; */
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;

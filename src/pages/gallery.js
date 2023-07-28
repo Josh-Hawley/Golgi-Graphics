@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import PortfolioPg from '../components/PortfolioPg'
 import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { PageContainer } from './PageElements';
+import NavbarNoLinks from '../components/NavbarNoLinks';
 
 const GalleryPage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const GalleryPage = () => {
       <>
       <PageContainer isOpen={isOpen}>
       <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <Navbar toggle={toggle}/>
+      <NavbarNoLinks toggle={toggle}/>
       <PortfolioPg />
       <Footer />
 

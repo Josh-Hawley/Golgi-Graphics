@@ -88,8 +88,8 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    /* color: ${theme.colors.accentLight}; */
-    color: #ffa8b5;
+    color: ${theme.colors.accentLight};
+    /* color: #ffa8b5; */
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -165,9 +165,9 @@ export const Img = styled.img`
 
 export const Button = styled(Link)`
     border-radius: 50px;
-    /* background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)}; */
+    background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)};
     white-space: nowrap;
-    background: #FFC0C9;
+    /* background: #FFC0C9; */
     /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
     padding: 10px 22px;
     color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
@@ -185,8 +185,8 @@ export const Button = styled(Link)`
     &:hover {
         transition: all 0.2s ease-in-out;
         color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
-        /* background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)}; */
-    background: #FA6A80;
+        background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)};
+    /* background: #FA6A80; */
     }
 `;
 

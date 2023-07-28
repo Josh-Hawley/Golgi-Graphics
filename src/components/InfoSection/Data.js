@@ -43,7 +43,7 @@ export const homeObjThree = {
     description: "Welcome! I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design. With a background in Quantitative and Biophysical Biology at The University of Manchester, I have honed my expertise in understanding the intricacies of mathematically modelling biological systems, with a focus on embryonic development. \n However, my curiosity extends beyond just doing the science and as a graphic designer, I channel my creativity and love for aesthetics to convey the complexity of science in visually appealing and easy-to-understand graphics. I believe that bridging the gap between science and art is crucial for fostering scientific literacy and engaging a broader audience, as well as communicating amongst scientific peers. ",
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/website profile pic.jpg'), // .default was important here, doesn't load image without 
+    // img: require(''), // .default was important here, doesn't load image without 
     alt: 'svg3',
     dark: true,
     primary: true,

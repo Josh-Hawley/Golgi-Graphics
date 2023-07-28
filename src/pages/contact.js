@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Contact from '../components/Contact';
 import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
+import NavbarNoLinks from '../components/NavbarNoLinks';
+// import Navbar from '../components/Navbar';
 import { PageContainer } from './PageElements';
 import Footer from '../components/Footer'
 
@@ -17,7 +18,7 @@ const ContactPage = () => {
     <>
     <PageContainer isOpen={isOpen}>
     <Sidebar isOpen={isOpen} toggle={toggle}/>
-    <Navbar toggle={toggle}/>
+    <NavbarNoLinks toggle={toggle}/>
     <Contact />
     <Footer />
     </PageContainer>

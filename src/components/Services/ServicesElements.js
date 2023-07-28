@@ -15,6 +15,7 @@ export const InfoContainer = styled.div`
     position: relative;
     width: 100%;
     overflow: hidden;
+    
     /* height: 100vh; */
     /* height: calc(100vh - 60px); */
    
@@ -37,12 +38,13 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    min-height: calc(100vh - 60px);
     
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-
+        /* height: calc(120vh - 60px); */
     }
 `;
 
@@ -65,25 +67,28 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
  
     width: 100%;
-    height: calc(100vh - 60px);
+    
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    align-items: center;
+    flex-wrap: wrap;
+  
     overflow: hidden;  
-    padding-top: 50px;
+    /* padding-top: 50px;
     padding-bottom: 50px;
-    padding-right: 30px;
+    padding-right: 30px; */
 
 
     @media screen and (max-width: 768px){
         width: 100vw;
-        height: 70vh;
-        padding-top: 0px;
+        /* height: 50vh; */
+        /* padding-top: 0px;
     padding-bottom: 0px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 0px;
+    padding-left: 0px; */
+    /* margin-top: 80px;
+    margin-bottom: 80px; */
     }
 `;
 
@@ -132,24 +137,7 @@ export const BtnWrap = styled.div`
     justify-content: flex-start;
 `;
 
-export const ImgWrap = styled.div`
-  
-    /* height: 100vh; */
-    /* width: 50vw; */
-    /* background: red; */
-    /* align-items: center; */
-    
-    /* overflow: hidden; */
 
-    @media screen and (max-width: 768px){
-        height: 70vh;
-        width: 100vw;
-    }
-
- 
-
-
-`;
 
 /* export const ImgConstrainBox = styled.div`
 overflow: hidden;
@@ -263,40 +251,42 @@ export const InnerBottom = styled.div`
 
 export const Img = styled.img`
   
-  /* height: 100%; */
-  width: 120%;
-  object-fit: cover;
-  transition: 0.2s all ease-in-out;
+  height: 200px;
+  width: 200px;
+  /* object-fit: cover; */
+  /* transition: 0.2s all ease-in-out; */
 
-  &:hover{
-    width: 130%;
+  /* &:hover{
+    width: 130%; */
     /* height: 120%; */
     /* height: 110%; */
-  }
+  /* } */
     
 `;
 
 export const IconTitle = styled.h2`
-    color: ${theme.colors.superLightTxt};
-    background: transparent;
-    position: absolute;
+    color: ${theme.colors.darkTxt};
+    /* background: transparent; */
+    position: relative;
     z-index: 10;
-    text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7); 
-    box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-    font-size: 55px;
-    pointer-events: none;
+    text-align: center;
+    /* text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7);  */
+    /* box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.5); */
+    font-weight: 300;
+    font-size: 35px;
+    /* pointer-events: none; */
     /* background: rgba(0, 0, 0, 0.2); */
-    padding: 4px 8px;
+    /* padding: 4px 8px; */
     border-radius: 10px;
+    flex-grow: 1;
 
-    @media screen and (max-width: 1200px){
+    /* @media screen and (max-width: 1200px){
         font-size: 35px;
     }
 
     @media screen and (max-width: 768px){
         font-size: 30px;
-    }
+    } */
     
     /* @media screen and (max-width: 768px){
         font-size: 40px;
@@ -324,3 +314,25 @@ export const DarkOverlay = styled.div`
 
   
   `;
+
+  export const IconTextWrap = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* background: grey; */
+    height: 300px;
+    width: 200px;
+  `
+
+  export const ImgWrap = styled(LinkS)`
+  
+    height: 200px;
+    /* transition: 0.1s all ease-in-out; */
+
+    &:hover{
+        /* transform: translateY(-5px); */
+        cursor: pointer;
+    }
+
+`;

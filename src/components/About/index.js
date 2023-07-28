@@ -1,7 +1,7 @@
 import React from 'react'
 // import { Button } from '../ButtonElements';
 import { AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, ImgWrap, Img} from './AboutElements';
-import img from '../../images/website profile pic colour.png';
+import img from '../../images/website profile pic.png'
 // import { ReactComponent as SvgImage } from '../../images/svg1.svg';
 // import {useTheme} from 'styled-components';
 
