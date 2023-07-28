@@ -253,14 +253,12 @@ export const Img = styled.img`
   
   height: 200px;
   width: 200px;
-  /* object-fit: cover; */
-  /* transition: 0.2s all ease-in-out; */
 
-  /* &:hover{
-    width: 130%; */
-    /* height: 120%; */
-    /* height: 110%; */
-  /* } */
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  width: 150px;
+    }
+
     
 `;
 
@@ -279,6 +277,10 @@ export const IconTitle = styled.h2`
     /* padding: 4px 8px; */
     border-radius: 10px;
     flex-grow: 1;
+
+    @media screen and (max-width: 768px) {
+        font-size: 28px;
+    }
 
     /* @media screen and (max-width: 1200px){
         font-size: 35px;
@@ -323,11 +325,20 @@ export const DarkOverlay = styled.div`
     /* background: grey; */
     height: 300px;
     width: 200px;
+
+    @media screen and (max-width: 768px) {
+    height: 250px;
+    width: 167px;
+    }
+
+    
   `
 
   export const ImgWrap = styled(LinkS)`
-  
-    height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    /* height: 200px; */
     /* transition: 0.1s all ease-in-out; */
 
     &:hover{

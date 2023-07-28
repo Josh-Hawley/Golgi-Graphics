@@ -74,7 +74,7 @@ const Services = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                       <Img src={PosterIcon}/>
                     </ImgWrap>
                     </motion.div>
-                    <IconTitle>Posters</IconTitle>
+                    <IconTitle>Posters & infographics</IconTitle>
                   </IconTextWrap>
 
                   
