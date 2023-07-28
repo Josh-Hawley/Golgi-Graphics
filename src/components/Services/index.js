@@ -41,6 +41,7 @@ const Services = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                   <IconTextWrap>
                   <motion.div
                    whileHover={{ y: -10 }} // Upward movement of 20 pixels on hover
+                   whileTap={{ y: -10 }}
                    transition={{ type: 'spring', stiffness: 1000, damping: 100, restDelta: 0.0001 }} // Adjust the transition as needed
                   >
                     <ImgWrap to='portfolio' smooth={true} duration={800} spy={true} exact="true" offset={-60}>
