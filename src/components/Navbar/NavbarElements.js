@@ -45,15 +45,9 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: ${theme.colors.darkTxt};
-  /* justify-self: flex-start; */
   cursor: pointer;
-  /* font-size: 30px; */
-  /* display: flex; */
-  /* align-items: left; */
-  /* margin-left: 0px; */
-  /* font-weight: bold; */
-  /* text-decoration: none; */
+  margin: 0;
+  padding: 0;
 `;
 
 export const NavLogoImage = styled.img`
