@@ -16,7 +16,7 @@ function Modal({selected, setSelected}) {
           <motion.img 
           src={selected.src} 
           layout='position'  
-          style={{width: '90%', maxWidth: '1000px', maxHeight: '65vh', zIndex: '3000', boxShadow: '0px 0px 30px rgba(0,0,0,0.2)'}} 
+          style={{width: '90%', maxWidth: '1000px', zIndex: '3000', boxShadow: '0px 0px 30px rgba(0,0,0,0.2)'}} 
           layoutId={`card-${selected.id}`}
           transition= {{ type: 'spring', stiffness: 200, damping: 30 }}
           />
