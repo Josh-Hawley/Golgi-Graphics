@@ -10,12 +10,12 @@ export const Nav = styled.nav`
  height: 60px;
   margin-top: -60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   font-size: 1rem;
   position: sticky;
   top: 0px;
-  z-index: 10;
+  z-index: 100;
   transition: 0.8s all ease;
   overflow: hidden;
   
@@ -46,11 +46,11 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
   color: ${theme.colors.darkTxt};
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
   cursor: pointer;
   /* font-size: 30px; */
-  display: flex;
-  align-items: left;
+  /* display: flex; */
+  /* align-items: left; */
   /* margin-left: 0px; */
   /* font-weight: bold; */
   /* text-decoration: none; */
