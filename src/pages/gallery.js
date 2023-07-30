@@ -1,23 +1,25 @@
 import React, {useState} from 'react'
 import PortfolioPg from '../components/PortfolioPg'
-import Sidebar from '../components/Sidebar';
-// import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { PageContainer } from './PageElements';
-import NavbarNoLinks from '../components/NavbarNoLinks';
+import NavbarNoScrollLinks from '../components/NavbarNoScrollLinks';
+import SidebarNoScrollLinks from '../components/SidebarNoScrollLinks';
+import Modal from '../components/Modal';
 
 const GalleryPage = () => {
   const [isOpen, setIsOpen] = useState(false);
+  // const [selected, setSelected] = useState(null);
 
     const toggle = () => {
         setIsOpen(!isOpen)
     };
   return (
-        // <ImageGallery imgArray={images} columnWidth={400} gapSize={24} />
+        
       <>
       <PageContainer isOpen={isOpen}>
-      <Sidebar isOpen={isOpen} toggle={toggle}/>
-      <NavbarNoLinks toggle={toggle}/>
+      <Modal />
+      <SidebarNoScrollLinks isOpen={isOpen} toggle={toggle}/>
+      <NavbarNoScrollLinks toggle={toggle}/>
       <PortfolioPg />
       <Footer />
 

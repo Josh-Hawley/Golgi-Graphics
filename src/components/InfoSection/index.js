@@ -70,20 +70,22 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
       restDelta: 0.001
     });
 
-    const offsetX = useTransform(offsetScale, [0,1], ['0', '0'])
-    const offsetY = useTransform(offsetScale, [0,1], [40*divHeight/100, 60*divHeight/100])
+    const reversePoint = 1;
 
-    const outerX = useTransform(outerScale, [0, 1], ['0', '60px']);
-    const outerY = useTransform(outerScale, [0, 1], ['0vh', '-10px']);
+    const offsetX = useTransform(offsetScale, [0, reversePoint, 1], ['0', '0', '0'])
+    const offsetY = useTransform(offsetScale, [0, reversePoint, 1], [40*divHeight/100, 60*divHeight/100, 40*divHeight/100])
 
-    const inner1X = useTransform(inner1Scale, [0, 1], ['0%', '-100px']);
-    const inner1Y = useTransform(inner1Scale, [0, 1], ['0vh', '50px']);
+    const outerX = useTransform(outerScale, [0, reversePoint, 1], ['0', '30px', '0']);
+    const outerY = useTransform(outerScale, [0, reversePoint, 1], ['0vh', '-5px','0vh']);
 
-    const inner2X = useTransform(inner2Scale, [0, 1], ['0%', '-40px']);
-    const inner2Y = useTransform(inner2Scale, [0, 1], ['0vh', '20px']);
+    const inner1X = useTransform(inner1Scale, [0, reversePoint, 1], ['0', '-50px', '0']);
+    const inner1Y = useTransform(inner1Scale, [0, reversePoint, 1], ['0', '25px', '0']);
 
-    // const inner2X = useTransform(inner2Scale, [0, 1], ['-0px', '0%']);
-    // const inner2Y = useTransform(inner2Scale, [0, 1], ['20px', '0vh']);
+    const inner2X = useTransform(inner2Scale, [0, reversePoint, 1], ['0', '-20px', '0']);
+    const inner2Y = useTransform(inner2Scale, [0, reversePoint, 1], ['0', '10px', '0']);
+    
+
+    
 
   return (
     <>
@@ -105,9 +107,12 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                 <Column2 ref={ref}>
 
                     <motion.div style = {{ x: offsetX, y: offsetY }}>
+
+
                       <motion.div style = {{ x: outerX, y: outerY}}>
                                 <Layer0 src={layer0} /> 
                       </motion.div>
+
 
                       <motion.div style = {{ x: inner1X, y: inner1Y}}>
                                 <Layer1 src={layer1} />  
@@ -124,6 +129,8 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                       <motion.div style = {{ x: outerX, y: outerY}}>   
                                 <Layer4 src={layer4} />  
                       </motion.div>
+
+
                     </motion.div>
                     
 

@@ -73,6 +73,37 @@ export const SidebarLink = styled(LinkS)`
    }
 `;
 
+
+export const SidebarMenuNoScroll = styled.ul`
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 60px);
+    text-align: center;
+    
+
+    @media screen and (max-width: 480px){
+        grid-template-rows: repeat(6, 60px);
+    }
+`
+export const SidebarLinkNoScroll = styled(LinkR)`
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.2rem;
+   text-decoration: none;
+   list-style: none;
+   transition: 0.2s ease-in-out;
+   text-decoration: none;
+   color: ${theme.colors.darkTxt};
+   cursor: pointer; 
+   
+
+   &:hover {
+    color: ${theme.colors.accent};
+    transition: 0.2s ease-in-out;
+   }
+`;
+
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
@@ -99,3 +130,4 @@ export const SidebarRoute = styled(LinkR)`
         color: ${theme.colors.superLightTxt};
     }
 `
+

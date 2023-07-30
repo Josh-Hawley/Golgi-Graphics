@@ -1,26 +1,12 @@
-// import React, {useState} from 'react';
 import React from 'react';
-// import {Button} from '../ButtonElements';
-// import { Parallax } from 'react-parallax';
-// import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle} from './HeroElements';
-// import Video from '../../videos/video.mp4';
-// import astrocyte from '../../images/astrocyte.svg'
-// import cellArt from '../../images/cell art 2 compressed.jpg'
-// import artBackground from '../../images/Hero Background/cell art background.jpg';
-// import artVesicles from '../../images/Hero Background/vesicles.png';
-// import artGolgi from '../../images/Hero Background/golgi.png';
 import vesicle1 from '../../images/Hero Background/vesicle1.png'
 import vesicle2 from '../../images/Hero Background/vesicle2.png'
 import vesicle3 from '../../images/Hero Background/vesicle3.png'
 import vesicle4 from '../../images/Hero Background/vesicle4.png'
 import vesicle5 from '../../images/Hero Background/vesicle5.png'
 import vesicle6 from '../../images/Hero Background/vesicle6.png'
-
 import golgi from '../../images/Hero Background/golgi corner.png'
-// import noiseBackground from '../../images/Hero Background/noise background.jpg'
-
-// import { Parallax} from 'react-scroll-parallax';
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -33,69 +19,69 @@ const HeroSection = () => {
         offset: ["end end", "end start"]
     });
 
-    const golgiScale = useSpring(scrollYProgress, {
-        stiffness: 70,
-        damping: 40,
-        restDelta: 0.001
-    });
-
-    const vesicle1Scale = useSpring(scrollYProgress, {
-        stiffness: 35,
-        damping: 40,
-        restDelta: 0.001
-    });
-
-    const vesicle2Scale = useSpring(scrollYProgress, {
+    const scale = useSpring(scrollYProgress, {
         stiffness: 120,
         damping: 40,
         restDelta: 0.001
     });
 
-    const vesicle3Scale = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 40,
-        restDelta: 0.001
-    });
+    // const vesicle1Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
 
-    const vesicle4Scale = useSpring(scrollYProgress, {
-        stiffness: 40,
-        damping: 30,
-        restDelta: 0.001
-    });
+    // const vesicle2Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
 
-    const vesicle5Scale = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-    });
+    // const vesicle3Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
 
-    const vesicle6Scale = useSpring(scrollYProgress, {
-        stiffness: 40,
-        damping: 30,
-        restDelta: 0.001
-    });
+    // const vesicle4Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
+
+    // const vesicle5Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
+
+    // const vesicle6Scale = useSpring(scrollYProgress, {
+    //     stiffness: 120,
+    //     damping: 40,
+    //     restDelta: 0.001
+    // });
 
 
-    const golgiX = useTransform(golgiScale, [0, 1], ['0vw', '8vw']);
-    const golgiY = useTransform(golgiScale, [0, 1], ['99vh', '110vh']);
+    const golgiX = useTransform(scale, [0, 1], ['0vw', '8vw']);
+    const golgiY = useTransform(scale, [0, 1], ['99vh', '110vh']);
 
-    const vesicle1X = useTransform(vesicle1Scale, [0, 1], ['20vw', '65vw']);
-    const vesicle1Y = useTransform(vesicle1Scale, [0, 1], ['65vh', '80vh']);
+    const vesicle1X = useTransform(scale, [0, 1], ['20vw', '65vw']);
+    const vesicle1Y = useTransform(scale, [0, 1], ['65vh', '90vh']);
 
-    const vesicle2X = useTransform(vesicle2Scale, [0, 1], ['0vw', '50vw']);
-    const vesicle2Y = useTransform(vesicle2Scale, [0, 1], ['90vh', '90vh']);
+    const vesicle2X = useTransform(scale, [0, 1], ['0vw', '50vw']);
+    const vesicle2Y = useTransform(scale, [0, 1], ['90vh', '90vh']);
 
-    const vesicle3X = useTransform(vesicle3Scale, [0, 1], ['10vw', '80vw']);
-    const vesicle3Y = useTransform(vesicle3Scale, [0, 1], ['10vh', '85vh']);
+    const vesicle3X = useTransform(scale, [0, 1], ['10vw', '80vw']);
+    const vesicle3Y = useTransform(scale, [0, 1], ['10vh', '85vh']);
     
-    const vesicle4X = useTransform(vesicle4Scale, [0, 1], ['60vw', '80vw']);
-    const vesicle4Y = useTransform(vesicle4Scale, [0, 1], ['30vh', '80vh']);
+    const vesicle4X = useTransform(scale, [0, 1], ['60vw', '80vw']);
+    const vesicle4Y = useTransform(scale, [0, 1], ['30vh', '80vh']);
 
-    const vesicle5X = useTransform(vesicle5Scale, [0, 1], ['80vw', '90vw']);
-    const vesicle5Y = useTransform(vesicle5Scale, [0, 1], ['15vh', '85vh']);
+    const vesicle5X = useTransform(scale, [0, 1], ['80vw', '90vw']);
+    const vesicle5Y = useTransform(scale, [0, 1], ['15vh', '85vh']);
 
-    const vesicle6X = useTransform(vesicle6Scale, [0, 1], ['47vw', '70vw']);
-    const vesicle6Y = useTransform(vesicle6Scale, [0, 1], ['60vh', '80vh']);
+    const vesicle6X = useTransform(scale, [0, 1], ['47vw', '70vw']);
+    const vesicle6Y = useTransform(scale, [0, 1], ['60vh', '80vh']);
 
 
     return (
