@@ -20,7 +20,7 @@ export const NavbarContainer = styled.div`
   background: ${theme.colors.lightestBg};
   /* box-shadow: 0px 0px 30px  rgba(0,0,0,0.1); */
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 60px;
   z-index: 10;
   width: 100%;
@@ -31,10 +31,7 @@ export const NavbarContainer = styled.div`
   top: 0px;
   transition: 0.8s all ease;
 
-  @media screen and (max-width: 768px) {
-    
-    /* justify-content: flex-start; */
-  }
+
   
   
   /* max-width: 1400px; */
@@ -44,6 +41,7 @@ export const NavLogo = styled(LinkR)`
   cursor: pointer;
   margin: 0;
   padding: 0;
+  display: block;
 `;
 
 export const NavLogoImage = styled.img`
