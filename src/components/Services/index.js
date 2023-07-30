@@ -5,7 +5,7 @@ import React from 'react'
 // import Poster from '../../images/Gallery/poster cropped.jpg';
 // import Figure from '../../images/Gallery/Neuro and gliogenesis cropped.jpg';
 // import GraphicalAbstract from '../../images/Gallery/Ellis graphical abstract cropped.jpg'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Button, Img, IconTitle, ImgWrap, IconTextWrap} from './ServicesElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Button, IconTitle, ImgWrap, IconTextWrap} from './ServicesElements';
 import {ReactComponent as PosterIcon} from '../../images/Icons/poster icon.svg';
 import {ReactComponent as GraphicalAbstractIcon} from '../../images/Icons/graphical abstract icon.svg';
 import {ReactComponent as FigureIcon} from '../../images/Icons/figure icon.svg';
