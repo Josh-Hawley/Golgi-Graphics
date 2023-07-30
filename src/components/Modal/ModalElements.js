@@ -17,7 +17,7 @@ export const Backdrop = styled.div`
 export const ImageTextWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
