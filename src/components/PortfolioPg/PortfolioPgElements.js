@@ -54,7 +54,7 @@ export const GalleryWrap = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        columns: 2;
+        columns: 1;
     }
 `
 export const Header = styled.h1`
