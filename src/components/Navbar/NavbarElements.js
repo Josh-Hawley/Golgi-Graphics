@@ -43,7 +43,7 @@ export const NavLogo = styled(LinkR)`
   padding: 0;
   display: block;
   box-sizing: border-box;
-  max-width:100px;
+  max-width:154px;
   /* flex-grow: 1; */
   /* justify-self: right; */
 `;
