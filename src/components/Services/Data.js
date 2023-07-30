@@ -7,7 +7,7 @@ export const servicesData = {
     lightTextDesc: true,
     topLine: 'Graphic design for science',
     headline: 'Our services',
-    description: 'Graphic design plays a vital role in breaking down complex scientific ideas. This applies to many different areas of scientific communication and thus our services extend to many aspects of  figures, graphical abstracts, posters, presentations, and a whole lot more.',
+    description: 'Effective graphic design can simplify the complexity of scientific data in an efficient and intuitive way that engages the reader. This in turn encourages collaboration and wider scientific understanding and can be utilised across many different areas of scientific communication.',
     buttonLabel: 'Request a quote',
     imgStart: false,
     img: require('../../images/Gallery/Neurulation.jpg'), // .default was important here, doesn't load image without 

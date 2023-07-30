@@ -8,47 +8,46 @@ import img2 from '../../images/Gallery/img3.png';
 import img3 from '../../images/Gallery/Neurulation.jpg';
 import img4 from '../../images/Gallery/Neuro and gliogenesis.jpg';
 import img5 from '../../images/Gallery/flash talk.jpg';
-// import img4 from '../../images/Gallery/img4.png';
-// import img5 from '../../images/Gallery/img5.png';
-// import img6 from '../../images/Gallery/img6.png';
+import img6 from '../../images/Gallery/Ellis graphical abstract.jpg';
+
 
 const images = [
-  {
-    src: img1,
-    width: 3500,
-    height: 4577,
-    caption: 'Graphical abstract'
-  },
   {
     src: img2,
     width: 3995,
     height: 1351,
-    caption: 'Text description'
+    caption: 'Figure'
   },
+  {
+    src: img1,
+    width: 3500,
+    height: 4577,
+    caption: 'Figure'
+  },
+  
   {
     src: img3,
     width: 1500,
     height: 1495,
-    caption: 'Text description'
+    caption: 'Figure'
   },
   {
     src: img4,
     width: 1214,
     height: 1622,
-    caption: 'Text description'
+    caption: 'Figure'
   },
   {
     src: img5,
     width: 1296,
     height: 1336,
-    caption: 'Text description'
+    caption: 'Flash talk'
   },
-  // {
-  //   src: img6,
-  //   width: 3000,
-  //   height: 1623,
-  //   caption: 'Text description'
-  // }
+  {
+    src: img6,
+    caption: 'Graphical abstract'
+  },
+
 ];
 
 const PortfolioPg = () => {

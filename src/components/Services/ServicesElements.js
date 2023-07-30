@@ -270,8 +270,8 @@ export const IconTitle = styled.h2`
     text-align: center;
     /* text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7);  */
     /* box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.5); */
-    font-weight: 300;
-    font-size: 35px;
+    font-weight: 400;
+    font-size: 30px;
     /* pointer-events: none; */
     /* background: rgba(0, 0, 0, 0.2); */
     /* padding: 4px 8px; */
@@ -279,7 +279,7 @@ export const IconTitle = styled.h2`
     flex-grow: 1;
 
     @media screen and (max-width: 768px) {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     /* @media screen and (max-width: 1200px){
