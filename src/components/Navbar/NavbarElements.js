@@ -20,7 +20,7 @@ export const NavbarContainer = styled.div`
   background: ${theme.colors.lightestBg};
   /* box-shadow: 0px 0px 30px  rgba(0,0,0,0.1); */
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 60px;
   z-index: 10;
   width: 100%;
@@ -33,7 +33,7 @@ export const NavbarContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
   
   
