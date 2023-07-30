@@ -7,22 +7,12 @@ import { theme } from '../../Theme';
 
 
 export const Nav = styled.nav`
- height: 60px;
+  height: 60px;
   margin-top: -60px;
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   font-size: 1rem;
   position: sticky;
-  top: 0px;
   z-index: 100;
-  transition: 0.8s all ease;
-  overflow: hidden;
-  
-
-  @media screen and (max-width: 960px){
-    transition: 0.8s all ease;
-  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -32,13 +22,19 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 60px;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   padding: 0 10px;
-  overflow: hidden;
+  margin: 0;
+
   position: fixed;
   top: 0px;
   transition: 0.8s all ease;
+
+  @media screen and (max-width: 768px) {
+    
+    justify-content: space-between;
+  }
   
   
   /* max-width: 1400px; */
@@ -78,14 +74,12 @@ export const NavMenu = styled.ul`
 
   @media screen and (max-width: 768px) {
     display: none;
+    
   }
 `;
 
 export const NavItem = styled.li`
   height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -125,7 +119,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 
   @media screen and (max-width: 768px) {
     display: none;
