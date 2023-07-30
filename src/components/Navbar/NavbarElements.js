@@ -34,7 +34,7 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 0px;
+  padding: 0 10px;
   overflow: hidden;
   position: fixed;
   top: 0px;
@@ -48,13 +48,12 @@ export const NavLogo = styled(LinkR)`
   color: ${theme.colors.darkTxt};
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 30px;
+  /* font-size: 30px; */
   display: flex;
-  align-items: center;
-  margin-left: 0px;
-  font-weight: bold;
-  text-decoration: none;
-  /* max-width:200px; */
+  align-items: left;
+  /* margin-left: 0px; */
+  /* font-weight: bold; */
+  /* text-decoration: none; */
 `;
 
 export const NavLogoImage = styled.img`
@@ -80,10 +79,8 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   list-style: none;
   text-align: center;
-  margin-right: 0px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -95,8 +92,6 @@ export const NavItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* width: 110px; */
-  /* border: solid 1px black; */
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -136,7 +131,7 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 10px;
 
   @media screen and (max-width: 768px) {
     display: none;
