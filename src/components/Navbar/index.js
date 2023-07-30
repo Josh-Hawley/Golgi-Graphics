@@ -5,8 +5,8 @@ import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 import { theme } from '../../Theme';
 // import logo_and_text from '../../images/logo and text 2.png'
-// import {ReactComponent as LogoText} from '../../images/logo and text.svg'
-import {ReactComponent as LogoText} from '../../images/Icons/infographics icon.svg'
+import {ReactComponent as LogoText} from '../../images/logo and text.svg'
+// import {ReactComponent as LogoText} from '../../images/Icons/infographics icon.svg'
 
 const Navbar = ({ toggle }) => {
     
