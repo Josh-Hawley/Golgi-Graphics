@@ -34,7 +34,7 @@ export const NavbarContainer = styled.div`
   height: 60px;
   z-index: 1;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 0px;
   overflow: hidden;
   position: fixed;
   top: 0px;
