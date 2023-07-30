@@ -8,7 +8,7 @@ import Modal from '../components/Modal';
 
 const GalleryPage = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(null);
 
     const toggle = () => {
         setIsOpen(!isOpen)
@@ -17,10 +17,11 @@ const GalleryPage = () => {
         
       <>
       <PageContainer isOpen={isOpen}>
-      <Modal />
+      
       <SidebarNoScrollLinks isOpen={isOpen} toggle={toggle}/>
       <NavbarNoScrollLinks toggle={toggle}/>
-      <PortfolioPg />
+      <PortfolioPg setSelected={setSelected} />
+      <Modal selected={selected} setSelected={setSelected}/>
       <Footer />
 
       </PageContainer>

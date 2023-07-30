@@ -82,7 +82,7 @@ export const SidebarMenuNoScroll = styled.ul`
     
 
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(6, 60px);
+        grid-template-rows: repeat(2, 60px);
     }
 `
 export const SidebarLinkNoScroll = styled(LinkR)`
