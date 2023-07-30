@@ -47,7 +47,7 @@ const Navbar = ({ toggle }) => {
             <NavbarContainer scrollNav = {scrollNav}>
                 <NavLogo to='/' onClick={toggleHome}>
                     {/* <NavLogoImage src={logo_and_text} /> */}
-                    <LogoText />
+                    <LogoText style={{ padding: '0', margin: '0'}}/>
                 </NavLogo>
                 
                 
