@@ -22,7 +22,7 @@ const About = () => {
                         Welcome. I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design.
                     </Subtitle>
                     <Subtitle darkText={true}>
-                         My PhD involved understanding how stem cells communicate with each other during spinal cord development, and this involved a combination of experimental work and mathematical modelling. Therefore I have a good grasp of a wide range of areas in biology, physics, and maths.
+                         My PhD involved understanding how stem cells communicate with each other during spinal cord development, and this required a combination of experimental work and mathematical modelling. Therefore I have a good grasp of a wide range of areas in biology, physics, and maths.
                     </Subtitle>
 
                     <Subtitle>
