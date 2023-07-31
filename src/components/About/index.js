@@ -19,11 +19,15 @@ const About = () => {
                     <TopLine>Dr. Josh Hawley</TopLine>
                     <Heading lightText={true}>About</Heading>
                     <Subtitle darkText={true}>
-                        Welcome! I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design. With a background in Quantitative and Biophysical Biology, I have honed my expertise in understanding the intricacies of embryonic development and stem cell fate decisions through a combination of mathematical modelling and experimental work.
+                        Welcome. I'm Dr. Josh Hawley, a passionate advocate for the fusion of science and design.
+                    </Subtitle>
+                    <Subtitle darkText={true}>
+                         My PhD involved understanding how stem cells communicate with each other during spinal cord development, and this involved a combination of experimental work and mathematical modelling. Therefore I have a good grasp of a wide range of areas in biology, physics, and maths.
                     </Subtitle>
 
                     <Subtitle>
-                    However, my curiosity extends beyond just doing the science and as a graphic designer, I channel my creativity and love for aesthetics to convey the complexity of scienctific concepts with visually appealing and easy-to-understand graphics. I believe that bridging the gap between science and art is crucial for fostering scientific literacy, engaging a broader audience, and in communicating amongst scientific peers.
+                      The reason why Golgi Graphics exists is because I have a passion for communicating complex ideas in intuitive and effective ways. I also love aesthetics and illustration, so I have naturally gravitated towards the use of graphic design in commuicating ideas throughout my scientific career, which has evolved into a scientific illustration career. 
+                     
                     </Subtitle>
                     
   

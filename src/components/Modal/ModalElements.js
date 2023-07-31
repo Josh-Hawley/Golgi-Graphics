@@ -7,7 +7,7 @@ export const Backdrop = styled.div`
   background: rgba(0, 0, 0, 0.7);
   z-index: 200;
   cursor: pointer;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   display:flex;
   align-items: flex-start;
   justify-content: top;
@@ -17,11 +17,14 @@ export const Backdrop = styled.div`
 export const ImageTextWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
+  width:90%;
+  max-width: 800px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};

@@ -22,8 +22,8 @@ export const homeObjTwo = {
     lightTextDesc: true,
     topLine: 'Gallery of past work',
     headline: 'Portfolio',
-    description: 'Click the button below to explore a portfolio of past work and get inspiration for your graphic design project.',
-    buttonLabel: 'See full portfolio',
+    description: 'Explore a portfolio of past work and get inspiration for your next scientific illustration project.',
+    buttonLabel: 'Go to portfolio',
     imgStart: true,
     img: require('../../images/Gallery/Neurulation.jpg'), // .default was important here, doesn't load image without 
     alt: 'svg2',
