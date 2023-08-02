@@ -7,6 +7,9 @@ import { useForm } from 'react-hook-form';
 const Contact = () => {
 
   const [loading, setLoading] = useState(false);
+  const resetForm = () => {
+    form.current.reset();
+  };
 
   const {
     register, 
@@ -25,6 +28,7 @@ const Contact = () => {
           console.log(result.text);
           setLoading(false);
           alert("Email sent successfully!");
+          resetForm();
           
       }, (error) => {
           console.log(error.text);
