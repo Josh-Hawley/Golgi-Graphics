@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import {Link} from 'react-router-dom';
 import { theme } from '../../Theme';
 
@@ -74,9 +74,9 @@ export const Form = styled.form`
 export const FormH1 = styled.h1`
     margin-bottom: 8px;
     color: ${theme.colors.darkTxt};
-    font-size: 40px;
-    font-weight: 300;
-    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
 `
 
 export const FormLabel = styled.label`
@@ -95,22 +95,51 @@ export const FormInput = styled.input`
     font-size: 18px;
     font-weight: 300;
 `
+
+const oscillateAnimation = keyframes`
+  0% {
+    width: 100%;
+    
+    /* border-radius: 8px; */
+  }
+  50% {
+    width: 40%;
+    /* border-radius: 50px; */
+  }
+  100% {
+    width: 100%;
+    /* border-radius: 8px; */
+  }
+`;
+
 export const FormButton = styled.button`
     
-    background: ${theme.colors.accentLight};
-    color: ${theme.colors.darkTxt};
+    /* background: ${theme.colors.accentLight}; */
+    /* color: ${theme.colors.darkTxt}; */
     padding: 16px 0;
     border: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     
     font-size: 20px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 32px;
 
+    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accentLight}`)};
+    color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.darkTxt}`)};
+    width: ${({loading}) => (loading ? '40%': '100%')};
+    border-radius: ${({loading}) => (loading ? '50px': '10px')};
+
+    ${({ loading }) =>
+    loading &&
+    css`
+      animation: ${oscillateAnimation} 1.5s infinite cubic-bezier(.25,.59,.83,.46);
+    `}
+    justify-self: center;
+
     &:hover{
     transition: 0.2 ease-in-out;
-    background: ${theme.colors.accent};
+    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accent}`)};
     color: ${theme.colors.accentSuperLight};
     }
 `

@@ -21,11 +21,11 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinkItems>
 
-                        <FooterLinkTitle>About us</FooterLinkTitle>
+                        <FooterLinkTitle>About</FooterLinkTitle>
                             <FooterLink to='/contact'>Contact</FooterLink>
                             <FooterLink to='/contact'>How it works</FooterLink>
-                            <FooterLink to='/contact'>Testimonials</FooterLink>
-                            <FooterLink to='/contact'>Terms of service</FooterLink>
+                            {/* <FooterLink to='/contact'>Testimonials</FooterLink> */}
+                            {/* <FooterLink to='/contact'>Terms of service</FooterLink> */}
                         
                     </FooterLinkItems>
 

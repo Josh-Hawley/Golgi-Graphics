@@ -48,8 +48,8 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     /* margin-bottom: 15px;  */
-    padding-left: 20px;
-     padding-right: 20px;
+    padding-left: 10px;
+     padding-right: 10px;
      margin-right: auto;
     margin-left: auto;
     

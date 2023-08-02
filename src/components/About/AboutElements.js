@@ -37,14 +37,24 @@ export const AboutRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 5px;
     grid-area: col1;
 `;
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 5px;
     grid-area: col2;
+
+ 
+        display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:auto;
+    margin-left: auto;
+    
+    
+    
 `;
 
 export const TextWrapper = styled.div`
