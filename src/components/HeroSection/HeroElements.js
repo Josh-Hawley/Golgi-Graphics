@@ -102,7 +102,7 @@ export const ImageVesicle = styled.img`
 
 
 export const ImageGolgi = styled.img`
-  width: 550px;
+  width: 500px;
   z-index: 4;
   position: absolute;
   right: 0;
@@ -112,7 +112,7 @@ export const ImageGolgi = styled.img`
     width: 450px;
   }
   @media screen and (max-width: 700px) {
-    width: 350px;
+    width: 300px;
   }
 
   @media screen and (max-width: 450px) {

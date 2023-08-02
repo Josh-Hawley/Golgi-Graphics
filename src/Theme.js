@@ -34,6 +34,7 @@ export const theme = {
     superLightTxt: '#fff',
     lightTxt: '#86837D ',
     darkTxt: '#323130',
+    darkishTxt: '#636363',
     accent: '#FF9E36',
     accentLight: '#FFC689',
     accentSuperLight: '#FFFAF7',

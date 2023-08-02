@@ -45,12 +45,12 @@ export const Header = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-max-width: 440px;
+max-width: 800px;
     margin-top: 20px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 300;
-    color: ${theme.colors.lightTxt}
+    color: ${theme.colors.darkishTxtTxt}
 `
 
 export const TagsWrap = styled.div`
@@ -60,7 +60,9 @@ export const TagsWrap = styled.div`
 
 `
 export const TagsContainer = styled.div`
-    margin: 10px 2px;
+margin-right: 4px;
+    margin-top: 10px;
+    margin-bottom: 2px;
     padding: 3px 5px;
 
     font-size: 15px;

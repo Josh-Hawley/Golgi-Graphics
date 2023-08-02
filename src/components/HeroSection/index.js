@@ -80,8 +80,8 @@ const HeroSection = () => {
     const vesicle5X = useTransform(scale, [0, 1], ['80vw', '90vw']);
     const vesicle5Y = useTransform(scale, [0, 1], ['15vh', '85vh']);
 
-    const vesicle6X = useTransform(scale, [0, 1], ['47vw', '70vw']);
-    const vesicle6Y = useTransform(scale, [0, 1], ['60vh', '80vh']);
+    const vesicle6X = useTransform(scale, [0, 1], ['55vw', '70vw']);
+    const vesicle6Y = useTransform(scale, [0, 1], ['65vh', '80vh']);
 
 
     return (

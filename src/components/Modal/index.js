@@ -41,6 +41,7 @@ function Modal({selected, setSelected}) {
               background:'white',
               padding: '20px',
               width: '100%',
+              marginBottom: '100px'
               
 
             }}

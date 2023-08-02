@@ -88,7 +88,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: ${theme.colors.accentLight};
+    color: ${theme.colors.accent};
     /* color: #ffa8b5; */
     font-size: 16px;
     font-weight: 700;
@@ -116,7 +116,7 @@ export const Subtitle = styled.p`
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
-    color: ${theme.colors.lightTxt}
+    color: ${theme.colors.darkishTxt}
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
 

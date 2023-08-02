@@ -28,11 +28,13 @@ margin-bottom: 50px;
 export const TagsWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 10px;
+    margin: 0px 0px;
 
 `
 export const TagsContainer = styled.div`
-    margin: 2px 2px;
+    margin-right: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     padding: 3px 5px;
 
     font-size: 15px;

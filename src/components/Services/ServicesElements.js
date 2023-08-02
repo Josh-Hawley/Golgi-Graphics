@@ -128,7 +128,7 @@ export const Subtitle = styled.p`
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
-    color: ${theme.colors.lightTxt}
+    color: ${theme.colors.darkishTxt};
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
 
