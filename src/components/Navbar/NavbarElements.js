@@ -60,11 +60,13 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-75%, 45%);
-    font-size: 1.8rem;
+    transform: translate(-46%, 26%);
+    font-size: 2.3rem;
+   
     cursor: pointer;
     color: #fff;
-    /* display:${({ isOpen }) => (isOpen ? 'none' : 'block')}; */
+    transition: 0.2s ease-in-out;
+    opacity: ${({ isOpen }) => (isOpen ? '0%' : '100%')};
   }
 `;
 

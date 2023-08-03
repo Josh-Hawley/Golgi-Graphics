@@ -4,17 +4,10 @@ import { theme } from '../../Theme';
 
 export const Container = styled.div`
     min-height: 692px;
-    /* position: fixed; */
-    /* bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0; */
     z-index: 0;
     overflow: hidden;
     padding-top: 150px;
     margin-bottom: 80px
-    
-    /* background: linear-gradient(108deg, rgba(1,147,86,1) 0%, rgba(10,201,122,1)100%); */
 `;
 
 export const FormWrap = styled.div`
@@ -71,7 +64,7 @@ export const Form = styled.form`
     }
 `
 
-export const FormH1 = styled.h1`
+export const Header = styled.h1`
     margin-bottom: 8px;
     color: ${theme.colors.darkTxt};
     font-size: 35px;
@@ -167,3 +160,97 @@ export const FormError = styled.p`
     margin-top:10px;
     font-weight: 300;
 `
+
+
+
+
+
+
+export const ContactContainer = styled.div`
+    color: #fff;
+    background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
+    z-index: 5;
+    /* min-height: 100vh; */
+    position: relative;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        /* padding: 100px 0; */
+    } 
+`;
+
+export const ContactWrapper = styled.div`
+    display: grid;
+    z-index: 1;
+    /* min-height: 100vh; */
+    /* width: 100vw; */
+    /* max-width: 1500px; */
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0px;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        min-height: 50vh;
+
+    }
+    
+    /* overflow: hidden; */
+`;
+
+export const ContactRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+
+    }
+`;
+
+export const Column1 = styled.div`
+    /* margin-bottom: 15px;  */
+    padding-left: 10px;
+     padding-right: 10px;
+     margin-right: auto;
+    margin-left: auto;
+    
+    /* @media screen and (max-width: 768px) {
+        height: 30vh;
+    } */
+    /* background: red; */
+    
+
+    grid-area: col1;
+`;
+
+export const Column2 = styled.div`
+    /* margin-bottom: 15px; */
+    /* padding: 0 0px; */
+    /* grid-area: col2; */
+    /* width:120vw; */
+    width: 50vw;
+    height: calc(100vh - 60px);
+    /* border: solid 1px black; */
+    
+    /* align-items: center; */
+    overflow: hidden;  
+    @media screen and (max-width: 768px){
+        /* height: 70vh; */
+        width: 100%;
+        height: 60vh;
+    }
+`;
+
+
+export const Paragraph = styled.p`
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
+    color: ${theme.colors.darkishTxt}
+    /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
+`;

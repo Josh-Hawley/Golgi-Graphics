@@ -1,20 +1,30 @@
 import React from 'react'
-import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap} from './SidebarElelments';
-
+import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, SideBarBlackOut, ArrowIconStyling} from './SidebarElelments';
+import { theme } from '../../Theme';
+import { ReactComponent as RightArrow } from '../../images/Icons/right arrow.svg'
 const Sidebar = ({isOpen, toggle}) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
+    <>
+    
+    <SideBarBlackOut isOpen={isOpen} onClick={toggle}>
+      <ArrowIconStyling onClick={toggle} isOpen={isOpen}>
+        {/* <FaArrowRight /> */}
+        <RightArrow style = {{textShadow: '20px 0px 30px  -5px rgba(0,0,0,1)', fill: `${theme.colors.darkTxt}` }}/>
+      </ArrowIconStyling>
+    
+    </SideBarBlackOut>
+    <SidebarContainer isOpen={isOpen}>
+      {/* <Icon onClick={toggle}> */}
+        {/* <CloseIcon  isOpen={isOpen} /> */}
+      {/* </Icon> */}
 
       <SidebarWrapper>
 
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active">Home</SidebarLink>
-          <SidebarLink to="services" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active">Services</SidebarLink>
-          <SidebarLink to="portfolio" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active">Portfolio</SidebarLink>
-          <SidebarLink to="about" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-80} activeClass="active">About</SidebarLink>
+          <SidebarLink to="home" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-60} activeClass="active">Home</SidebarLink>
+          <SidebarLink to="services" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-60} activeClass="active">Services</SidebarLink>
+          <SidebarLink to="portfolio" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-60} activeClass="active">Portfolio</SidebarLink>
+          <SidebarLink to="about" onClick={toggle} smooth={true} duration={500} spy={true} exact='true' offset={-60} activeClass="active">About</SidebarLink>
         </SidebarMenu>
 
         <SideBtnWrap>
@@ -26,6 +36,7 @@ const Sidebar = ({isOpen, toggle}) => {
       </SidebarWrapper>
 
     </SidebarContainer>
+    </>
   );
 }
 

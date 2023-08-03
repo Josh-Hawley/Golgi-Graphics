@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from 'react-icons/fa';
+import {FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import { IconContext } from 'react-icons/lib';
 import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
@@ -8,7 +8,7 @@ import { theme } from '../../Theme';
 import {ReactComponent as LogoText} from '../../images/logo and text.svg'
 // import {ReactComponent as LogoText} from '../../images/Icons/infographics icon.svg'
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, isOpen }) => {
     
     const [scrollNav, setScrollNav] = useState(false);
     
@@ -26,15 +26,8 @@ const Navbar = ({ toggle }) => {
 
     const toggleHome = () => {
         scroll.scrollToTop( {
-            duration:800,
+            duration: 800,
         })
-        // scroll.scrollTo('services', {
-        //     duration: 800, // Animation duration in milliseconds
-        //     smooth: true, // Whether to enable smooth scrolling
-        //     offset: -60, // Scroll offset from the top of the element (adjust as needed)
-        //     spy: true, // If true, the active link will be highlighted based on scroll position
-        //     exact: "true", // If true, the scroll will stop at the specified position
-        //   });
     }
 
    
@@ -51,8 +44,9 @@ const Navbar = ({ toggle }) => {
                 </NavLogo>
                 
                 
-                <MobileIcon onClick={toggle}>
+                <MobileIcon onClick={toggle} isOpen={isOpen}>
                     <FaBars />
+                    {/* <FaChevronCircleRight/> */}
                 </MobileIcon>
 
                 <NavMenu>

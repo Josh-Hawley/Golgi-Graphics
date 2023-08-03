@@ -107,7 +107,7 @@ export  const SocialIcons = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    /* width: 240px; */
 `
 
 export const SocialIconLink = styled.a`
@@ -119,4 +119,11 @@ export const FooterLogoImage = styled.img`
   height: 70px;
 ` 
 
+
+export const EmailLink = styled.a`
+    color: #fff;
+    font-weight:200;
+    font-size: 25px;
+    margin-bottom: 16px;
+`
 

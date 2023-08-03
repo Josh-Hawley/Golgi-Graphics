@@ -1,10 +1,11 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 // import {FaYoutube, FaInstagram, FaTwitter, FaLinkedin} from 'react-icons/fa';
-import { FaTwitter } from 'react-icons/fa';
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink, FooterLogoImage } from './FooterElements';
+// import { FaTwitter } from 'react-icons/fa';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, FooterLogoImage, EmailLink } from './FooterElements';
 import { IconContext } from 'react-icons/lib';
 import logo_and_text from '../../images/logo and text 2 white.png';
+// import {ReactComponent as LogoText} from '../../images/logo and text dark.svg'
 
 const Footer = () => {
 
@@ -39,6 +40,7 @@ const Footer = () => {
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
                         <FooterLogoImage src={logo_and_text} />
+                        {/* <LogoText style={{maxWidth:'154px'}}/> */}
                     </SocialLogo>
                     <WebsiteRights>Golgi Graphics © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                 <SocialIcons>
@@ -51,9 +53,11 @@ const Footer = () => {
                         <FaInstagram />
                     </SocialIconLink> */}
                     
-                    <SocialIconLink href="//www.twitter.com/ItsJoshSurely" target="_blank" aria-label="Twitter">
+                    {/* <SocialIconLink href="//www.twitter.com/ItsJoshSurely" target="_blank" aria-label="Twitter">
                         <FaTwitter />
-                    </SocialIconLink>
+                    </SocialIconLink> */}
+                    {/* <a href="mailto:contact@golgi.graphics">contact@golgi.graphics</a> */}
+                    <EmailLink href="mailto:contact@golgi.graphics">contact@golgi.graphics</EmailLink>
                     
                     {/* <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                         <FaLinkedin />

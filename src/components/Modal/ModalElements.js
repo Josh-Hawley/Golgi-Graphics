@@ -20,10 +20,12 @@ export const ImageTextWrap = styled.div`
   width:90%;
   max-width: 800px;
   margin-top: 100px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: default;
 
 `
 export const Header = styled.h1`
