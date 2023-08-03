@@ -10,7 +10,7 @@ export const SideBarBlackOut = styled.aside`
     z-index: 999;
     overflow: hidden;
     /* width: 100%; */
-    height: 100%;
+    height: 100vh;
     display: grid;
     align-items: center;
     top: 0;
@@ -48,7 +48,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     overflow: hidden;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background: ${theme.colors.lightestBg};
     display: grid;
     align-items: center;
