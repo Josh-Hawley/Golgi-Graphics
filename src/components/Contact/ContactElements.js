@@ -3,11 +3,12 @@ import {Link} from 'react-router-dom';
 import { theme } from '../../Theme';
 
 export const Container = styled.div`
-    min-height: 692px;
-    z-index: 0;
-    overflow: hidden;
-    padding-top: 150px;
-    margin-bottom: 80px
+    /* min-height: 692px; */
+    /* min-width: 90vw;
+    z-index: 0; */
+    /* overflow: hidden; */
+    margin-top: 50px;
+    margin-bottom: 50px;
 `;
 
 export const FormWrap = styled.div`
@@ -57,7 +58,7 @@ export const Form = styled.form`
     margin: 0 auto;
     padding: 60px 32px;
     border-radius: 8px;
-    box-shadow: 0 0 40px rgba(0,0,0,0.0);
+    /* box-shadow: 0 0 40px rgba(0,0,0,0.0); */
 
     @media screen and (max-width: 400px){
         padding: 32px 32px;
@@ -173,6 +174,7 @@ export const ContactContainer = styled.div`
     /* min-height: 100vh; */
     position: relative;
     width: 100%;
+    background: yellow;
     @media screen and (max-width: 768px) {
         /* padding: 100px 0; */
     } 
@@ -184,13 +186,14 @@ export const ContactWrapper = styled.div`
     /* min-height: 100vh; */
     /* width: 100vw; */
     /* max-width: 1500px; */
-    margin-right: auto;
-    margin-left: auto;
+    /* margin-right: auto;
+    margin-left: auto; */
     padding: 0 0px;
     justify-content: center;
+   
 
     @media screen and (max-width: 768px) {
-        min-height: 50vh;
+        /* min-height: 50vh; */
 
     }
     
@@ -201,56 +204,111 @@ export const ContactRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    background: red;
+    /* width: 100%; */
     
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}; */
 
     @media screen and (max-width: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}; */
 
     }
 `;
 
 export const Column1 = styled.div`
-    /* margin-bottom: 15px;  */
-    padding-left: 10px;
-     padding-right: 10px;
-     margin-right: auto;
-    margin-left: auto;
-    
-    /* @media screen and (max-width: 768px) {
-        height: 30vh;
-    } */
-    /* background: red; */
-    
 
-    grid-area: col1;
+    padding-left: 50px;
+     padding-right: 50px;
+     min-width: 500px;
+     
+     /* margin-right: auto;
+    margin-left: auto; */
+    /* grid-area: col1; */
+    
+    /* justify-content: center;
+    align-items: center; */
+    /* background: blue; */
+    @media screen and (max-width: 650px) {
+        width: 100%;
+        min-width:300px;
+        padding-left: 0px;
+     padding-right: 0px;
+
+    }
+    
 `;
 
 export const Column2 = styled.div`
-    /* margin-bottom: 15px; */
-    /* padding: 0 0px; */
-    /* grid-area: col2; */
-    /* width:120vw; */
-    width: 50vw;
-    height: calc(100vh - 60px);
-    /* border: solid 1px black; */
-    
-    /* align-items: center; */
-    overflow: hidden;  
-    @media screen and (max-width: 768px){
-        /* height: 70vh; */
+
+    /* width: 50%; */
+    padding-left: 50px;
+     padding-right: 50px;
+     min-width: 500px;
+
+     @media screen and (max-width: 650px) {
         width: 100%;
-        height: 60vh;
+        min-width:300px;
+        padding-left: 0px;
+     padding-right: 0px;
     }
+    /* background: green; */
+    /* height: calc(100vh - 60px); */
+    /* min-width: 692px; */
+    /* width:692px; */
+
+     
+    /* @media screen and (max-width: 768px){
+        width: 100%;
+    }
+    grid-area: col2; */
 `;
 
 
 export const Paragraph = styled.p`
-    max-width: 440px;
-    margin-bottom: 35px;
+    /* max-width: 440px; */
+    /* margin-bottom: 8px; */
+    margin-top: 26px;
+    /* margin-bottom: 35px; */
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
     color: ${theme.colors.darkishTxt}
+    
+    
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
+
+
+export const FlexWrap = styled.div`
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    /* height: 1500px; */
+    width: 100%;
+    margin-top:150px;
+    margin-bottom: 200px;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        margin-top:50px;
+        margin-bottom: 100px;
+    }
+
+  `
+
+  export const TextWrap = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center horizontally */
+  /* background: grey; */
+  /* height: 1500px; */
+  /* width: 100%; */
+  
+
+  /* @media screen and (max-width: 768px) {
+    height: 250px;
+    width: 167px;
+  } */
+`

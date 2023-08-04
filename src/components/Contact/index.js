@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, FormInput, FormTextArea, FormError, ContactContainer, ContactWrapper, ContactRow, Column1, Column2, Paragraph } from './ContactElements';
+import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, FormInput, FormTextArea, FormError, Column1, Column2, Paragraph, FlexWrap } from './ContactElements';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 // import { motion } from 'framer-motion';
@@ -42,14 +42,29 @@ const Contact = () => {
   return (
     <>
 
-      <ContactContainer>
+      {/* <ContactContainer>
         <ContactWrapper>
-            <ContactRow> 
-                
-                <Column1>
-                  <Header>How it works</Header>
-                  <Paragraph>Enquire</Paragraph>
-                </Column1>
+            <ContactRow>  */}
+            <FlexWrap>
+              <Column1>
+              
+              <Container>
+                    <FormWrap>
+                      <FormContent>
+                      
+                        <Form >
+                          
+                        <Header>How it works</Header>
+                  <Paragraph>Enquire, hshkdh sue enskl d dfisha kskjd dfhiffvnvhdhsirb rhrowuanxcnvk d ssodj </Paragraph>
+
+                        </Form>
+
+                      </FormContent>
+                    </FormWrap>
+                  </Container>
+              
+
+                  </Column1>
               
                 <Column2>
                   <Container>
@@ -97,14 +112,18 @@ const Contact = () => {
                           </FormButton>
 
                         </Form>
+
                       </FormContent>
                     </FormWrap>
                   </Container>
                 </Column2>
+            </FlexWrap>
+                
+                
            
-            </ContactRow>
+            {/* </ContactRow>
         </ContactWrapper>
-      </ContactContainer>
+      </ContactContainer> */}
 
 
 
