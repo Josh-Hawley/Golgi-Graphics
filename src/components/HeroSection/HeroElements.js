@@ -21,7 +21,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroContainer = styled.div`
-    background: ${theme.colors.lighterBg};
+    background-color: ${theme.colors.lighterBg};
     display: flex;
     justify-content: center;
     align-items: center;
