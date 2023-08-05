@@ -122,19 +122,19 @@ export const SidebarLink = styled(LinkS)`
 export const SidebarMenuNoScroll = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 60px);
+    grid-template-rows: repeat(3, 60px);
     text-align: center;
     
 
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(2, 60px);
+        grid-template-rows: repeat(3, 60px);
     }
 `
 export const SidebarLinkNoScroll = styled(LinkR)`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 1.2rem;
+   font-size: 30px;
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;

@@ -1,67 +1,47 @@
 import styled, { keyframes, css } from 'styled-components';
-import {Link} from 'react-router-dom';
 import { theme } from '../../Theme';
 
 export const Container = styled.div`
-    /* min-height: 692px; */
-    /* min-width: 90vw;
-    z-index: 0; */
-    /* overflow: hidden; */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
 `;
 
 export const FormWrap = styled.div`
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
 
     @media screen and (max-width: 400px){
-        height: 80%;
-    }
-`
-
-export const Icon = styled(Link)`
-    margin-left: 32px;
-    margin-top: 32px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-    font-size: 32px;
-
-    @media screen and (max-width: 480px){
-        margin-left: 16px;
-        margin-top: 8px;
+        /* height: 80%; */
     }
 `
 
 export const FormContent = styled.div`
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     @media screen and (max-width: 480px){
-        padding: 10px;
+        padding: 0px;
     }
 `
 
 export const Form = styled.form`
     background: ${theme.colors.lightestBg};
-    max-width: 400px;
+    max-width: 520px;
     height: auto;
     width: 100%;
     z-index: 1;
     display: grid;
     margin: 0 auto;
-    padding: 60px 32px;
+    padding: 0px 25px;
     border-radius: 8px;
-    /* box-shadow: 0 0 40px rgba(0,0,0,0.0); */
 
     @media screen and (max-width: 400px){
-        padding: 32px 32px;
+        /* padding: 32px 32px; */
     }
 `
 
@@ -108,11 +88,8 @@ const oscillateAnimation = keyframes`
 
 export const FormButton = styled.button`
     
-    /* background: ${theme.colors.accentLight}; */
-    /* color: ${theme.colors.darkTxt}; */
     padding: 16px 0;
     border: none;
-    /* border-radius: 8px; */
     
     font-size: 20px;
     cursor: pointer;
@@ -171,33 +148,17 @@ export const ContactContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
-    /* min-height: 100vh; */
     position: relative;
     width: 100%;
-    background: yellow;
-    @media screen and (max-width: 768px) {
-        /* padding: 100px 0; */
-    } 
+    /* background: yellow; */
+
 `;
 
 export const ContactWrapper = styled.div`
     display: grid;
     z-index: 1;
-    /* min-height: 100vh; */
-    /* width: 100vw; */
-    /* max-width: 1500px; */
-    /* margin-right: auto;
-    margin-left: auto; */
     padding: 0 0px;
     justify-content: center;
-   
-
-    @media screen and (max-width: 768px) {
-        /* min-height: 50vh; */
-
-    }
-    
-    /* overflow: hidden; */
 `;
 
 export const ContactRow = styled.div`
@@ -205,14 +166,7 @@ export const ContactRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     background: red;
-    /* width: 100%; */
-    
-    /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}; */
 
-    @media screen and (max-width: 768px) {
-        /* grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}; */
-
-    }
 `;
 
 export const Column1 = styled.div`
@@ -220,14 +174,7 @@ export const Column1 = styled.div`
     padding-left: 50px;
      padding-right: 50px;
      min-width: 500px;
-     
-     /* margin-right: auto;
-    margin-left: auto; */
-    /* grid-area: col1; */
-    
-    /* justify-content: center;
-    align-items: center; */
-    /* background: blue; */
+
     @media screen and (max-width: 650px) {
         width: 100%;
         min-width:300px;
@@ -265,17 +212,13 @@ export const Column2 = styled.div`
 
 
 export const Paragraph = styled.p`
-    /* max-width: 440px; */
-    /* margin-bottom: 8px; */
+
     margin-top: 26px;
-    /* margin-bottom: 35px; */
     font-size: 20px;
     line-height: 24px;
     font-weight: 300;
     color: ${theme.colors.darkishTxt}
     
-    
-    /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
 
 
@@ -283,32 +226,43 @@ export const FlexWrap = styled.div`
     display: flex;
     flex-direction:row;
     justify-content: center;
-    /* height: 1500px; */
     width: 100%;
-    margin-top:150px;
+    padding-top:180px;
     margin-bottom: 200px;
 
     @media screen and (max-width: 1000px) {
         flex-direction: column;
-        margin-top:50px;
+        /* margin-top:50px; */
+        padding-top:120px;
         margin-bottom: 100px;
     }
 
   `
 
-  export const TextWrap = styled.div`
+export const TextWrap = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center horizontally */
-  /* background: grey; */
-  /* height: 1500px; */
-  /* width: 100%; */
-  
+  align-items: center; 
 
-  /* @media screen and (max-width: 768px) {
-    height: 250px;
-    width: 167px;
-  } */
+`
+
+export const OrderedList = styled.ol`
+padding-left: 20px;
+`
+
+export const ListItem = styled.li`
+margin-bottom: 10px;
+`
+
+export const UnorderedList = styled.ul`
+padding-left: 30px;
+margin-top: 5px;
+
+`
+
+export const EmailLink = styled.a`
+    color: ${theme.colors.accent};
+    margin-bottom: 16px;
 `

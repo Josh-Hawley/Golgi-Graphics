@@ -61,21 +61,23 @@ export const GalleryWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-weight:300;
+    font-weight:600;
 
 
     @media screen and (max-width: 768px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 480px) {
         font-size: 60px;
     }
+
+    /* @media screen and (max-width: 480px) {
+        font-size: 60px;
+    } */
 `;
+
+
 
 
 

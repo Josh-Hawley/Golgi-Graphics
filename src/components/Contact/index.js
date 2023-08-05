@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, FormInput, FormTextArea, FormError, Column1, Column2, Paragraph, FlexWrap } from './ContactElements';
+import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, FormInput, FormTextArea, FormError, Column1, Column2, Paragraph, FlexWrap, OrderedList, ListItem, EmailLink, UnorderedList } from './ContactElements';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 // import { motion } from 'framer-motion';
@@ -42,9 +42,6 @@ const Contact = () => {
   return (
     <>
 
-      {/* <ContactContainer>
-        <ContactWrapper>
-            <ContactRow>  */}
             <FlexWrap>
               <Column1>
               
@@ -55,7 +52,48 @@ const Contact = () => {
                         <Form >
                           
                         <Header>How it works</Header>
-                  <Paragraph>Enquire, hshkdh sue enskl d dfisha kskjd dfhiffvnvhdhsirb rhrowuanxcnvk d ssodj </Paragraph>
+                  
+                  
+                        <Paragraph>
+                        If it involves science and graphics, we will be happy to recieve your enquiry! Here's an overview of the process:
+                      </Paragraph>
+                      
+                      <Paragraph>
+                    
+
+                        <OrderedList>
+                          
+                          <ListItem>
+                            <b>Initial enquiry:</b> Reach out to us with your specific requirements using the contact form on this page, or for more general enquiries you can email us directly: <EmailLink href="mailto:contact@golgi.graphics">contact@golgi.graphics</EmailLink>. 
+                          </ListItem>
+                          
+                          <ListItem>
+                            <b>Project consultation:</b> We will get in touch to discuss the project in detail and cover considerations such as:
+                          <UnorderedList>
+                            <ListItem><i>Target audience</i></ListItem>
+                            <ListItem><i>Research details and areas of emphasis</i></ListItem>
+                            <ListItem><i>Stylistic choice</i></ListItem>
+                            <ListItem><i>Project timeline</i></ListItem>
+
+                          </UnorderedList>
+                          </ListItem>
+
+                          <ListItem>
+                            <b>Quotation:</b> Once a quote has been agreed, the illustrating begins!
+                          </ListItem>
+
+                          <ListItem>
+                            <b>Refinement:</b> The first draft will be sent across, and any refinements you wish to make are included with the initial quotation.
+                          </ListItem>
+                          
+                          <ListItem>
+                            <b>Final design:</b> We will provide you with copies of the final design in any required formats. 
+                          </ListItem>
+
+                        </OrderedList>
+                          
+                      
+                      </Paragraph>
 
                         </Form>
 
@@ -119,14 +157,6 @@ const Contact = () => {
                 </Column2>
             </FlexWrap>
                 
-                
-           
-            {/* </ContactRow>
-        </ContactWrapper>
-      </ContactContainer> */}
-
-
-
     </>
   )
 }

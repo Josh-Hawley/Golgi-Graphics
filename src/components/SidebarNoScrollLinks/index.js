@@ -24,6 +24,7 @@ const SidebarNoScrollLinks = ({isOpen, toggle}) => {
 
         <SidebarMenuNoScroll>
           <SidebarLinkNoScroll to="/" >Home</SidebarLinkNoScroll>
+          <SidebarLinkNoScroll to="/gallery" >Portfolio</SidebarLinkNoScroll>
         </SidebarMenuNoScroll>
 
         <SideBtnWrap>
