@@ -56,8 +56,11 @@ export const Header = styled.h1`
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     margin-top: 26px;
-    font-size: 18px;
-    color: ${theme.colors.darkTxt};
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+ 
+    color: ${theme.colors.darkishTxt};
 `
 
 export const FormInput = styled.input`
@@ -65,7 +68,7 @@ export const FormInput = styled.input`
     margin-bottom: 0px;
     
     border: 1px solid grey;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 18px;
     font-weight: 300;
 `
@@ -99,7 +102,7 @@ export const FormButton = styled.button`
     background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accentLight}`)};
     color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.darkTxt}`)};
     width: ${({loading}) => (loading ? '40%': '100%')};
-    border-radius: ${({loading}) => (loading ? '50px': '10px')};
+    border-radius: ${({loading}) => (loading ? '50px': '6px')};
 
     ${({ loading }) =>
     loading &&
@@ -127,7 +130,7 @@ export const FormTextArea = styled.textarea`
     padding: 16px 16px;
     
     border: 1px solid grey;
-    border-radius: 8px;
+    border-radius: 6px;
     font-size: 18px;
     font-weight: 300;
 `

@@ -131,7 +131,7 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
+  border-radius: 20px;
   background: ${theme.colors.accentLight};
   white-space: nowrap;
   padding: 8px 18px;

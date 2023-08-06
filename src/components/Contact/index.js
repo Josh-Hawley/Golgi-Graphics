@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, FormInput, FormTextArea, FormError, Column1, Column2, Paragraph, FlexWrap, OrderedList, ListItem, EmailLink, UnorderedList } from './ContactElements';
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
-// import { motion } from 'framer-motion';
 
 const Contact = () => {
 
@@ -116,7 +115,7 @@ const Contact = () => {
                           <FormLabel>Name</FormLabel>
                           <FormInput
                           name="user_name"
-                          placeholder='Name' 
+                          placeholder='Your name' 
                           {...register("user_name", {
                           required: "Name is required"
                           })} />
@@ -124,7 +123,7 @@ const Contact = () => {
                           
                           <FormLabel>Email</FormLabel>
                           <FormInput 
-                          placeholder='Email'
+                          placeholder='Your email address'
                           {...register("user_email", 
                           {required: "Email is required", 
                           pattern:{
@@ -133,17 +132,42 @@ const Contact = () => {
                           }})} />
                           <FormError>{errors.user_email?.message}</FormError>
 
-                          <FormLabel>Message</FormLabel>
+                          <FormLabel>Project outline</FormLabel>
                           <FormTextArea 
                           name="message"
                           required style={{ resize: 'vertical' }}
-                          placeholder='Details about your graphic design enquiry.'
+                          placeholder='Please give an outline of what we can help you with.'
                           rows="8"
                           {...register("message", {
                           required: "Message is required"
                           })} />
                           <FormError>{errors.message?.message}</FormError>
+                          
+                          
 
+                          <FormLabel>Additional details (optional)</FormLabel>
+                          <FormTextArea 
+                          name="target_audience"
+                          required style={{ resize: 'vertical', marginBottom: '15px' }}
+                          placeholder='Who is the target audience?'
+                          rows="1"
+                           />
+                           <FormTextArea 
+                          name="budget"
+                          required style={{ resize: 'vertical', marginBottom: '15px' }}
+                          placeholder='Whats the budget?'
+                          rows="1"
+                           />
+                           <FormTextArea 
+                          name="deadline"
+                          required style={{ resize: 'vertical' }}
+                          placeholder='When is the deadline?'
+                          rows="1"
+                           />
+
+                          
+                          {/* <FormLabel>Send a sketch of your project (optional)</FormLabel>
+                          <input type="file" name="my_file"/> */}
                         
                           <FormButton type='submit' loading={loading ? 1 : 0}>
                             {loading ? 'Sending...' : 'Submit'}
