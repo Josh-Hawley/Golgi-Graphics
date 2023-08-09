@@ -125,5 +125,6 @@ export const EmailLink = styled.a`
     font-weight:200;
     font-size: 25px;
     margin-bottom: 16px;
+    /* margin-left: 20px; */
 `
 
