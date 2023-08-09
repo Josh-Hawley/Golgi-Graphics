@@ -16,8 +16,11 @@ function Modal({selected, setSelected}) {
           <motion.img 
           src={selected.src} 
           layout='position'
+          // variants={variants}
+      // initial="initial"
+      // animate="animate"
             
-          style={{width: '100%', zIndex: '3000', boxShadow: '0px 0px 30px rgba(0,0,0,0.2)'}} 
+          style={{width: '100%', objectFit: 'cover', zIndex: '3000', boxShadow: '0px 0px 30px rgba(0,0,0,0.2)'}} 
           layoutId={`card-${selected.id}`}
           transition= {{ type: 'spring', stiffness: 200, damping: 30 }}
           />

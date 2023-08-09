@@ -6,10 +6,14 @@ import { Link as LinkS} from 'react-scroll';
 
 export const HeroH1 = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 90px;
+    font-size: 120px;
     text-align: center;
     font-weight: 700;
     /* max-width: 700px; */
+
+    @media screen and (max-width: 1400px) {
+        font-size: 90px;
+    }
 
     @media screen and (max-width: 768px) {
         font-size: 65px;
@@ -135,7 +139,7 @@ export const ImageContainer = styled.div`
 
 export const HeroContent = styled.div`
     z-index: 3;
-    max-width: 1400px;
+    max-width: 1600px;
     position: absolute;
     padding: 8px 24px;
     display: flex;

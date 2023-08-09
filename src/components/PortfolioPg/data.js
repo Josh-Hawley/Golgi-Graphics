@@ -1,10 +1,11 @@
 import img3 from '../../images/Gallery/Hes_interactions.jpg';
 import img2 from '../../images/Gallery/img3.png';
 import img1 from '../../images/Gallery/Neurulation.jpg';
-import img4 from '../../images/Gallery/Neuro and gliogenesis.jpg';
+// import img4 from '../../images/Gallery/Neuro and gliogenesis.jpg';
 import img5 from '../../images/Gallery/flash talk.jpg';
 import img6 from '../../images/Gallery/Ellis graphical abstract.jpg';
 import img7 from '../../images/Gallery/poster.jpg';
+import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 
 
 export const images = [
@@ -41,29 +42,36 @@ export const images = [
     description: 'Different types of repression that Hes genes exert on proneural genes. This influences the differentiation status of neural progenitor cells in the developing spinal cord.'
   },
 
-  {
-    id: 4,
-    src: img4,
-    title: 'Figure',
-    tags: ['Figure', 'Neurogenesis', 'Gliogenesis'],
-    description: 'The developing neuroepithelia of the neural tube including neurogenesis and gliogenesis.'
-  },
+  // {
+  //   id: 4,
+  //   src: img4,
+  //   title: 'Neurogenesis',
+  //   tags: ['Figure', 'Neurogenesis', 'Gliogenesis'],
+  //   description: 'The developing neuroepithelia of the neural tube including neurogenesis and gliogenesis.'
+  // },
 
   {
     id: 5,
     src: img5,
-    title: 'Flash talk',
+    title: 'Zebrafish development',
     tags: ['Flash talk', 'Presentation', 'Conference', 'Development'],
     description: 'A flash talk summary slide given at a conference.'
   },
-
+ {
+    id: 8,
+    src: img8,
+    title: 'Neuroepithelia',
+    tags: ['Grant figure', 'Paper'],
+    description: 'The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
+  },
   {
     id: 6,
     src: img6,
-    title: 'Graphical abstract',
+    title: 'Prolifereation and quiescence',
     tags: ['Graphical abstract', 'Paper'],
     description: 'A graphical abstract used in published work relating Hes1 dynamics to cell state.'
   },
+ 
 
   
 ];

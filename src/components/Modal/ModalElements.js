@@ -18,6 +18,7 @@ export const ImageTextWrap = styled.div`
   margin-left: auto;
   margin-right: auto;
   width:90%;
+  /* height: 700px; */
   max-width: 800px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -26,6 +27,8 @@ export const ImageTextWrap = styled.div`
   align-items: center;
   justify-content: center;
   cursor: default;
+  overflow:hidden;
+  /* background-size: contain; */
 
 `
 export const Header = styled.h1`

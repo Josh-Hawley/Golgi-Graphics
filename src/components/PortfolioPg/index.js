@@ -9,8 +9,9 @@ const Card = ({
   image
 }) => {
   return <div style={{ display:'inline-block', marginBottom: '20px'}}>
-    <motion.img 
+    <motion.img src={image.src}
     layoutId={`card-${image.id}`}
+    // layout = 'positionAndSize'
     whileHover={{
       scale: 1.025,
       transition: {
@@ -28,7 +29,7 @@ const Card = ({
       setSelected(image);
     }}
 
-    src={image.src}
+    
     style={{
       width: '100%',
       boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
