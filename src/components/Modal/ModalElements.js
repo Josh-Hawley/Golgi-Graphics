@@ -27,7 +27,7 @@ export const ImageTextWrap = styled.div`
   align-items: center;
   justify-content: center;
   cursor: default;
-  overflow:hidden;
+  /* overflow:hidden; */
   /* background-size: contain; */
 
 `
