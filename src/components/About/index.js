@@ -26,7 +26,7 @@ const About = () => {
                     </Subtitle>
 
                     <Subtitle>
-                      The reason why Golgi Graphics exists is because I have a passion for communicating complex ideas in intuitive and effective ways. I also love aesthetics and illustration, so I have naturally gravitated towards the use of graphic design in communicating ideas throughout my scientific career, which has evolved into a scientific illustration career. 
+                      Golgi Graphics exists because I have a passion for communicating complex ideas in visually intuitive and pleasing ways. I also love aesthetics and illustration, so I have naturally gravitated towards the use of graphic design in communicating ideas throughout my scientific career, which has evolved into a scientific illustration career. 
                      
                     </Subtitle>
                     
