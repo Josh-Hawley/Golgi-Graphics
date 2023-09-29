@@ -4,8 +4,9 @@ import { animateScroll as scroll } from 'react-scroll';
 import { FaTwitter } from 'react-icons/fa';
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, FooterLogoImage, EmailLink, SocialIconLink } from './FooterElements';
 import { IconContext } from 'react-icons/lib';
-import logo_and_text from '../../images/logo and text 2 white.png';
+import logo_and_text from '../../images/logo and text white.png';
 // import {ReactComponent as LogoText} from '../../images/logo and text dark.svg'
+
 
 const Footer = () => {
 
