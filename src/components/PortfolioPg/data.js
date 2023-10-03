@@ -9,6 +9,10 @@ import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
 
+import img11 from '../../images/Gallery/IMG_2482.jpeg';
+
+
+
 
 
 export const images = [
@@ -83,6 +87,15 @@ export const images = [
     tags: ['Art', '3D'],
     description: 'Artistic 3D render of endogenous HES5::Venus reporter in neuroepithelia.'
   },
+
+  {
+    id: 11,
+    src: img11,
+    title: 'Lysocome V-ATPase',
+    tags: ['3D'],
+    description: 'V-ATPase - a proton pump - on the surface of a lysosome, roughly to scale for a small vesicle.'
+  },
+  
   // {
   //   id: 6,
   //   src: img6,
