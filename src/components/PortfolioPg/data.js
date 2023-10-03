@@ -91,9 +91,9 @@ export const images = [
   {
     id: 11,
     src: img11,
-    title: 'Lysocome V-ATPase',
+    title: 'V-ATPase on the surface of a lysosome',
     tags: ['3D'],
-    description: 'V-ATPase - a proton pump - on the surface of a lysosome, roughly to scale for a small vesicle.'
+    description: 'V-ATPase - a proton pump - on the surface of a lysosome, roughly to scale for a small vesicle around 100nm in diameter.'
   },
   
   // {
