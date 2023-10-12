@@ -98,9 +98,10 @@ export const FormButton = styled.button`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 32px;
-
-    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accentLight}`)};
-    color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.darkTxt}`)};
+    /* background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accentLight}`)};
+    color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.darkTxt}`)}; */
+    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accent}`)};
+    color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.superLightTxt}`)};
     width: ${({loading}) => (loading ? '40%': '100%')};
     border-radius: ${({loading}) => (loading ? '50px': '6px')};
 
@@ -113,8 +114,8 @@ export const FormButton = styled.button`
 
     &:hover{
     transition: 0.2 ease-in-out;
-    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accent}`)};
-    color: ${theme.colors.accentSuperLight};
+    background: ${({loading}) => (loading ? `${theme.colors.darkBg}`: `${theme.colors.accentLight}`)};
+    color: ${({loading}) => (loading ? `${theme.colors.superLightTxt}`: `${theme.colors.darkTxt}`)};
     }
 `
 

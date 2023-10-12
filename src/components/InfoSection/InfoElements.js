@@ -9,6 +9,7 @@ export const InfoContainer = styled.div`
     /* min-height: 100vh; */
     position: relative;
     width: 100%;
+    
     @media screen and (max-width: 768px) {
         /* padding: 100px 0; */
     } 
@@ -20,9 +21,9 @@ export const InfoWrapper = styled.div`
     /* min-height: 100vh; */
     /* width: 100vw; */
     /* max-width: 1500px; */
-    /* margin-right: auto;
+    margin-right: auto;
     margin-left: auto;
-    padding: 0 0px; */
+    padding: 0 0px;
     justify-content: center;
 
     @media screen and (max-width: 768px) {
@@ -53,6 +54,7 @@ export const Column1 = styled.div`
      padding: 0 15px;
      margin-right: auto;
     margin-left: auto;
+    /* background: red; */
     
     /* @media screen and (max-width: 768px) {
         height: 30vh;

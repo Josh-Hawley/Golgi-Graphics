@@ -36,6 +36,10 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
     justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    /* margin-left: auto;
+    margin-right: auto; */
     
     /* offset:-60px; */
     /* background: orange; */
@@ -143,7 +147,7 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1600px;
     position: absolute;
-    padding: 8px 45px;
+    padding: 8px 15px;
     display: flex;
     flex-direction: column;
     align-items: left;

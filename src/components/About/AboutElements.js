@@ -6,6 +6,8 @@ export const AboutContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
+    /* background: blue; */
+    /* width: 100%; */
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     } 
@@ -46,6 +48,8 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+    margin-right: auto;
+    margin-left: auto;
 
  
         display:flex;
@@ -81,6 +85,7 @@ export const Heading = styled.h1`
     font-size: 80px;
     line-height: 1.1;
     font-weight: 300;
+    /* background: red; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
     @media screen and (max-width: 480px) {

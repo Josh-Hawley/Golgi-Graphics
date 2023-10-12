@@ -6,4 +6,5 @@ export const PageContainer = styled.div`
     width: 100%;
     transition: 0.3s cubic-bezier(.62,.13,.54,.85);
     left: ${({ isOpen }) => (isOpen ? '-50%' : '0%')};
+    
 `

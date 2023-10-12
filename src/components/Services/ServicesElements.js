@@ -10,10 +10,12 @@ import { Link as LinkS} from 'react-scroll';
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
+    
     z-index: 5;
     position: relative;
-    width: 100%;
+    
     overflow: hidden;
+    /* background: blue; */
     
    
 `;
@@ -22,6 +24,8 @@ export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
     justify-content: center;
+    align-items: center;
+    
 
 
 `;
@@ -30,13 +34,19 @@ export const InfoRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
+    justify-content: center;
     min-height: calc(100vh - 60px);
+    margin-left: auto;
+    margin-right: auto;
+    
+
     
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-        /* height: calc(120vh - 60px); */
+        grid-auto-columns: minmax(auto, auto);
+        
     }
 `;
 
@@ -45,7 +55,9 @@ export const Column1 = styled.div`
     padding: 0 25px;
      margin-right: auto;
     margin-left: auto;
-    
+    /* width:100%; */
+    /* justify-content: center;
+    align-items: center; */
     
 
     grid-area: col1;
@@ -53,14 +65,17 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
  
-    width: 100%;
-    padding: 0 10px;
+    
+    padding: 0 5px;
+    margin-right: auto;
+    margin-left: auto;
     
     display: flex;
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* background: red; */
   
     overflow: hidden;  
 
@@ -290,14 +305,17 @@ export const DarkOverlay = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    /* background: grey; */
     height: 300px;
     width: 200px;
 
     @media screen and (max-width: 768px) {
     height: 250px;
     width: 167px;
+    }
+
+    @media screen and (max-width: 400px) {
+    height: 200px;
+    width: 134px;
     }
 
     
