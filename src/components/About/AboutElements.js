@@ -19,7 +19,7 @@ export const AboutWrapper = styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 0 0px;
     justify-content: center;
 `;
 
@@ -37,13 +37,14 @@ export const AboutRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 5px;
+    padding: 0 15px;
     grid-area: col1;
+    
 `;
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    padding: 0 5px;
+    padding: 0 15px;
     grid-area: col2;
 
  
@@ -64,11 +65,11 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: ${theme.colors.accent};
+    color: ${theme.colors.lightTxt};
     /* color: #FFC234; */
     /* color: #ffd166; */
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -77,13 +78,13 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
     margin-bottom: 24px;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 300;
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 60px;
     }
 `;
 

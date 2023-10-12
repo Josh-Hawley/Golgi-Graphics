@@ -38,7 +38,7 @@ export const theme = {
     // accent: '#FF9E36',
     accent: '#FF7262',
     // accentLight: '#FFC689',
-    accentLight: '#F0A494',
+    accentLight: '#FFBFA9',
     accentSuperLight: '#FFFAF7',
     accentDark: '#421800',
   },

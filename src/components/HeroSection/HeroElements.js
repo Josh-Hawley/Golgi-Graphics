@@ -6,21 +6,22 @@ import { Link as LinkS} from 'react-scroll';
 
 export const HeroH1 = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 120px;
-    text-align: center;
-    font-weight: 700;
-    /* max-width: 700px; */
+    font-size: 90px;
+    text-align: left;
+    font-weight:400;
+    max-width: 1000px;
+    text-transform: uppercase;
 
     @media screen and (max-width: 1400px) {
-        font-size: 90px;
+        font-size: 80px;
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 65px;
+        font-size: 55px;
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 58px;
+        font-size: 42px;
     }
 `;
 
@@ -35,6 +36,7 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
     justify-content: center;
+    
     /* offset:-60px; */
     /* background: orange; */
 `;
@@ -141,10 +143,10 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1600px;
     position: absolute;
-    padding: 8px 24px;
+    padding: 8px 45px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     
 `;
 
@@ -154,8 +156,8 @@ export const HeroContent = styled.div`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: ${theme.colors.darkTxt};
-    font-size: 30px;
-    text-align: center;
+    font-size: 22px;
+    text-align: left;
     max-width: 700px;
     font-weight: 300;
 
@@ -194,17 +196,18 @@ export const HeroBtnLink = styled(LinkS)`
   
   font-size: 20px;
   outline: none;
-  border: none;
+  border: ${theme.colors.darkTxt};;
+  /* border: 2px solid ${theme.colors.darkTxt}; */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  background: ${theme.colors.accentLight};
-  color: ${theme.colors.darkTxt};
+  background: ${theme.colors.accent};
+  color: ${theme.colors.superLightTxt};
 
   &:hover{
     transition: 0.2 ease-in-out;
-    color: ${theme.colors.superLightTxt};
-    background: ${theme.colors.accent};
+    color: ${theme.colors.darkTxt};
+    background: ${theme.colors.accentLight};
   }
 `
 

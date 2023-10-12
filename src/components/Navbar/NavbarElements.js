@@ -87,16 +87,17 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
-  color: ${theme.colors.darkTxt};
+  color: ${theme.colors.lightTxt};
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-decoration: none;
-  /* padding: 0 1rem; */
-  font-size: 20px;
+  padding: 0 1.5rem;
+  font-size: 15px;
   height: 100%;
-  width: 110px;
+  /* width: 110px; */
+  text-transform: uppercase;
   cursor: pointer;
   transition: ease-in-out 0.08s;
 
@@ -107,8 +108,8 @@ export const NavLinks = styled(LinkS)`
     color: ${theme.colors.accent}; */
     /* border-bottom: 3px solid ${theme.colors.darkTxt}; */
     color:${theme.colors.darkTxt};
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 17px;
   }
 
   &:hover {
@@ -132,10 +133,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 20px;
-  background: ${theme.colors.accentLight};
+  background: ${theme.colors.accent};
   white-space: nowrap;
   padding: 8px 18px;
-  color: ${theme.colors.darkTxt};
+  color: ${theme.colors.superLightTxt};
   font-size: 20px;
   outline: none;
   border: none;
@@ -145,7 +146,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover{
     transition: 0.2 ease-in-out;
-    background: ${theme.colors.accent};
-    color: ${theme.colors.superLightTxt};
+    background: ${theme.colors.accentLight};
+    color: ${theme.colors.darkTxt};
   }
 `

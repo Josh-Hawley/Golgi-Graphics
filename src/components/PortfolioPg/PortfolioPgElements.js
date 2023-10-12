@@ -61,11 +61,12 @@ export const GalleryWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-weight:600;
+    font-weight:300;
+    text-transform: uppercase;
 
 
     @media screen and (max-width: 768px) {

@@ -11,24 +11,16 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? `${theme.colors.lightBg}`: `${theme.colors.lightestBg}`)};
     z-index: 5;
-    /* min-height: 100vh; */
     position: relative;
     width: 100%;
     overflow: hidden;
     
-    /* height: 100vh; */
-    /* height: calc(100vh - 60px); */
    
 `;
 
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    /* height: 1000px;; */
-
-    /* margin-right: auto;
-    margin-left: auto; */
-
     justify-content: center;
 
 
@@ -49,16 +41,11 @@ export const InfoRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    /* margin-bottom: 15px;  */
-     padding-left: 10px;
-     padding-right: 10px;
+
+    padding: 0 25px;
      margin-right: auto;
     margin-left: auto;
     
-    /* @media screen and (max-width: 768px) {
-        height: 30vh;
-    } */
-    /* background: red; */
     
 
     grid-area: col1;
@@ -76,20 +63,12 @@ export const Column2 = styled.div`
     flex-wrap: wrap;
   
     overflow: hidden;  
-    /* padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 30px; */
+
 
 
     @media screen and (max-width: 768px){
         width: 100vw;
-        /* height: 50vh; */
-        /* padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    padding-left: 0px; */
-    /* margin-top: 80px;
-    margin-bottom: 80px; */
+
     }
 `;
 
@@ -98,13 +77,15 @@ export const TextWrapper = styled.div`
     padding-top: 0;
     padding-bottom: 60px;
     padding-top: 60px;
+
+
 `;
 
 export const TopLine = styled.p`
     /* color: ${theme.colors.accentLight}; */
-    color: ${theme.colors.accent};
+    color: ${theme.colors.lightTxt};
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -113,13 +94,13 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
     margin-bottom: 24px;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 300;
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 60px;
     }
 `;
 
@@ -149,12 +130,12 @@ overflow: hidden;
 
 export const Button = styled(Link)`
     border-radius: 50px;
-    /* background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)}; */
+    
     white-space: nowrap;
-    background: ${theme.colors.accentLight};
+    background: ${theme.colors.accent};
     /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
     padding: 10px 22px;
-    color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
+    color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: 20px;
     outline: none;
@@ -168,9 +149,9 @@ export const Button = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
+        color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
         /* background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)}; */
-    background: ${theme.colors.accent};
+    background: ${theme.colors.accentLight};
     }
 `;
 
@@ -265,17 +246,14 @@ export const Img = styled.img`
 
 export const IconTitle = styled.h2`
     color: ${theme.colors.darkTxt};
-    /* background: transparent; */
+
     position: relative;
     z-index: 10;
     text-align: center;
-    /* text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.7);  */
-    /* box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.5); */
+
     font-weight: 400;
     font-size: 30px;
-    /* pointer-events: none; */
-    /* background: rgba(0, 0, 0, 0.2); */
-    /* padding: 4px 8px; */
+
     border-radius: 10px;
     flex-grow: 1;
 
@@ -283,17 +261,7 @@ export const IconTitle = styled.h2`
         font-size: 24px;
     }
 
-    /* @media screen and (max-width: 1200px){
-        font-size: 35px;
-    }
 
-    @media screen and (max-width: 768px){
-        font-size: 30px;
-    } */
-    
-    /* @media screen and (max-width: 768px){
-        font-size: 40px;
-    } */
 `
 
 

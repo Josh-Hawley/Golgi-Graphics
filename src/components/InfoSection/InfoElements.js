@@ -20,9 +20,9 @@ export const InfoWrapper = styled.div`
     /* min-height: 100vh; */
     /* width: 100vw; */
     /* max-width: 1500px; */
-    margin-right: auto;
+    /* margin-right: auto;
     margin-left: auto;
-    padding: 0 0px;
+    padding: 0 0px; */
     justify-content: center;
 
     @media screen and (max-width: 768px) {
@@ -48,8 +48,9 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     /* margin-bottom: 15px;  */
-    padding-left: 10px;
-     padding-right: 10px;
+    /* padding-left: 10px;
+     padding-right: 10px; */
+     padding: 0 15px;
      margin-right: auto;
     margin-left: auto;
     
@@ -88,10 +89,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: ${theme.colors.accent};
+    color: ${theme.colors.lightTxt};
     /* color: #ffa8b5; */
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -100,13 +101,14 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
     margin-bottom: 24px;
-    font-size: 60px;
+    font-size: 80px;
     line-height: 1.1;
-    font-weight: 600;
+    font-weight: 300;
+    /* text-transform: uppercase; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
     @media screen and (max-width: 480px) {
-        font-size: 32px;
+        font-size: 60px;
     }
 `;
 
@@ -165,12 +167,12 @@ export const Img = styled.img`
 
 export const Button = styled(Link)`
     border-radius: 50px;
-    background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)};
+    background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)};
     white-space: nowrap;
     /* background: #FFC0C9; */
     /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
     padding: 10px 22px;
-    color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
+    color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: 20px;
     outline: none;
@@ -184,8 +186,8 @@ export const Button = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
-        background: ${({primary}) => (primary ?  `${theme.colors.accent}` : `${theme.colors.accentLight}`)};
+        color: ${({dark}) => (dark ?  `${theme.colors.darkTxt}` : `${theme.colors.superLightTxt}`)};
+        background: ${({primary}) => (primary ?  `${theme.colors.accentLight}` : `${theme.colors.accent}`)};
     /* background: #FA6A80; */
     }
 `;

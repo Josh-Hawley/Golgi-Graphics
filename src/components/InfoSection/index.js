@@ -18,6 +18,7 @@ import layer4 from '../../images/portfolio background/Layer4.png'
 
 
 
+
 // import top from '../../images/portfolio background/top.png'
 // import bottom from '../../images/portfolio background/bottom.png'
 // import mid from '../../images/portfolio background/mid.png'

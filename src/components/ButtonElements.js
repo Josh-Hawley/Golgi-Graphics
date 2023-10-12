@@ -11,12 +11,13 @@ export const Button = styled(Link)`
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: 20px;
     outline: none;
-    border: none;
+    /* border: none; */
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    border: 2px solid ${theme.colors.darkTxt};
 
     &:hover {
         transition: all 0.2s ease-in-out;

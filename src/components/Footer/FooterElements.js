@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { theme } from '../../Theme';
 
 export const FooterContainer = styled.footer`
-    background: ${theme.colors.darkBg};
+    background: ${theme.colors.darkTxt};
 `
 
 export const FooterWrap = styled.div`
@@ -51,15 +51,18 @@ export const FooterLinkItems = styled.div`
 `
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 16px;
+    font-weight:400;
+    /* text-transform: uppercase; */
 `
 
 export const FooterLink = styled(Link)`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight:300;
 
     &:hover {
         color: ${theme.colors.accent};
@@ -96,6 +99,7 @@ export const SocialLogo = styled(Link)`
     align-items: center;
     margin-bottom: 16px;
     font-weight: bold;
+    
 `
 
 export const WebsiteRights = styled.small`
@@ -126,5 +130,9 @@ export const EmailLink = styled.a`
     font-size: 25px;
     margin-bottom: 16px;
     /* margin-left: 20px; */
+    &:hover {
+        color: ${theme.colors.accent};
+        transition: 0.3s ease-out;
+    }
 `
 
