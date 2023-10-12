@@ -4,7 +4,7 @@ import img1 from '../../images/Gallery/Neurulation.jpg';
 // import img4 from '../../images/Gallery/Neuro and gliogenesis.jpg';
 // import img5 from '../../images/Gallery/flash talk.jpg';
 // import img6 from '../../images/Gallery/Ellis graphical abstract.jpg';
-import img7 from '../../images/Gallery/poster.jpg';
+// import img7 from '../../images/Gallery/poster.jpg';
 import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
@@ -28,13 +28,13 @@ export const images = [
     description: 'Notch signalling is a contact dependent signalling network utilised across many developmental processes as well as in adult tissue. Here, it is shown in the context of its regulation on Hes and proneural genes.'
   },
 
-  {
-    id: 7,
-    src: img7,
-    title: 'Conference poster summarising published work ',
-    tags: ['Poster', 'Developmental', 'Mathematical modelling'],
-    description: 'Poster presented at EMBL Biological Oscillator conference in Heidelberg in 2022, which won a poster prize.'
-  },
+  // {
+  //   id: 7,
+  //   src: img7,
+  //   title: 'Conference poster summarising published work ',
+  //   tags: ['Poster', 'Developmental', 'Mathematical modelling'],
+  //   description: 'Poster presented at EMBL Biological Oscillator conference in Heidelberg in 2022, which won a poster prize.'
+  // },
   
   
   {
