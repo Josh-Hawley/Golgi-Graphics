@@ -1,15 +1,15 @@
 import React from 'react'
 import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, SideBarBlackOut, ArrowIconStyling} from './SidebarElelments';
-import { theme } from '../../Theme';
-import { ReactComponent as RightArrow } from '../../images/Icons/right arrow.svg'
+// import { theme } from '../../Theme';
+// import { ReactComponent as RightArrow } from '../../images/Icons/right arrow.svg'
 const Sidebar = ({isOpen, toggle}) => {
   return (
     <>
     
     <SideBarBlackOut isOpen={isOpen} onClick={toggle}>
       <ArrowIconStyling onClick={toggle} isOpen={isOpen}>
-        {/* <FaArrowRight /> */}
-        <RightArrow style = {{textShadow: '20px 0px 30px  -5px rgba(0,0,0,1)', fill: `${theme.colors.darkTxt}` }}/>
+        
+        {/* <RightArrow style = {{textShadow: '20px 0px 30px  -5px rgba(0,0,0,1)', fill: `${theme.colors.darkTxt}` }}/> */}
       </ArrowIconStyling>
     
     </SideBarBlackOut>

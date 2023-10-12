@@ -103,17 +103,18 @@ export const SidebarLink = styled(LinkS)`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 30px;
+   font-size: 18px;
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
-   color: ${theme.colors.superLightTxt};
+   color: ${theme.colors.lightTxt};
+   text-transform: uppercase;
    cursor: pointer; 
    
 
    &:hover {
-    color: ${theme.colors.accentLight};
+    color: ${theme.colors.accent};
     transition: 0.2s ease-in-out;
    }
 `;
@@ -134,17 +135,18 @@ export const SidebarLinkNoScroll = styled(LinkR)`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 30px;
+   font-size: 18px;
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
-   color: ${theme.colors.superLightTxt};
+   color: ${theme.colors.lightTxt};
+   text-transform: uppercase;
    cursor: pointer; 
    
 
    &:hover {
-    color: ${theme.colors.accentLight};
+    color: ${theme.colors.accent};
     transition: 0.2s ease-in-out;
    }
 `;
@@ -156,10 +158,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled(LinkR)`
     border-radius: 50px;
-    background-color: ${theme.colors.accentLight};
+    background-color: ${theme.colors.accent};
     white-space: nowrap;
     padding: 10px 22px;
-    color: ${theme.colors.darkTxt};
+    color: ${theme.colors.superLightTxt};
     font-size: 20px;
     outline: none;
     border: none;
@@ -171,8 +173,8 @@ export const SidebarRoute = styled(LinkR)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: ${theme.colors.accent};
-        color: ${theme.colors.superLightTxt};
+        background: ${theme.colors.accentLight};
+        color: ${theme.colors.darkTxt};
     }
 `
 
