@@ -108,12 +108,12 @@ export const SidebarLink = styled(LinkS)`
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
-   color: ${theme.colors.darkTxt};
+   color: ${theme.colors.superLightTxt};
    cursor: pointer; 
    
 
    &:hover {
-    color: ${theme.colors.accent};
+    color: ${theme.colors.accentLight};
     transition: 0.2s ease-in-out;
    }
 `;
@@ -139,12 +139,12 @@ export const SidebarLinkNoScroll = styled(LinkR)`
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
-   color: ${theme.colors.darkTxt};
+   color: ${theme.colors.superLightTxt};
    cursor: pointer; 
    
 
    &:hover {
-    color: ${theme.colors.accent};
+    color: ${theme.colors.accentLight};
     transition: 0.2s ease-in-out;
    }
 `;
