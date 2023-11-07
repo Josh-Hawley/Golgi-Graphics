@@ -148,19 +148,19 @@ const Contact = () => {
                           <FormLabel>Additional details (optional)</FormLabel>
                           <FormTextArea 
                           name="target_audience"
-                          required style={{ resize: 'vertical', marginBottom: '15px' }}
+                          style={{ resize: 'vertical', marginBottom: '15px' }}
                           placeholder='Who is the target audience?'
                           rows="1"
                            />
                            <FormTextArea 
                           name="budget"
-                          required style={{ resize: 'vertical', marginBottom: '15px' }}
+                          style={{ resize: 'vertical', marginBottom: '15px' }}
                           placeholder='Whats the budget?'
                           rows="1"
                            />
                            <FormTextArea 
                           name="deadline"
-                          required style={{ resize: 'vertical' }}
+                          style={{ resize: 'vertical' }}
                           placeholder='When is the deadline?'
                           rows="1"
                            />

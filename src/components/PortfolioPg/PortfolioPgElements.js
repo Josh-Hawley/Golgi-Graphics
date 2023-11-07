@@ -37,7 +37,8 @@ export const TagsContainer = styled.div`
     margin-bottom: 2px;
     padding: 3px 5px;
 
-    font-size: 15px;
+    font-size: ${theme.fontSizes.xsmall};
+    font-weight: ${theme.fontWeights.medium};
     background: #e6e6e6;
     border-radius: 3px;
     color: ${theme.colors.darkTxt};
@@ -46,6 +47,7 @@ export const TagsContainer = styled.div`
 export const GalleryWrap = styled.div`
     columns: 3;
     column-gap: 20px; 
+    font-size: 30px;
 
     @media screen and (max-width: 1600px) {
         columns: 3;
@@ -61,16 +63,16 @@ export const GalleryWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 80px;
+    font-size: ${theme.fontSizes.xlarge};
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-weight:300;
-    text-transform: uppercase;
+    font-weight:400;
+    /* text-transform: uppercase; */
 
 
     @media screen and (max-width: 768px) {
-        font-size: 60px;
+        font-size: calc(0.8 * ${theme.fontSizes.xlarge});
     }
 
     /* @media screen and (max-width: 480px) {

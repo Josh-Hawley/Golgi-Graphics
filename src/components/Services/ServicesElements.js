@@ -99,32 +99,35 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
     /* color: ${theme.colors.accentLight}; */
     color: ${theme.colors.lightTxt};
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 1.4px;
+    font-size: ${theme.fontSizes.xsmall};
+    font-weight: ${theme.fontWeights.medium};
+    letter-spacing: 1.2px;
     text-transform: uppercase;
+
     margin-bottom: 16px;
 `;
 
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
     margin-bottom: 24px;
-    font-size: 80px;
+    font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: 300;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    /* font-family: 'Josefin sans'; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
     @media screen and (max-width: 480px) {
-        font-size: 60px;
+        font-size: calc(0.8*${theme.fontSizes.large});
     }
 `;
 
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
     line-height: 24px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxt};
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;
@@ -152,7 +155,8 @@ export const Button = styled(Link)`
     padding: 10px 22px;
     color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
     outline: none;
     border: none;
     cursor: pointer;
@@ -267,7 +271,7 @@ export const IconTitle = styled.h2`
     text-align: center;
 
     font-weight: 400;
-    font-size: 30px;
+    font-size: ${theme.fontSizes.medium};
 
     border-radius: 10px;
     flex-grow: 1;
@@ -307,6 +311,7 @@ export const DarkOverlay = styled.div`
     justify-content: center;
     height: 300px;
     width: 200px;
+    
 
     @media screen and (max-width: 768px) {
     height: 250px;

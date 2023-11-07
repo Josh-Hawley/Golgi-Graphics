@@ -51,7 +51,7 @@ export const FooterLinkItems = styled.div`
 `
 
 export const FooterLinkTitle = styled.h1`
-    font-size: 18px;
+    font-size: ${theme.fontSizes.small};
     margin-bottom: 16px;
     font-weight:400;
     /* text-transform: uppercase; */
@@ -61,8 +61,8 @@ export const FooterLink = styled(Link)`
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
-    font-size: 16px;
-    font-weight:300;
+    font-size: ${theme.fontSizes.xsmall};
+    font-weight: ${theme.fontWeights.light};
 
     &:hover {
         color: ${theme.colors.accent};
@@ -105,6 +105,9 @@ export const SocialLogo = styled(Link)`
 export const WebsiteRights = styled.small`
     color: #fff;
     margin-bottom: 16px;
+    text-align: center;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
 `
 
 export  const SocialIcons = styled.div`
@@ -126,8 +129,8 @@ export const FooterLogoImage = styled.img`
 
 export const EmailLink = styled.a`
     color: #fff;
-    font-weight:200;
-    font-size: 25px;
+    font-weight: ${theme.fontWeights.light};
+    font-size: ${theme.fontSizes.small};
     margin-bottom: 16px;
     /* margin-left: 20px; */
     &:hover {

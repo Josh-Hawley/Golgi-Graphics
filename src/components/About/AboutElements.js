@@ -74,7 +74,7 @@ export const TopLine = styled.p`
     /* color: #ffd166; */
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 1.4px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     margin-bottom: 16px;
 `;
@@ -82,9 +82,9 @@ export const TopLine = styled.p`
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
     margin-bottom: 24px;
-    font-size: 80px;
+    font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: 300;
+    font-weight: 400;
     /* background: red; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
@@ -96,9 +96,9 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
     line-height: 24px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxt}
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */
 `;

@@ -49,16 +49,16 @@ export const Header = styled.h1`
     margin-bottom: 8px;
     color: ${theme.colors.darkTxt};
     font-size: 35px;
-    font-weight: 600;
+    font-weight: ${theme.fontWeights.bold};
     text-align: left;
 `
 
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     margin-top: 26px;
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
     line-height: 24px;
-    font-weight: 600;
+    font-weight: ${theme.fontWeights.bold};
  
     color: ${theme.colors.darkishTxt};
 `
@@ -69,8 +69,8 @@ export const FormInput = styled.input`
     
     border: 1px solid grey;
     border-radius: 6px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
 `
 
 const oscillateAnimation = keyframes`
@@ -94,7 +94,8 @@ export const FormButton = styled.button`
     padding: 16px 0;
     border: none;
     
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 32px;
@@ -123,7 +124,8 @@ export const Text = styled.span`
     text-align: center;
     margin-top: 24px;
     color: #fff;
-    font-size: 14px;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
 `
 
 
@@ -132,15 +134,15 @@ export const FormTextArea = styled.textarea`
     
     border: 1px solid grey;
     border-radius: 6px;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
 `
 
 export const FormError = styled.p`
-    color: red;
+    color: ${theme.colors.accent};
     margin-bottom: 0px;
     margin-top:10px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.medium};
 `
 
 
@@ -218,9 +220,9 @@ export const Column2 = styled.div`
 export const Paragraph = styled.p`
 
     margin-top: 26px;
-    font-size: 20px;
+    font-size: ${theme.fontSizes.small};
     line-height: 24px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxt}
     
 `;
@@ -258,6 +260,7 @@ padding-left: 20px;
 
 export const ListItem = styled.li`
 margin-bottom: 10px;
+font-size: ${theme.fontSizes.small};
 `
 
 export const UnorderedList = styled.ul`

@@ -6,27 +6,28 @@ import { Link as LinkS} from 'react-scroll';
 
 export const HeroH1 = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 90px;
+    font-size: ${theme.fontSizes.xlarge};
     text-align: left;
-    font-weight:400;
+    font-weight: ${theme.fontWeights.bold};
     max-width: 1000px;
     text-transform: uppercase;
+    font-family: 'Josefin sans';
 
     @media screen and (max-width: 1400px) {
-        font-size: 80px;
+        font-size: calc(0.8*${theme.fontSizes.xlarge});
     }
 
     @media screen and (max-width: 768px) {
-        font-size: 55px;
+      font-size: calc(0.65*${theme.fontSizes.xlarge});
     }
 
     @media screen and (max-width: 480px) {
-        font-size: 42px;
+      font-size: calc(0.45*${theme.fontSizes.xlarge});
     }
 `;
 
 export const HeroContainer = styled.div`
-    background-color: ${theme.colors.lighterBg};
+    background-color:${theme.colors.lighterBg};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,18 +161,17 @@ export const HeroContent = styled.div`
 export const HeroP = styled.p`
     margin-top: 24px;
     color: ${theme.colors.darkTxt};
-    font-size: 22px;
+    font-size: ${theme.fontSizes.small};
     text-align: left;
     max-width: 700px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
+    
 
-    @media screen and (max-width: 768px) {
-        font-size: 24px;
-    }
+    /* @media screen and (max-width: 768px) {
+        font-size: ${theme.fontWeights.normal};;
+    } */
 
-    @media screen and (max-width: 480px) {
-        font-size: 18px;
-    }
+
 `;
 
 export const HeroBtnWrapper = styled.div`
@@ -198,10 +198,12 @@ export const HeroBtnLink = styled(LinkS)`
   white-space: nowrap;
   padding: 10px 22px;
   
-  font-size: 20px;
+  font-size: ${theme.fontSizes.small};
+  font-weight: ${theme.fontWeights.normal};
+  /* text-transform:uppercase; */
+  /* font-family: 'Josefin sans'; */
   outline: none;
   border: ${theme.colors.darkTxt};;
-  /* border: 2px solid ${theme.colors.darkTxt}; */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;

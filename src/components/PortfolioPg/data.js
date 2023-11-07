@@ -6,6 +6,7 @@ import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
 import img4 from '../../images/Gallery/k channel.jpg';
+import img11 from '../../images/Gallery/IMG_2482.jpeg';
 
 
 
@@ -29,7 +30,7 @@ export const images = [
   {
     id: 3,
     src: img3,
-    title: 'Figure',
+    title: 'Modes of transcription factor repression',
     tags: ['Figure', 'Differentiation', 'Gene network', 'Neurogenesis'],
     description: 'Different types of repression that Hes genes exert on proneural genes. This influences the differentiation status of neural progenitor cells in the developing spinal cord.'
   },
@@ -64,6 +65,14 @@ export const images = [
     title: 'Lightbulb cell art',
     tags: ['Art', '3D', 'Cells'],
     description: 'Artistic 3D render of endogenous HES5::Venus reporter in neuroepithelia.'
+  },
+
+  {
+    id: 11,
+    src: img11,
+    title: 'Lysosome V-ATPase',
+    tags: ['3D'],
+    description: 'V-ATPase - a proton pump - on the surface of a lysosome, roughly to scale for a small vesicle.'
   },
   
 ];

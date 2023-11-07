@@ -30,8 +30,8 @@ const Services = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
-                    <Subtitle darkText={darkText}>Specialising in biology, we provide illustration services to visually represent and communicate your scientific research.</Subtitle>
-                    <Subtitle darkText={darkText}>Our aim is to promote scientific understanding and foster collaboration by transforming complex data into intuitive visual elements, providing accurate and insightful summaries.</Subtitle>
+                    <Subtitle darkText={darkText}>Specialising in biology, I provide illustration services to visually represent and communicate your scientific research.</Subtitle>
+                    <Subtitle darkText={darkText}>My aim is to promote scientific understanding and foster collaboration by transforming complex data into intuitive visual elements, providing accurate and insightful summaries.</Subtitle>
 
                     <BtnWrap>
                         <Button to='/contact' primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1: 0}>{buttonLabel}</Button>

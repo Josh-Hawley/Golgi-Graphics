@@ -33,11 +33,12 @@ export const ImageTextWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: 24px;
+    font-size: calc(1 * ${theme.fontSizes.medium});
+
     /* text-align: center; */
     /* margin-top: 50px; */
     /* margin-bottom: 120px; */
-    font-weight:800;
+    font-weight:700;
 
 
     /* @media screen and (max-width: 768px) {
@@ -52,9 +53,9 @@ export const Header = styled.h1`
 export const Paragraph = styled.p`
 max-width: 800px;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: calc(0.85*${theme.fontSizes.small});
     line-height: 24px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxtTxt}
 `
 
@@ -70,7 +71,8 @@ margin-right: 4px;
     margin-bottom: 2px;
     padding: 3px 5px;
 
-    font-size: 15px;
+    font-size: ${theme.fontSizes.xsmall};
+    font-weight: ${theme.fontWeights.medium};
     background: #e6e6e6;
     border-radius: 3px;
     color: ${theme.colors.darkTxt};
