@@ -13,7 +13,7 @@ const Card = ({ setSelected, content }) => {
           src={content.src}
           alt={content.title}
           layoutId={`card-${content.id}`}
-          loading="lazy"  // Add this line for lazy loading
+          loading="eager"  // Add this line for lazy loading
           whileHover={{
             scale: 1.025,
             transition: {
@@ -40,7 +40,7 @@ const Card = ({ setSelected, content }) => {
           controls
           width="100%"
           height="auto"
-          loading="lazy"  // Add this line for lazy loading
+          loading="eager"  // Add this line for lazy loading
           whileHover={{
             scale: 1.025,
             transition: {
