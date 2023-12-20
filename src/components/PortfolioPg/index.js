@@ -34,7 +34,7 @@ const Card = ({ setSelected, content }) => {
         />
       ) : (
         <motion.video
-          src={content.src}
+          src={`${content.src}#t=0.001`}
           alt={content.title}
           layoutId={`card-${content.id}`}
           controls
