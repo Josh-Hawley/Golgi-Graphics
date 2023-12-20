@@ -1,31 +1,13 @@
-// import React from 'react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header } from './PortfolioPgElements';
 import { images } from './data';
 import { motion } from 'framer-motion';
 
 const Card = ({ setSelected, content }) => {
   const isImage = content.type === 'image';
-  const cardRef = useRef(null);
-
-  const handleClick = () => {
-    setSelected(content);
-  };
-
-  const handleTouchStart = () => {
-    // Trigger the click event on touch for better mobile compatibility
-    if (cardRef.current) {
-      cardRef.current.click();
-    }
-  };
 
   return (
-    <div
-      style={{ display: 'inline-block', marginBottom: '20px' }}
-      onClick={handleClick}
-      onTouchStart={handleTouchStart}
-      ref={cardRef}
-    >
+    <div style={{ display: 'inline-block', marginBottom: '20px' }}>
       {isImage ? (
         <motion.img
           src={content.src}
@@ -40,6 +22,9 @@ const Card = ({ setSelected, content }) => {
           whileTap={{
             scale: 0.95,
           }}
+          onClick={() => {
+            setSelected(content);
+          }}
           style={{
             width: '100%',
             boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
@@ -47,28 +32,30 @@ const Card = ({ setSelected, content }) => {
           }}
         />
       ) : (
-        <div>
-          <motion.video
-            src={content.src}
-            layoutId={`card-${content.id}`}
-            controls
-            width="100%"
-            height="auto"
-            whileHover={{
-              scale: 1.025,
-              transition: {
-                duration: 0.2,
-              },
-            }}
-            whileTap={{
-              scale: 0.95,
-            }}
-            style={{
-              boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
-              cursor: 'pointer',
-            }}
-          />
-        </div>
+        <motion.video
+          src={content.src}
+          alt={content.title}
+          layoutId={`card-${content.id}`}
+          controls
+          width="100%"
+          height="auto"
+          whileHover={{
+            scale: 1.025,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          whileTap={{
+            scale: 0.95,
+          }}
+          onClick={() => {
+            setSelected(content);
+          }}
+          style={{
+            boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
+            cursor: 'pointer',
+          }}
+        />
       )}
 
       <TagsWrap>
