@@ -7,8 +7,8 @@ import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
 // import img4 from '../../images/Gallery/k channel.jpg';
 import img11 from '../../images/Gallery/IMG_2482.jpeg';
-import vid1 from '../../videos/vesicle rotating.mp4#t=0.001';
-import vid2 from '../../videos/potassium channel.mp4#t=0.001';
+import vid1 from '../../videos/vesicle rotating.mp4';
+import vid2 from '../../videos/potassium channel.mp4';
 
 
 

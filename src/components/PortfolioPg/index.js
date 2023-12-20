@@ -42,7 +42,7 @@ const Card = ({ setSelected, content }) => {
           width="100%"
           height="auto"
           loading="eager"  // Add this line for lazy loading
-          autoPlay={isPlaying}
+          
           loop
           whileHover={{
             scale: 1.025,
