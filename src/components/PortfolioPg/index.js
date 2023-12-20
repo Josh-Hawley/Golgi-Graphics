@@ -78,6 +78,11 @@ const PortfolioPg = ({ setSelected }) => {
           {images.map((content) => (
             <Card key={content.id} setSelected={setSelected} content={content} />
           ))}
+
+        <video>
+          <source src="../../videos/vesicle rotating.mp4#t=0.001" type="video/mp4" />
+        </video>
+          {/* import vid1 from '../../videos/vesicle rotating.mp4#t=0.001'; */}
         </GalleryWrap>
       </PageContainer>
     </>
