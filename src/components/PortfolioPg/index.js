@@ -38,9 +38,12 @@ const Card = ({ setSelected, content }) => {
           alt={content.title}
           layoutId={`card-${content.id}`}
           controls
+          preload="metadata"
           width="100%"
           height="auto"
           loading="eager"  // Add this line for lazy loading
+          autoPlay={isPlaying}
+          loop
           whileHover={{
             scale: 1.025,
             transition: {
