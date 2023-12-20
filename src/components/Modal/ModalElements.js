@@ -33,7 +33,7 @@ export const ImageTextWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: calc(1 * ${theme.fontSizes.medium});
+    font-size: calc(1.2 * ${theme.fontSizes.medium});
 
     /* text-align: center; */
     /* margin-top: 50px; */

@@ -6,7 +6,9 @@ export const theme = {
     superLightTxt: '#FFFFFF',
     lightTxt: '#86837D ',
     darkTxt: '#323130',
+    // darkTxt: '#1D1C1C',
     darkishTxt: '#636363',
+    // darkishTxt: '#1D1C1C',
     // accent: '#FF9E36',
     accent: '#FF7262',
     // accentLight: '#FFC689',
@@ -15,13 +17,12 @@ export const theme = {
     accentDark: '#421800',
   },
 
-  fonts: ['Roboto', 'sans-serif'],
   fontSizes: {
     xsmall: '0.8rem',
-    small: '1.0rem',
+    small: '1.1rem',
     medium: '1.2rem',
-    large: '3.7rem',
-    xlarge: '4.7rem',
+    large: '4.8rem',
+    xlarge: '6.5rem',
   },
 
   fontWeights: {

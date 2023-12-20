@@ -109,7 +109,8 @@ export const SidebarLink = styled(LinkS)`
    transition: 0.2s ease-in-out;
    text-decoration: none;
    color: ${theme.colors.lightTxt};
-   text-transform: uppercase;
+   font-family: 'Nav font';
+   /* text-transform: uppercase; */
    cursor: pointer; 
    
 
@@ -141,7 +142,8 @@ export const SidebarLinkNoScroll = styled(LinkR)`
    transition: 0.2s ease-in-out;
    text-decoration: none;
    color: ${theme.colors.lightTxt};
-   text-transform: uppercase;
+   font-family: 'Nav font';
+   /* text-transform: uppercase; */
    cursor: pointer; 
    
 
@@ -164,6 +166,7 @@ export const SidebarRoute = styled(LinkR)`
     color: ${theme.colors.superLightTxt};
     font-size: ${theme.fontSizes.small};
     font-weight: ${theme.fontWeights.normal};
+    font-family: 'Button font';
     outline: none;
     border: none;
     cursor: pointer;

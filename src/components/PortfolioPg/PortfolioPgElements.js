@@ -47,7 +47,6 @@ export const TagsContainer = styled.div`
 export const GalleryWrap = styled.div`
     columns: 3;
     column-gap: 20px; 
-    font-size: 30px;
 
     @media screen and (max-width: 1600px) {
         columns: 3;
@@ -68,11 +67,15 @@ export const Header = styled.h1`
     margin-top: 50px;
     margin-bottom: 80px;
     font-weight:400;
+    font-family: 'Title Font';
     /* text-transform: uppercase; */
 
 
     @media screen and (max-width: 768px) {
         font-size: calc(0.8 * ${theme.fontSizes.xlarge});
+    }
+    @media screen and (max-width: 480px) {
+        font-size: calc(0.6 * ${theme.fontSizes.xlarge});
     }
 
     /* @media screen and (max-width: 480px) {

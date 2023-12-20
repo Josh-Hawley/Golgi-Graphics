@@ -14,9 +14,7 @@ const Sidebar = ({isOpen, toggle}) => {
     
     </SideBarBlackOut>
     <SidebarContainer isOpen={isOpen}>
-      {/* <Icon onClick={toggle}> */}
-        {/* <CloseIcon  isOpen={isOpen} /> */}
-      {/* </Icon> */}
+ 
 
       <SidebarWrapper>
 

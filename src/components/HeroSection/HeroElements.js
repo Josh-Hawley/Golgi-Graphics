@@ -9,9 +9,9 @@ export const HeroH1 = styled.h1`
     font-size: ${theme.fontSizes.xlarge};
     text-align: left;
     font-weight: ${theme.fontWeights.bold};
-    max-width: 1000px;
-    text-transform: uppercase;
-    font-family: 'Josefin sans';
+    max-width: 1200px;
+    /* text-transform: uppercase; */
+    font-family: 'Title Font';
 
     @media screen and (max-width: 1400px) {
         font-size: calc(0.8*${theme.fontSizes.xlarge});
@@ -22,7 +22,7 @@ export const HeroH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px) {
-      font-size: calc(0.45*${theme.fontSizes.xlarge});
+      font-size: calc(0.55*${theme.fontSizes.xlarge});
     }
 `;
 
@@ -100,11 +100,11 @@ export const ImageVesicle = styled.img`
   @media screen and (max-width: 1300px) {
        width: 90px;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 1000px) {
     width: 70px;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 500px) {
     width: 55px;
   }
 
@@ -122,11 +122,11 @@ export const ImageGolgi = styled.img`
   @media screen and (max-width: 1300px) {
     width: 450px;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1000px) {
     width: 300px;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 500px) {
     width: 250px;
   }
 
@@ -197,7 +197,7 @@ export const HeroBtnLink = styled(LinkS)`
   
   white-space: nowrap;
   padding: 10px 22px;
-  
+  font-family: 'Button font';
   font-size: ${theme.fontSizes.small};
   font-weight: ${theme.fontWeights.normal};
   /* text-transform:uppercase; */

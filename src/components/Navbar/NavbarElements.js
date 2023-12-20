@@ -27,6 +27,7 @@ export const NavbarContainer = styled.div`
   padding: 0 10px;
   margin: 0;
 
+
   position: fixed;
   top: 0px;
   transition: 0.8s all ease;
@@ -60,8 +61,9 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-46%, 26%);
-    /* font-size: 2.3rem; */
+    transform: translate(-46%, 40%);
+    /* font-size: 2.3rem;
+    line-height: 2.5rem; */
    
     cursor: pointer;
     color: #fff;
@@ -88,29 +90,29 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: ${theme.colors.lightTxt};
+  font-family: 'Nav font';
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-decoration: none;
   padding: 0 1.5rem;
-  font-size: ${theme.fontSizes.xsmall};
+  font-size: ${theme.fontSizes.small};
   /* font-family: 'josefin sans'; */
+  /* font-family: 'Trap-Medium'; */
+  /* font-family: 'Title Font'; */
   height: 100%;
   /* width: 110px; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
   transition: ease-in-out 0.08s;
 
 
 
   &.active {
-    /* border-bottom: 3px solid ${theme.colors.accent};
-    color: ${theme.colors.accent}; */
-    /* border-bottom: 3px solid ${theme.colors.darkTxt}; */
+
     color:${theme.colors.darkTxt};
-    /* font-weight: 600; */
-    /* font-size: 17px; */
+
   }
 
   &:hover {
@@ -140,6 +142,7 @@ export const NavBtnLink = styled(LinkR)`
   color: ${theme.colors.superLightTxt};
   font-size: ${theme.fontSizes.small};
   font-weight: ${theme.fontWeights.normal};
+  font-family: 'Button font';
   outline: none;
   border: none;
   cursor: pointer;

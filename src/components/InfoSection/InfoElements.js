@@ -106,6 +106,7 @@ export const Heading = styled.h1`
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
     font-weight: 400;
+    font-family: 'Title Font';
     /* text-transform: uppercase; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
@@ -178,6 +179,7 @@ export const Button = styled(Link)`
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: ${theme.fontSizes.small};
     font-weight: ${theme.fontWeights.normal};
+    font-family: 'Button font';
     outline: none;
     border: none;
     cursor: pointer;

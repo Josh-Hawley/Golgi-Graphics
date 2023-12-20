@@ -113,6 +113,7 @@ export const Heading = styled.h1`
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
     font-weight: 400;
+    font-family: 'Title Font';
     /* text-transform: uppercase; */
     /* font-family: 'Josefin sans'; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
@@ -151,6 +152,7 @@ export const Button = styled(Link)`
     
     white-space: nowrap;
     background: ${theme.colors.accent};
+    font-family: 'Button font';
     /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
     padding: 10px 22px;
     color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};

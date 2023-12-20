@@ -85,6 +85,7 @@ export const Heading = styled.h1`
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
     font-weight: 400;
+    font-family: 'Title Font';
     /* background: red; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 

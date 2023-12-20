@@ -1,134 +1,217 @@
-import React from 'react'
+// import React from 'react';
+import React, { useRef } from 'react';
 import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header } from './PortfolioPgElements';
-// import ImageGallery from 'react-image-grid-gallery';
-import {images} from './data';
+import { images } from './data';
 import { motion } from 'framer-motion';
 
-const Card = ({
-  setSelected,
-  image
-}) => {
-  return <div style={{ display:'inline-block', marginBottom: '20px'}}>
-    <motion.img src={image.src}
-    layoutId={`card-${image.id}`}
-    // layout = 'positionAndSize'
-    whileHover={{
-      scale: 1.025,
-      transition: {
-        duration: 0.2
-      }
-    }}
+const Card = ({ setSelected, content }) => {
+  const isImage = content.type === 'image';
+  const cardRef = useRef(null);
 
-    whileTap={{
-      scale: 0.95
-    }}
+  const handleClick = () => {
+    setSelected(content);
+  };
 
-    
+  const handleTouchStart = () => {
+    // Trigger the click event on touch for better mobile compatibility
+    if (cardRef.current) {
+      cardRef.current.click();
+    }
+  };
 
-    onClick={() => {
-      setSelected(image);
-    }}
+  return (
+    <div
+      style={{ display: 'inline-block', marginBottom: '20px' }}
+      onClick={handleClick}
+      onTouchStart={handleTouchStart}
+      ref={cardRef}
+    >
+      {isImage ? (
+        <motion.img
+          src={content.src}
+          alt={content.title}
+          layoutId={`card-${content.id}`}
+          whileHover={{
+            scale: 1.025,
+            transition: {
+              duration: 0.2,
+            },
+          }}
+          whileTap={{
+            scale: 0.95,
+          }}
+          style={{
+            width: '100%',
+            boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
+            cursor: 'pointer',
+          }}
+        />
+      ) : (
+        <div>
+          <motion.video
+            src={content.src}
+            layoutId={`card-${content.id}`}
+            controls
+            width="100%"
+            height="auto"
+            whileHover={{
+              scale: 1.025,
+              transition: {
+                duration: 0.2,
+              },
+            }}
+            whileTap={{
+              scale: 0.95,
+            }}
+            style={{
+              boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
+              cursor: 'pointer',
+            }}
+          />
+        </div>
+      )}
 
-    
-    style={{
-      width: '100%',
-      boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
-      // margin: '5px 10px',
-      cursor: 'pointer'
-    }}/>
-
-    <TagsWrap>
-      {image.tags.map((tag) => {
-        return (
-          <TagsContainer key={tag} >{tag}</TagsContainer>
-        )
-      })}
-    </TagsWrap>
-  </div>
+      <TagsWrap>
+        {content.tags.map((tag) => (
+          <TagsContainer key={tag}>{tag}</TagsContainer>
+        ))}
+      </TagsWrap>
+    </div>
+  );
 };
 
-const PortfolioPg = ({setSelected}) => {
+const PortfolioPg = ({ setSelected }) => {
   return (
     <>
-    
-      {/* <PortfolioPgContainer>
-        
-        <PortfolioPgContent>
-          <PortfolioPgH1>Portfolio</PortfolioPgH1>
-        </PortfolioPgContent>
-        
-
-      </PortfolioPgContainer> */}
-
-
       <PageContainer>
         <Header>Portfolio</Header>
         <GalleryWrap>
-          {images.map(image => <Card key={image.id} setSelected={setSelected} image={image}/>)}
+          {images.map((content) => (
+            <Card key={content.id} setSelected={setSelected} content={content} />
+          ))}
+          
         </GalleryWrap>
       </PageContainer>
-      
-                
     </>
-  )
-}
+  );
+};
 
 export default PortfolioPg;
 
 
+// import React, { useState } from 'react';
+// import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header } from './PortfolioPgElements';
+// import { images } from './data';
+// import { motion } from 'framer-motion';
+
+// const VideoOverlay = ({ onClick }) => (
+//   <div
+//     style={{
+//       position: 'absolute',
+//       top: '50%',
+//       left: '50%',
+//       transform: 'translate(-50%, -50%)',
+//       cursor: 'pointer',
+//       zIndex: 2,
+//     }}
+//     onClick={onClick}
+//   >
+//     {/* You can customize the play button icon here */}
+//     <svg width="50" height="50" viewBox="0 0 50 50">
+//       <polygon points="0,0 50,25 0,50" fill="#fff" />
+//     </svg>
+//   </div>
+// );
+
+// const Card = ({ setSelected, content }) => {
+//   const isImage = content.type === 'image';
+//   const [isPlaying, setIsPlaying] = useState(false);
+
+//   const handleVideoClick = () => {
+//     setIsPlaying(!isPlaying);
+//     setSelected(content);
+//   };
+
+//   return (
+//     <div style={{ display: 'inline-block', marginBottom: '20px', position: 'relative' }}>
+//       {isImage ? (
+//         <motion.img
+//           src={content.src}
+//           alt={content.title}
+//           layoutId={`card-${content.id}`}
+//           whileHover={{
+//             scale: 1.025,
+//             transition: {
+//               duration: 0.2,
+//             },
+//           }}
+//           whileTap={{
+//             scale: 0.95,
+//           }}
+//           onClick={() => {
+//             setSelected(content);
+//           }}
+//           style={{
+//             width: '100%',
+//             boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
+//             cursor: 'pointer',
+//           }}
+//         />
+//       ) : (
+//         <>
+//           <motion.video
+//             src={content.src}
+//             alt={content.title}
+//             layoutId={`card-${content.id}`}
+//             autoPlay={isPlaying}
+//             loop
+//             muted
+//             whileHover={{
+//               scale: 1.025,
+//               transition: {
+//                 duration: 0.2,
+//               },
+//             }}
+//             onClick={handleVideoClick}
+//             style={{
+//               width: '100%',
+//               boxShadow: '0px 0px 30px rgba(0,0,0,0.2)',
+//               cursor: 'pointer',
+//             }}
+//           />
+
+//           {/* {!isPlaying && <VideoOverlay onClick={handleVideoClick} />} */}
+//           {<VideoOverlay onClick={handleVideoClick} />}
+//         </>
+//       )}
+
+//       <TagsWrap>
+//         {content.tags.map((tag) => (
+//           <TagsContainer key={tag}>{tag}</TagsContainer>
+//         ))}
+//       </TagsWrap>
+//     </div>
+//   );
+// };
+
+// const PortfolioPg = ({ setSelected }) => {
+//   return (
+//     <>
+//       <PageContainer>
+//         <Header>Portfolio</Header>
+//         <GalleryWrap>
+//           {images.map((content) => (
+//             <Card key={content.id} setSelected={setSelected} content={content} />
+//           ))}
+//         </GalleryWrap>
+//       </PageContainer>
+//     </>
+//   );
+// };
+
+// export default PortfolioPg;
 
 
 
 
 
-
-
-
-
-
-// import img1 from '../../images/Gallery/Hes_interactions.jpg';
-// import img2 from '../../images/Gallery/img3.png';
-// import img3 from '../../images/Gallery/Neurulation.jpg';
-// import img4 from '../../images/Gallery/Neuro and gliogenesis.jpg';
-// import img5 from '../../images/Gallery/flash talk.jpg';
-// import img6 from '../../images/Gallery/Ellis graphical abstract.jpg';
-
-
-// const images = [
-//   {
-//     src: img2,
-//     width: 3995,
-//     height: 1351,
-//     caption: 'Figure'
-//   },
-//   {
-//     src: img1,
-//     width: 3500,
-//     height: 4577,
-//     caption: 'Figure'
-//   },
-  
-//   {
-//     src: img3,
-//     width: 1500,
-//     height: 1495,
-//     caption: 'Figure'
-//   },
-//   {
-//     src: img4,
-//     width: 1214,
-//     height: 1622,
-//     caption: 'Figure'
-//   },
-//   {
-//     src: img5,
-//     width: 1296,
-//     height: 1336,
-//     caption: 'Flash talk'
-//   },
-//   {
-//     src: img6,
-//     caption: 'Graphical abstract'
-//   },
-
-// ];

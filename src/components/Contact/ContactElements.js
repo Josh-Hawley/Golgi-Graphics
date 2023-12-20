@@ -51,6 +51,7 @@ export const Header = styled.h1`
     font-size: 35px;
     font-weight: ${theme.fontWeights.bold};
     text-align: left;
+    font-family: 'Title Font';
 `
 
 export const FormLabel = styled.label`

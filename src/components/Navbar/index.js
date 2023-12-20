@@ -44,8 +44,8 @@ const Navbar = ({ toggle, isOpen }) => {
                 
                 
                 <MobileIcon onClick={toggle} isOpen={isOpen}>
-                    <FaBars />
-                    {/* <FaChevronCircleRight/> */}
+                    <FaBars style={{fontSize: '1.7rem'}}/>
+               
                 </MobileIcon>
 
                 <NavMenu>
