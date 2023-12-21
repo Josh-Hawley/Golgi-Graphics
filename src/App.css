@@ -5,17 +5,17 @@
   font-weight: 400;  
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Title font';
   src: local('Synonym'),
   url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
   font-weight: 490;
-}
+} */
 
 @font-face {
   font-family: 'Title font';
-  src: local('Bespoke Sans Variable'),
-  url('../public/fonts/Bespoke Sans/BespokeSans-Variable.woff2') format('woff2');  
+  src: local('Noyh'),
+  url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
   font-weight: 490;
 }
 

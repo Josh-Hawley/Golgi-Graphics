@@ -33,8 +33,9 @@ export const ImageTextWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-size: calc(1.4 * ${theme.fontSizes.medium});
-    font-weight: 600;
+    font-size: calc(1.7 * ${theme.fontSizes.medium});
+    /* font-weight: 600; */
+    font-family: 'Title Font';
 
     /* text-align: center; */
     /* margin-top: 50px; */
