@@ -75,7 +75,7 @@ export const Header = styled.h1`
         font-size: calc(0.8 * ${theme.fontSizes.xlarge});
     }
     @media screen and (max-width: 480px) {
-        font-size: calc(0.6 * ${theme.fontSizes.xlarge});
+        font-size: calc(0.5 * ${theme.fontSizes.xlarge});
     }
 
     /* @media screen and (max-width: 480px) {
