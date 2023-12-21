@@ -89,6 +89,7 @@ function Modal({ selected, setSelected }) {
               style={{ width: '100%', height: 'auto', objectFit: 'cover', zIndex: '3000', boxShadow: '0px 0px 30px rgba(0,0,0,0.2)' }}
               layoutId={`card-${selected.id}`}
               transition={{ type: 'spring', stiffness: 300, damping: 35 }}
+              
             />
           ) : (
             <motion.video

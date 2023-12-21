@@ -39,7 +39,7 @@ const NavbarNoLinks = ({ toggle }) => {
                 
                 
                 <MobileIcon onClick={toggle}>
-                    <FaBars />
+                <FaBars style={{fontSize: '1.7rem'}}/>
                 </MobileIcon>
 
                 <NavMenu>
