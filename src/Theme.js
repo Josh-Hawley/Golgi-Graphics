@@ -19,7 +19,7 @@ export const theme = {
 
   fontSizes: {
     xsmall: '0.8rem',
-    small: '1.1rem',
+    small: '1rem',
     medium: '1.2rem',
     large: '4.8rem',
     xlarge: '6.5rem',

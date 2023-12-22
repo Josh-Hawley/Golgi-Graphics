@@ -272,8 +272,8 @@ export const IconTitle = styled.h2`
     z-index: 10;
     text-align: center;
 
-    font-weight: 400;
-    font-size: ${theme.fontSizes.medium};
+    /* font-weight: 400; */
+    font-size: ${theme.fontSizes.normal};
 
     border-radius: 10px;
     flex-grow: 1;
