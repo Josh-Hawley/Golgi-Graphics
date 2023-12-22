@@ -5,6 +5,34 @@
   font-weight: 400;  
 }
 
+@font-face {
+  font-family: 'Novaletra';
+  src: local('FSP DEMO - Novaletra Sans CF'),
+  url('../public/fonts/Novaletra Sans CF/Fontspring-DEMO-novaletrasanscf-regular-BF6417bc63d7f20.woff2') format('woff2');
+  /* font-weight: 400;   */
+}
+
+@font-face {
+  font-family: 'Noyh';
+  src: local('Noyh'),
+  url('../public/fonts/Nyoh/Noyh-Regular.woff2') format('woff2');
+  /* font-weight: 400;   */
+}
+
+@font-face {
+  font-family: 'Greycliff';
+  src: local('Greycliff'),
+  url('../public/fonts/Greycliff CF/GreycliffCF-Regular.woff2') format('woff2');
+  /* font-weight: 400;   */
+}
+
+@font-face {
+  font-family: 'Bespoke Sans';
+  src: local('Bespoke Sans'),
+  url('../public/fonts/Bespoke Sans/BespokeSans-Regular.woff2') format('woff2');
+  /* font-weight: 400;   */
+}
+
 /* @font-face {
   font-family: 'Title font';
   src: local('Synonym'),
@@ -16,8 +44,15 @@
   font-family: 'Title font';
   src: local('Noyh'),
   url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
-  font-weight: 490;
+  /* font-weight: 490; */
 }
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('Greycliff'),
+  url('../public/fonts/Greycliff CF/GreycliffCF-Heavy.woff2') format('woff2');  
+
+} */
 
 @font-face {
   font-family: 'Button font';
@@ -25,6 +60,19 @@
   url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
   font-weight: 500;
 }
+/* @font-face {
+  font-family: 'Button font';
+  src: local('Noyh'),
+  url('../public/fonts/Nyoh/Noyh-Medium.woff2') format('woff2');  
+} */
+
+/* @font-face {
+  font-family: 'Button font';
+  src: local('FSP DEMO - Novaletra Sans CF'),
+  url('../public/fonts/Novaletra Sans CF/Fontspring-DEMO-novaletrasanscf-regular-BF6417bc63d7f20.woff2') format('woff2');
+} */
+
+
 
 @font-face {
   font-family: 'Nav font';
@@ -41,5 +89,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Synonym Regular';
+  /* font-family: 'Novaletra'; */
+  /* font-family: 'Noyh'; */
+  /* font-family: 'Greycliff'; */
+  /* font-family: 'Bespoke Sans'; */
 }
 

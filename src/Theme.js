@@ -7,8 +7,8 @@ export const theme = {
     lightTxt: '#86837D ',
     darkTxt: '#323130',
     // darkTxt: '#1D1C1C',
-    darkishTxt: '#636363',
-    // darkishTxt: '#1D1C1C',
+    // darkishTxt: '#636363',
+    darkishTxt: '#1D1C1C',
     // accent: '#FF9E36',
     accent: '#FF7262',
     // accentLight: '#FFC689',
@@ -22,7 +22,7 @@ export const theme = {
     small: '1.1rem',
     medium: '1.2rem',
     large: '4.8rem',
-    xlarge: '7.9rem',
+    xlarge: '6.5rem',
   },
 
   fontWeights: {

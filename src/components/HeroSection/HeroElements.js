@@ -160,7 +160,7 @@ export const HeroContent = styled.div`
 
 export const HeroP = styled.p`
     margin-top: 24px;
-    color: ${theme.colors.darkTxt};
+    color: ${theme.colors.darkishTxt};
     font-size: ${theme.fontSizes.small};
     text-align: left;
     max-width: 700px;
