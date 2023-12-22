@@ -36,7 +36,7 @@ export const Header = styled.h1`
     /* font-size: calc(1.7 * ${theme.fontSizes.medium}); */
     /* font-weight: 600; */
     font-family: 'Title Font';
-    font-size: 4rem;
+    font-size: 2.2rem;
 
     /* text-align: center; */
     /* margin-top: 50px; */
