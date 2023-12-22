@@ -123,7 +123,7 @@ export const SocialIconLink = styled.a`
 `
 
 export const FooterLogoImage = styled.img`
-  height: 70px;
+  height: 55px;
 ` 
 
 

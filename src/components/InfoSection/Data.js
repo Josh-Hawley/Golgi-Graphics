@@ -8,7 +8,7 @@ export const homeObjOne = {
     description: 'Graphical abstracts, paper figures, resusable icons for presentations, posters...',
     buttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/svg1.svg').default, // .default was important here, doesn't load image without 
+    // img: require('../../images/svg1.svg').default, // .default was important here, doesn't load image without 
     alt: 'svg1',
     dark: true,
     primary: true,
@@ -25,7 +25,7 @@ export const homeObjTwo = {
     description: 'Explore a portfolio of past work and get inspiration for your next scientific illustration project.',
     buttonLabel: 'Go to portfolio',
     imgStart: true,
-    img: require('../../images/Gallery/Neurulation.jpg'), // .default was important here, doesn't load image without 
+    // img: require('../../images/Gallery/Neurulation.jpg'), // .default was important here, doesn't load image without 
     alt: 'svg2',
     dark: true,
     primary: true,
