@@ -34,23 +34,10 @@ export const ImageTextWrap = styled.div`
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
     /* font-size: calc(1.7 * ${theme.fontSizes.medium}); */
-    /* font-weight: 600; */
     font-family: 'Title Font';
-    font-size: 2.2rem;
+    font-size: 40px;
 
-    /* text-align: center; */
-    /* margin-top: 50px; */
-    /* margin-bottom: 120px; */
-    /* font-weight:700; */
-
-
-    /* @media screen and (max-width: 768px) {
-        font-size: 70px;
-    }
-
-    @media screen and (max-width: 480px) {
-        font-size: 60px;
-    } */
+  
 `;
 
 export const Paragraph = styled.p`
