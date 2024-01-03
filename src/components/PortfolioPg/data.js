@@ -1,12 +1,13 @@
 import img3 from '../../images/Gallery/Hes_interactions.jpg';
 import img2 from '../../images/Gallery/img3.png';
 import img1 from '../../images/Gallery/Neurulation.jpg';
-
 import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
-// import img4 from '../../images/Gallery/k channel.jpg';
 import img11 from '../../images/Gallery/IMG_2482.jpeg';
+import img13 from '../../images/Gallery/grant figure.jpg';
+import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
+
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/potassium channel.mp4';
 
@@ -65,14 +66,7 @@ export const images = [
     description: 'The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
   },
 
-  {
-    id: 9,
-    type: 'image',
-    src: img9,
-    title: 'Mosaic membrane art',
-    tags: ['Art', '3D', 'Cells'],
-    description: 'Artistic 3D render of mosaically labelled neuroepithlial cells where bright cells represent a membrane-bound fluorescent protein.'
-  },
+
 
   {
     id: 10,
@@ -84,6 +78,33 @@ export const images = [
   },
 
   {
+    id: 9,
+    type: 'image',
+    src: img9,
+    title: 'Mosaic membrane art',
+    tags: ['Art', '3D', 'Cells'],
+    description: 'Artistic 3D render of mosaically labelled neuroepithlial cells where bright cells represent a membrane-bound fluorescent protein.'
+  },
+
+  {
+    id: 13,
+    type: 'image',
+    src: img13,
+    title: 'Grant figure',
+    tags: ['Grant figure'],
+    description: 'Work done for the graphical abstract of a grant application.'
+  },
+
+  {
+    id: 14,
+    type: 'image',
+    src: img14,
+    title: 'Graphical abstract',
+    tags: ['Graphical abstract'],
+    description: 'Graphical abstract for a paper soon to be published.'
+  },
+
+  {
     id: 11,
     type: 'image',
     src: img11,
@@ -91,6 +112,8 @@ export const images = [
     tags: ['3D'],
     description: 'V-ATPase - a proton pump - on the surface of a lysosome, roughly to scale for a small vesicle.'
   },
+
+  
 
   
   

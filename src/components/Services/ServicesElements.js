@@ -127,9 +127,7 @@ export const Heading = styled.h1`
       font-size: calc(0.65*${theme.fontSizes.large});
     }
 
-    @media screen and (max-width: 480px) {
-      font-size: calc(0.65*${theme.fontSizes.large});
-    }
+    
 `;
 
 export const Subtitle = styled.p`
