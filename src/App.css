@@ -47,6 +47,13 @@
   /* font-weight: 400;   */
 }
 
+@font-face {
+  font-family: 'Scala Sans';
+  src: local('Scala Sans LF'),
+  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
+  /* font-weight: 400;   */
+}
+
 /* @font-face {
   font-family: 'Title font';
   src: local('Synonym'),
@@ -60,6 +67,12 @@
   url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
   /* font-weight: 490; */
 }
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('ScalaSans Black'),
+  url('../public/fonts/Scala Sans/ScalaSansBlack.woff') format('woff');  
+} */
 
 /* @font-face {
   font-family: 'Title font';
@@ -103,6 +116,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Synonym Regular';
+  /* font-family: 'Scala Sans'; */
   /* font-family: 'Novaletra'; */
   /* font-family: 'Novaletra Light'; */
   /* font-family: 'Noyh'; */

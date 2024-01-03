@@ -22,7 +22,7 @@ export const HeroH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px) {
-      font-size: calc(0.4*${theme.fontSizes.xlarge});
+      font-size: calc(0.5*${theme.fontSizes.xlarge});
     }
 `;
 

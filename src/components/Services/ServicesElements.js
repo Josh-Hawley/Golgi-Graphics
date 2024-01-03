@@ -118,8 +118,17 @@ export const Heading = styled.h1`
     /* font-family: 'Josefin sans'; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
-    @media screen and (max-width: 480px) {
+
+    @media screen and (max-width: 1400px) {
         font-size: calc(0.8*${theme.fontSizes.large});
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: calc(0.65*${theme.fontSizes.large});
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: calc(0.65*${theme.fontSizes.large});
     }
 `;
 
