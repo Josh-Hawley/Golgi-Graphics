@@ -100,9 +100,9 @@ export const TextWrapper = styled.div`
 export const TopLine = styled.p`
     /* color: ${theme.colors.accentLight}; */
     color: ${theme.colors.lightTxt};
-    font-size: ${theme.fontSizes.xsmall};
+    font-size: 16px;
     font-weight: ${theme.fontWeights.medium};
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 
     margin-bottom: 16px;

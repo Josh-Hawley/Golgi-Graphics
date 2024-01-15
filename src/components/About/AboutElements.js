@@ -74,7 +74,7 @@ export const TopLine = styled.p`
     /* color: #ffd166; */
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 16px;
 `;

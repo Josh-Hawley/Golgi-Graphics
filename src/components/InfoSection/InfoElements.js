@@ -95,7 +95,7 @@ export const TopLine = styled.p`
     /* color: #ffa8b5; */
     font-size: 16px;
     font-weight: 300;
-    letter-spacing: 1.2px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 16px;
 `;

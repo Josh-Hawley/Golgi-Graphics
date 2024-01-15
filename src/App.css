@@ -24,6 +24,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Joanna Sans Nova';
+  src: local('Joanna Sans Nova Light'),
+  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaLight.woff2') format('woff2');
+  font-weight: lighter;
+  font-style: normal;
+}
 
 
 
@@ -41,13 +48,13 @@
 
 @font-face {
   font-family: 'Button font';
-  src: local('Joanna Sans'),
-  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
+  src: local('Joanna Sans Nova Book'),
+  /* url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');   */
 }
 
 @font-face {
   font-family: 'Nav Font';
-  src: local('Joanna Sans'),
+  src: local('Joanna Sans Nova Regular'),
   url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
 
 }
