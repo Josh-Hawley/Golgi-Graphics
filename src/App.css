@@ -40,16 +40,21 @@
   url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Medium.woff2') format('woff2');
 } */
 
-@font-face {
+/* @font-face {
   font-family: 'Title font';
   src: local('Joanna Sans Nova Bold'),
   url('../public/fonts/Joanna Sans Nova/JoannaSansNovaBold.woff2') format('woff2');
+} */
+@font-face {
+  font-family: 'Title font';
+  src: local('Joanna Sans Nova Bold'),
+  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaBold.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Button font';
   src: local('Joanna Sans Nova Book'),
-  /* url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');   */
+  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
 }
 
 @font-face {
