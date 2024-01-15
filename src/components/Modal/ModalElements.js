@@ -35,7 +35,7 @@ export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
     /* font-size: calc(1.7 * ${theme.fontSizes.medium}); */
     font-family: 'Title Font';
-    font-size: 40px;
+    font-size: 30px;
 
   
 `;
@@ -43,7 +43,7 @@ export const Header = styled.h1`
 export const Paragraph = styled.p`
 max-width: 800px;
     margin-top: 20px;
-    font-size: calc(0.85*${theme.fontSizes.small});
+    font-size: calc(0.85*${theme.fontSizes.normal});
     line-height: 24px;
     font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxtTxt}
@@ -53,6 +53,7 @@ export const TagsWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin: 0px 0px;
+    /* line-height: 1.5; */
 
 `
 export const TagsContainer = styled.div`
@@ -60,6 +61,8 @@ margin-right: 4px;
     margin-top: 10px;
     margin-bottom: 2px;
     padding: 3px 5px;
+    line-height: 1;
+    padding-bottom: 7px;
 
     font-size: ${theme.fontSizes.xsmall};
     font-weight: ${theme.fontWeights.medium};

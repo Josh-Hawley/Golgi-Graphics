@@ -21,8 +21,8 @@ export const theme = {
     xsmall: '0.8rem',
     small: '1rem',
     medium: '1.2rem',
-    large: '4.8rem',
-    xlarge: '6.5rem',
+    large: '3.4rem',
+    xlarge: '5rem',
   },
 
   fontWeights: {

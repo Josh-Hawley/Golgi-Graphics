@@ -192,6 +192,8 @@ export const Button = styled(Link)`
     align-items: center;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    line-height: 1;
+  padding-bottom: 14px;
 
     &:hover {
         transition: all 0.2s ease-in-out;

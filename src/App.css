@@ -1,113 +1,56 @@
+
+
 @font-face {
-  font-family: 'Synonym Regular';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');
-  font-weight: 440;
+  font-family: 'Joanna Sans Nova';
+  src: local('Joanna Sans Nova Regular'),
+  url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Novaletra';
-  src: local('FSP DEMO - Novaletra Sans CF'),
-  url('../public/fonts/Novaletra Sans CF/Fontspring-DEMO-novaletrasanscf-regular-BF6417bc63d7f20.woff2') format('woff2');
-  /* font-weight: 400;   */
+  font-family: 'Joanna Sans Nova';
+  src: local('Joanna Sans Nova Italic'),
+  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Novaletra Light';
-  src: local('FSP DEMO - Novaletra Sans CF'),
-  url('../public/fonts/Novaletra Sans CF/Fontspring-DEMO-novaletrasanscf-light-BF6417bc63357ae.woff2') format('woff2');
-  /* font-weight: 400;   */
+  font-family: 'Joanna Sans Nova';
+  src: local('Joanna Sans Nova Bold'),
+  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaMedium.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'Artifex';
-  src: local('ArtifexCF-Regular'),
-  url('../public/fonts/Artifex CF/ArtifexCF-Light.woff2') format('woff2');
 
-}
 
-@font-face {
-  font-family: 'Noyh';
-  src: local('Noyh'),
-  url('../public/fonts/Nyoh/Noyh-Regular.woff2') format('woff2');
-  /* font-weight: 400;   */
-}
-
-@font-face {
-  font-family: 'Greycliff';
-  src: local('Greycliff'),
-  url('../public/fonts/Greycliff CF/GreycliffCF-Regular.woff2') format('woff2');
-  /* font-weight: 400;   */
-}
-
-@font-face {
-  font-family: 'Bespoke Sans';
-  src: local('Bespoke Sans'),
-  url('../public/fonts/Bespoke Sans/BespokeSans-Regular.woff2') format('woff2');
-  /* font-weight: 400;   */
-}
-
-@font-face {
-  font-family: 'Scala Sans';
-  src: local('Scala Sans LF'),
-  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
-  /* font-weight: 400;   */
-}
 
 /* @font-face {
   font-family: 'Title font';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
-  font-weight: 490;
+  src: local('Joanna Sans Nova Medium'),
+  url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Medium.woff2') format('woff2');
 } */
 
 @font-face {
   font-family: 'Title font';
-  src: local('Noyh'),
-  url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
-  /* font-weight: 490; */
+  src: local('Joanna Sans Nova Bold'),
+  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaBold.woff2') format('woff2');
 }
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('ScalaSans Black'),
-  url('../public/fonts/Scala Sans/ScalaSansBlack.woff') format('woff');  
-} */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Greycliff'),
-  url('../public/fonts/Greycliff CF/GreycliffCF-Heavy.woff2') format('woff2');  
-
-} */
 
 @font-face {
   font-family: 'Button font';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
-  font-weight: 500;
+  src: local('Joanna Sans'),
+  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
 }
-/* @font-face {
-  font-family: 'Button font';
-  src: local('Noyh'),
-  url('../public/fonts/Nyoh/Noyh-Medium.woff2') format('woff2');  
-} */
-
-/* @font-face {
-  font-family: 'Button font';
-  src: local('FSP DEMO - Novaletra Sans CF'),
-  url('../public/fonts/Novaletra Sans CF/Fontspring-DEMO-novaletrasanscf-regular-BF6417bc63d7f20.woff2') format('woff2');
-} */
-
-
 
 @font-face {
-  font-family: 'Nav font';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
-  font-weight: 450;
-}
+  font-family: 'Nav Font';
+  src: local('Joanna Sans'),
+  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
 
+}
 
 
 *{
@@ -115,13 +58,132 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
-  font-family: 'Synonym Regular';
-  /* font-family: 'Scala Sans'; */
-  /* font-family: 'Novaletra'; */
-  /* font-family: 'Novaletra Light'; */
-  /* font-family: 'Noyh'; */
-  /* font-family: 'Greycliff'; */
-  /* font-family: 'Bespoke Sans'; */
-  /* font-family: 'Artifex'; */
+  font-family: 'Joanna Sans Nova';
 }
+
+/* @font-face {
+  font-family: 'Synonym Regular';
+  src: local('Synonym'),
+  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');
+  font-weight: 440;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato Regular'),
+  url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2');
+
+}
+
+
+@font-face {
+  font-family: 'Bespoke Sans';
+  src: local('Bespoke Sans'),
+  url('../public/fonts/Bespoke Sans/BespokeSans-Regular.woff2') format('woff2');
+
+}
+
+@font-face {
+  font-family: 'Scala Sans';
+  src: local('Scala Sans LF'),
+  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
+
+}
+
+
+
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek Light'),
+  url('../public/fonts/Seravek/Seravek-Light.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Title font';
+  src: local('Noyh'),
+  url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
+
+} */
+
+
+/* 
+@font-face {
+  font-family: 'Title font';
+  src: local('Granite'),
+  url('../public/fonts/NCT Granite/Granite-Regular.woff2') format('woff2');  
+} */
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('Granite'),
+  url('../public/fonts/Seravek/Old seravek/seravek-bold.woff2') format('woff2');  
+} */
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('Lato Bold'),
+  url('../public/fonts/Lato/Lato-Bold.woff2') format('woff2');
+
+} */
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('Scala Sans Bold'),
+  url('../public/fonts/Scala Sans/ScalaSans-Bold.woff2') format('woff2');
+} */
+
+/* @font-face {
+  font-family: 'Title font';
+  src: local('Scala Sans Bold'),
+  url('../public/fonts/Scala Sans/ScalaSans-Bold.woff2') format('woff2');
+
+} */
+
+
+
+/* @font-face {
+  font-family: 'Button font';
+  src: local('Synonym'),
+  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
+  font-weight: 500;
+} */
+
+
+/* @font-face {
+  font-family: 'Button font';
+  src: local('Seravek'),
+  url('../public/fonts/Seravek/Old seravek/seravek.woff2') format('woff2');  
+
+} */
+
+/* @font-face {
+  font-family: 'Button font';
+  src: local('Scala Sans LF'),
+  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
+
+} */
+
+/* @font-face {
+  font-family: 'Button font';
+  src: local('Lato Regular'),
+  url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2');
+
+} */
+
+
+
+/* @font-face {
+  font-family: 'Nav font';
+  src: local('Synonym'),
+  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
+  font-weight: 450;
+} */
+
+/* @font-face {
+  font-family: 'Nav Font';
+  src: local('Seravek'),
+  url('../public/fonts/Seravek/Old seravek/seravek.woff2') format('woff2');  
+
+} */
 

@@ -172,6 +172,8 @@ export const SidebarRoute = styled(LinkR)`
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
+    line-height: 1;
+  padding-bottom: 14px;
     /* box-shadow:  20px 10px 40px rgba(0, 0, 0, 0.25); */
     
 

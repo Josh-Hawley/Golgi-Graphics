@@ -92,6 +92,7 @@ export const TextWrapper = styled.div`
     padding-top: 0;
     padding-bottom: 60px;
     padding-top: 60px;
+    
 
 
 `;
@@ -174,6 +175,8 @@ export const Button = styled(Link)`
     align-items: center;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    line-height: 1;
+    padding-bottom: 14px;
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -279,15 +282,17 @@ export const IconTitle = styled.h2`
     z-index: 10;
     text-align: center;
 
-    /* font-weight: 400; */
-    font-size: ${theme.fontSizes.normal};
+    font-weight: 400;
+    /* letter-spacing: 1.2px; */
+    /* text-transform: uppercase; */
+    font-size: ${theme.fontSizes.small};
 
     border-radius: 10px;
     flex-grow: 1;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         font-size: 24px;
-    }
+    } */
 
 
 `

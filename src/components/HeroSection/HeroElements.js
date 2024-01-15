@@ -195,7 +195,7 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 export const HeroBtnLink = styled(LinkS)`
   border-radius: 50px;
   
-  white-space: nowrap;
+  /* white-space: nowrap; */
   padding: 10px 22px;
   font-family: 'Button font';
   font-size: ${theme.fontSizes.small};
@@ -209,6 +209,11 @@ export const HeroBtnLink = styled(LinkS)`
   text-decoration: none;
   background: ${theme.colors.accent};
   color: ${theme.colors.superLightTxt};
+  /* display: flex;
+  align-items: center; */
+  line-height: 1;
+  padding-bottom: 14px;
+  /* vertical-align: baseline; */
 
   &:hover{
     transition: 0.2 ease-in-out;

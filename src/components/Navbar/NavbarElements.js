@@ -98,6 +98,8 @@ export const NavLinks = styled(LinkS)`
   text-decoration: none;
   padding: 0 1.5rem;
   font-size: ${theme.fontSizes.small};
+  /* line-height: 1; */
+  padding-bottom: 2px;
   /* font-family: 'josefin sans'; */
   /* font-family: 'Trap-Medium'; */
   /* font-family: 'Title Font'; */
@@ -135,7 +137,7 @@ export const NavBtn = styled.nav`
 `
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 20px;
+  border-radius: 50px;
   background: ${theme.colors.accent};
   white-space: nowrap;
   padding: 8px 18px;
@@ -148,6 +150,8 @@ export const NavBtnLink = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  line-height: 1;
+  padding-bottom: 12px;
 
   &:hover{
     transition: 0.2 ease-in-out;
