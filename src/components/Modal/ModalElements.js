@@ -35,6 +35,7 @@ export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
     font-weight: ${theme.fontWeights.bold};
     font-size: 30px;
+    font-family: 'seravek-web';
 
   
 `;
@@ -61,7 +62,7 @@ export const TagsContainer = styled.div`
     margin-bottom: 2px;
     padding: 3px 5px;
     line-height: 1;
-    /* padding-bottom: 7px; */
+    padding-bottom: 7px;
 
     font-size: ${theme.fontSizes.xsmall};
     font-weight: ${theme.fontWeights.medium};
