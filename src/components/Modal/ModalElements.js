@@ -33,8 +33,7 @@ export const ImageTextWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    /* font-size: calc(1.7 * ${theme.fontSizes.medium}); */
-    font-family: 'Title Font';
+    font-weight: ${theme.fontWeights.bold};
     font-size: 30px;
 
   
@@ -57,16 +56,17 @@ export const TagsWrap = styled.div`
 
 `
 export const TagsContainer = styled.div`
-margin-right: 4px;
+    margin-right: 4px;
     margin-top: 10px;
     margin-bottom: 2px;
     padding: 3px 5px;
     line-height: 1;
-    padding-bottom: 7px;
+    /* padding-bottom: 7px; */
 
     font-size: ${theme.fontSizes.xsmall};
     font-weight: ${theme.fontWeights.medium};
     background: #e6e6e6;
     border-radius: 3px;
     color: ${theme.colors.darkTxt};
+    
 `

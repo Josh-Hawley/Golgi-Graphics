@@ -8,7 +8,8 @@ export const theme = {
     darkTxt: '#323130',
     // darkTxt: '#1D1C1C',
     // darkishTxt: '#636363',
-    darkishTxt: '#1D1C1C',
+    // darkishTxt: '#1D1C1C',
+    darkishTxt: '#000000',
     // accent: '#FF9E36',
     accent: '#FF7262',
     // accentLight: '#FFC689',
@@ -21,14 +22,19 @@ export const theme = {
     xsmall: '0.8rem',
     small: '1rem',
     medium: '1.2rem',
-    large: '3.4rem',
+    large: '3rem',
     xlarge: '5rem',
   },
 
   fontWeights: {
-    light: 100,
-    normal: 200,
-    medium: 300,
-    bold: 500,
+    light: 300,
+    normal: 300,
+    medium: 400,
+    button: 500,
+    bold: 600,
+  },
+
+  padding: {
+    button: '12px',
   },
 };

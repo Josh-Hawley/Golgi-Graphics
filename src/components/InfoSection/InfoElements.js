@@ -94,7 +94,7 @@ export const TopLine = styled.p`
     color: ${theme.colors.lightTxt};
     /* color: #ffa8b5; */
     font-size: 16px;
-    font-weight: 300;
+    font-weight: ${theme.fontWeights.normal};
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 16px;
@@ -105,8 +105,9 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: 400;
-    font-family: 'Title Font';
+    font-weight: ${theme.fontWeights.bold};
+    font-family: 'seravek-web';
+    /* font-family: 'Title Font'; */
     /* text-transform: uppercase; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 
@@ -182,8 +183,8 @@ export const Button = styled(Link)`
     color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: ${theme.fontSizes.small};
-    font-weight: ${theme.fontWeights.normal};
-    font-family: 'Button font';
+    font-weight: ${theme.fontWeights.button};
+    /* font-family: 'Button font'; */
     outline: none;
     border: none;
     cursor: pointer;
@@ -193,7 +194,8 @@ export const Button = styled(Link)`
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     line-height: 1;
-  padding-bottom: 14px;
+    padding-bottom: ${theme.padding.button};
+  /* padding-bottom: 14px; */
 
     &:hover {
         transition: all 0.2s ease-in-out;

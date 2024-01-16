@@ -51,7 +51,8 @@ export const Header = styled.h1`
     font-size: 35px;
     font-weight: ${theme.fontWeights.bold};
     text-align: left;
-    font-family: 'Title Font';
+    /* font-family: 'Title Font'; */
+    font-family: 'seravek-web';
 `
 
 export const FormLabel = styled.label`
@@ -96,7 +97,7 @@ export const FormButton = styled.button`
     border: none;
     
     font-size: ${theme.fontSizes.small};
-    font-weight: ${theme.fontWeights.normal};
+    font-weight: ${theme.fontWeights.bold};
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: 32px;

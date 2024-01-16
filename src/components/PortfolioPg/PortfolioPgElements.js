@@ -37,7 +37,7 @@ export const TagsContainer = styled.div`
     margin-bottom: 2px;
     padding: 3px 5px;
     line-height: 1;
-    padding-bottom: 7px;
+    /* padding-bottom: 7px; */
 
     font-size: ${theme.fontSizes.xsmall};
     font-weight: ${theme.fontWeights.medium};
@@ -68,8 +68,8 @@ export const Header = styled.h1`
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-weight:400;
-    font-family: 'Title Font';
+    font-weight: ${theme.fontWeights.bold};
+    /* font-family: 'Title Font'; */
     /* text-transform: uppercase; */
 
 

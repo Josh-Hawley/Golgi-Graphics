@@ -10,8 +10,9 @@ export const HeroH1 = styled.h1`
     text-align: left;
     font-weight: ${theme.fontWeights.bold};
     max-width: 1200px;
+    font-family: 'seravek-web';
     /* text-transform: uppercase; */
-    font-family: 'Title Font';
+    /* font-family: 'Title Font'; */
 
     @media screen and (max-width: 1400px) {
         font-size: calc(0.8*${theme.fontSizes.xlarge});
@@ -197,11 +198,11 @@ export const HeroBtnLink = styled(LinkS)`
   
   /* white-space: nowrap; */
   padding: 10px 22px;
-  font-family: 'Button font';
+  /* font-family: 'Button font'; */
   font-size: ${theme.fontSizes.small};
-  font-weight: ${theme.fontWeights.normal};
+  font-weight: ${theme.fontWeights.button};
   /* text-transform:uppercase; */
-  /* font-family: 'Josefin sans'; */
+  /* font-family: 'seravek-web'; */
   outline: none;
   border: ${theme.colors.darkTxt};;
   cursor: pointer;
@@ -212,7 +213,7 @@ export const HeroBtnLink = styled(LinkS)`
   /* display: flex;
   align-items: center; */
   line-height: 1;
-  padding-bottom: 14px;
+  padding-bottom: ${theme.padding.button};
   /* vertical-align: baseline; */
 
   &:hover{

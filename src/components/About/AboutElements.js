@@ -84,8 +84,9 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: 400;
-    font-family: 'Title Font';
+    font-weight: ${theme.fontWeights.bold};
+    font-family: 'seravek-web';
+    /* font-family: 'Title Font'; */
     /* background: red; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
 

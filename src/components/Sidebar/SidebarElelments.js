@@ -104,12 +104,13 @@ export const SidebarLink = styled(LinkS)`
    align-items: center;
    justify-content: center;
    font-size: ${theme.fontSizes.small};
+   font-weight: ${theme.fontWeights.normal};
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
    color: ${theme.colors.lightTxt};
-   font-family: 'Nav font';
+   /* font-family: 'Nav font'; */
    /* text-transform: uppercase; */
    cursor: pointer; 
    
@@ -136,13 +137,14 @@ export const SidebarLinkNoScroll = styled(LinkR)`
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 18px;
+   /* font-size: 18px; */
    text-decoration: none;
    list-style: none;
    transition: 0.2s ease-in-out;
    text-decoration: none;
    color: ${theme.colors.lightTxt};
-   font-family: 'Nav font';
+   font-weight: ${theme.fontWeights.normal};
+   /* font-family: 'Nav font'; */
    /* text-transform: uppercase; */
    cursor: pointer; 
    
@@ -165,15 +167,16 @@ export const SidebarRoute = styled(LinkR)`
     padding: 10px 22px;
     color: ${theme.colors.superLightTxt};
     font-size: ${theme.fontSizes.small};
-    font-weight: ${theme.fontWeights.normal};
-    font-family: 'Button font';
+    font-weight: ${theme.fontWeights.button};
+    padding-bottom: ${theme.padding.button};
+    /* font-family: 'Button font'; */
     outline: none;
     border: none;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     text-decoration: none;
     line-height: 1;
-  padding-bottom: 14px;
+  /* padding-bottom: 14px; */
     /* box-shadow:  20px 10px 40px rgba(0, 0, 0, 0.25); */
     
 

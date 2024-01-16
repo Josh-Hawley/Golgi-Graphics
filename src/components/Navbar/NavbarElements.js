@@ -90,16 +90,17 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
   color: ${theme.colors.lightTxt};
-  font-family: 'Nav font';
+  /* font-family: 'Nav font'; */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   text-decoration: none;
   padding: 0 1.5rem;
-  font-size: ${theme.fontSizes.small};
+  /* font-size: ${theme.fontSizes.small}; */
+  font-weight: ${theme.fontWeights.normal};
   /* line-height: 1; */
-  padding-bottom: 2px;
+  /* padding-bottom: 2px; */
   /* font-family: 'josefin sans'; */
   /* font-family: 'Trap-Medium'; */
   /* font-family: 'Title Font'; */
@@ -143,15 +144,16 @@ export const NavBtnLink = styled(LinkR)`
   padding: 8px 18px;
   color: ${theme.colors.superLightTxt};
   font-size: ${theme.fontSizes.small};
-  font-weight: ${theme.fontWeights.normal};
-  font-family: 'Button font';
+  font-weight: ${theme.fontWeights.button};
+  padding-bottom: ${theme.padding.button};
+  /* font-family: 'Button font'; */
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   line-height: 1;
-  padding-bottom: 12px;
+  /* padding-bottom: 12px; */
 
   &:hover{
     transition: 0.2 ease-in-out;

@@ -1,6 +1,11 @@
 
+@import url("https://use.typekit.net/jmt5tve.css");
+@import url("https://use.typekit.net/usr2cvt.css");
 
-@font-face {
+/* @import url("https://use.typekit.net/usr2cvt.css");  */
+/*  */
+
+/* @font-face {
   font-family: 'Joanna Sans Nova';
   src: local('Joanna Sans Nova Regular'),
   url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Regular.woff2') format('woff2');
@@ -30,172 +35,17 @@
   url('../public/fonts/Joanna Sans Nova/JoannaSansNovaLight.woff2') format('woff2');
   font-weight: lighter;
   font-style: normal;
-}
-
-
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Joanna Sans Nova Medium'),
-  url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Medium.woff2') format('woff2');
 } */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Joanna Sans Nova Bold'),
-  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaBold.woff2') format('woff2');
-} */
-@font-face {
-  font-family: 'Title font';
-  src: local('Joanna Sans Nova Bold'),
-  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaBold.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'Button font';
-  src: local('Joanna Sans Nova Book'),
-  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
-}
-
-@font-face {
-  font-family: 'Nav Font';
-  src: local('Joanna Sans Nova Regular'),
-  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Regular.woff2') format('woff2');  
-
-}
-
 
 *{
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
-  font-family: 'Joanna Sans Nova';
-}
-
-/* @font-face {
-  font-family: 'Synonym Regular';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');
-  font-weight: 440;
-}
-
-@font-face {
-  font-family: 'Lato';
-  src: local('Lato Regular'),
-  url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2');
+  /* font-family: 'seravek-web', sans-serif; */
+  /* font-family: 'Joanna Sans Nova'; */
+  font-family: "gill-sans-nova", sans-serif;
+  /* font-weight: 100; */
+  /* font-style: normal; */
 
 }
-
-
-@font-face {
-  font-family: 'Bespoke Sans';
-  src: local('Bespoke Sans'),
-  url('../public/fonts/Bespoke Sans/BespokeSans-Regular.woff2') format('woff2');
-
-}
-
-@font-face {
-  font-family: 'Scala Sans';
-  src: local('Scala Sans LF'),
-  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
-
-}
-
-
-
-@font-face {
-  font-family: 'Seravek';
-  src: local('Seravek Light'),
-  url('../public/fonts/Seravek/Seravek-Light.woff2') format('woff2');
-}
-
-
-@font-face {
-  font-family: 'Title font';
-  src: local('Noyh'),
-  url('../public/fonts/Nyoh/Noyh-Bold.woff2') format('woff2');  
-
-} */
-
-
-/* 
-@font-face {
-  font-family: 'Title font';
-  src: local('Granite'),
-  url('../public/fonts/NCT Granite/Granite-Regular.woff2') format('woff2');  
-} */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Granite'),
-  url('../public/fonts/Seravek/Old seravek/seravek-bold.woff2') format('woff2');  
-} */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Lato Bold'),
-  url('../public/fonts/Lato/Lato-Bold.woff2') format('woff2');
-
-} */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Scala Sans Bold'),
-  url('../public/fonts/Scala Sans/ScalaSans-Bold.woff2') format('woff2');
-} */
-
-/* @font-face {
-  font-family: 'Title font';
-  src: local('Scala Sans Bold'),
-  url('../public/fonts/Scala Sans/ScalaSans-Bold.woff2') format('woff2');
-
-} */
-
-
-
-/* @font-face {
-  font-family: 'Button font';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
-  font-weight: 500;
-} */
-
-
-/* @font-face {
-  font-family: 'Button font';
-  src: local('Seravek'),
-  url('../public/fonts/Seravek/Old seravek/seravek.woff2') format('woff2');  
-
-} */
-
-/* @font-face {
-  font-family: 'Button font';
-  src: local('Scala Sans LF'),
-  url('../public/fonts/Scala Sans/ScalaSans-RegularLF.woff2') format('woff2');
-
-} */
-
-/* @font-face {
-  font-family: 'Button font';
-  src: local('Lato Regular'),
-  url('../public/fonts/Lato/Lato-Regular.woff2') format('woff2');
-
-} */
-
-
-
-/* @font-face {
-  font-family: 'Nav font';
-  src: local('Synonym'),
-  url('../public/fonts/Synonym/Synonym-Variable.woff2') format('woff2');  
-  font-weight: 450;
-} */
-
-/* @font-face {
-  font-family: 'Nav Font';
-  src: local('Seravek'),
-  url('../public/fonts/Seravek/Old seravek/seravek.woff2') format('woff2');  
-
-} */
-

@@ -101,7 +101,7 @@ export const TopLine = styled.p`
     /* color: ${theme.colors.accentLight}; */
     color: ${theme.colors.lightTxt};
     font-size: 16px;
-    font-weight: ${theme.fontWeights.medium};
+    font-weight: ${theme.fontWeights.light};
     letter-spacing: 2px;
     text-transform: uppercase;
 
@@ -113,8 +113,9 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: 400;
-    font-family: 'Title Font';
+    font-weight: ${theme.fontWeights.bold};
+    font-family: 'seravek-web';
+    /* font-family: 'Title Font'; */
     /* text-transform: uppercase; */
     /* font-family: 'Josefin sans'; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */
@@ -160,13 +161,14 @@ export const Button = styled(Link)`
     
     white-space: nowrap;
     background: ${theme.colors.accent};
-    font-family: 'Button font';
+    /* font-family: 'Button font'; */
     /* padding: ${({big}) => (big ? '14px 48px' : '12px 30px')}; */
     padding: 10px 22px;
     color: ${({dark}) => (dark ?  `${theme.colors.superLightTxt}` : `${theme.colors.darkTxt}`)};
     /* font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')}; */
     font-size: ${theme.fontSizes.small};
-    font-weight: ${theme.fontWeights.normal};
+    font-weight: ${theme.fontWeights.button};
+    padding-bottom: ${theme.padding.button};
     outline: none;
     border: none;
     cursor: pointer;
@@ -176,7 +178,7 @@ export const Button = styled(Link)`
     text-decoration: none;
     transition: all 0.2s ease-in-out;
     line-height: 1;
-    padding-bottom: 14px;
+    /* padding-bottom: 14px; */
 
     &:hover {
         transition: all 0.2s ease-in-out;
@@ -286,6 +288,7 @@ export const IconTitle = styled.h2`
     /* letter-spacing: 1.2px; */
     /* text-transform: uppercase; */
     font-size: ${theme.fontSizes.small};
+    font-weight: ${theme.fontWeights.normal};
 
     border-radius: 10px;
     flex-grow: 1;
@@ -323,8 +326,8 @@ export const DarkOverlay = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
-    width: 200px;
+    height: 250px;
+    width: 160px;
     
 
     @media screen and (max-width: 768px) {
