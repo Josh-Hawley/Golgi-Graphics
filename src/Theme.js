@@ -36,5 +36,6 @@ export const theme = {
 
   padding: {
     button: '12px',
+    tags: '4px',
   },
 };

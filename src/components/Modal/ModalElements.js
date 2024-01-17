@@ -62,7 +62,7 @@ export const TagsContainer = styled.div`
     margin-bottom: 2px;
     padding: 3px 5px;
     line-height: 1;
-    padding-bottom: 7px;
+    padding-bottom: ${theme.padding.tags};
 
     font-size: ${theme.fontSizes.xsmall};
     font-weight: ${theme.fontWeights.medium};
