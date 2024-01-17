@@ -28,7 +28,7 @@ export const theme = {
 
   fontWeights: {
     light: 300,
-    normal: 300,
+    normal: 400,
     medium: 400,
     button: 500,
     bold: 600,
