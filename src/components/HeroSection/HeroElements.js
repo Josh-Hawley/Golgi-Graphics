@@ -11,6 +11,7 @@ export const HeroH1 = styled.h1`
     font-weight: ${theme.fontWeights.bold};
     max-width: 1200px;
     font-family: 'seravek-web';
+    
     /* text-transform: uppercase; */
     /* font-family: 'Title Font'; */
 
