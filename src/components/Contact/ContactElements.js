@@ -46,7 +46,7 @@ export const Form = styled.form`
 `
 
 export const Header = styled.h1`
-    margin-bottom: 8px;
+    margin-bottom: -10px;
     color: ${theme.colors.darkTxt};
     font-size: 35px;
     font-weight: ${theme.fontWeights.bold};

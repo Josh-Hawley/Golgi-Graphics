@@ -50,24 +50,25 @@ const Contact = () => {
                       
                         <Form >
                           
-                        <Header>How it works</Header>
+                        
                   
-                  
-                        <Paragraph>
-                        If it involves science and graphics, we will be happy to recieve your enquiry! Here's an overview of the process:
+                      <Header>How to contact me</Header>
+                        <Paragraph style={{ marginBottom: '50px' }}>
+                        If it involves science and graphics, then what are you waiting for? Let me know what you have in mind by using the contact form found on this page or emailing me directly at <EmailLink href="mailto:contact@golgi.graphics">contact@golgi.graphics</EmailLink>.
                       </Paragraph>
                       
+                      <Header>How it works</Header>
                       <Paragraph>
                     
 
                         <OrderedList>
                           
                           <ListItem>
-                            <b>Initial enquiry:</b> Reach out to us with your specific requirements using the contact form on this page, or for more general enquiries you can email us directly: <EmailLink href="mailto:contact@golgi.graphics">contact@golgi.graphics</EmailLink>. 
+                            <b>Initial enquiry:</b> Reach out to me with your specific requirements using the contact form on this page. For more general enquiries <EmailLink href="mailto:contact@golgi.graphics">email me</EmailLink>. 
                           </ListItem>
                           
                           <ListItem>
-                            <b>Project consultation:</b> We will get in touch to discuss the project in detail and cover considerations such as:
+                            <b>Project consultation:</b> I will get in touch to discuss the project in detail and cover considerations such as:
                           <UnorderedList>
                             <ListItem><i>Target audience</i></ListItem>
                             <ListItem><i>Research details and areas of emphasis</i></ListItem>
@@ -78,7 +79,7 @@ const Contact = () => {
                           </ListItem>
 
                           <ListItem>
-                            <b>Quotation:</b> Once a quote has been agreed, the illustrating begins!
+                            <b>Quotation:</b> Once a quote has been agreed, I will start work on the first draft.
                           </ListItem>
 
                           <ListItem>
@@ -86,7 +87,7 @@ const Contact = () => {
                           </ListItem>
                           
                           <ListItem>
-                            <b>Final design:</b> We will provide you with copies of the final design in any required formats. 
+                            <b>Final design:</b> I will provide you with copies of the final design in any required formats. 
                           </ListItem>
 
                         </OrderedList>
@@ -136,7 +137,7 @@ const Contact = () => {
                           <FormTextArea 
                           name="message"
                           required style={{ resize: 'vertical' }}
-                          placeholder='Please give an outline of what we can help you with.'
+                          placeholder='Please give an outline of what you have in mind.'
                           rows="8"
                           {...register("message", {
                           required: "Message is required"
