@@ -21,21 +21,29 @@ export const theme = {
   fontSizes: {
     xsmall: '0.8rem',
     small: '1rem',
-    medium: '1.2rem',
+    medium: '2rem',
     large: '3rem',
     xlarge: '5rem',
   },
 
   fontWeights: {
     light: 300,
-    normal: 200,
+    normal: 300,
     medium: 400,
-    button: 500,
     bold: 600,
+    button: 500,
+    header: 600,
   },
 
   padding: {
     button: '11px',
     tags: '4px',
   },
+
+  font: {
+    // header: 'artifex-hand-cf', //font-weight: 900
+    // header: 'joanna-nova', 
+    // header: "gill-sans-nova",
+    header: 'seravek-web'
+  }
 };

@@ -48,11 +48,13 @@ export const Form = styled.form`
 export const Header = styled.h1`
     margin-bottom: -10px;
     color: ${theme.colors.darkTxt};
-    font-size: 35px;
-    font-weight: ${theme.fontWeights.bold};
+    font-size: ${theme.fontSizes.medium};
+    /* font-weight: ${theme.fontWeights.bold}; */
     text-align: left;
     /* font-family: 'Title Font'; */
-    font-family: 'seravek-web';
+    /* font-family: 'seravek-web'; */
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
 `
 
 export const FormLabel = styled.label`

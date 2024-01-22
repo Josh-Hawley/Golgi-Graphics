@@ -105,8 +105,10 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
-    font-weight: ${theme.fontWeights.bold};
-    font-family: 'seravek-web';
+    /* font-weight: ${theme.fontWeights.bold}; */
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
+    /* font-family: 'seravek-web'; */
     /* font-family: 'Title Font'; */
     /* text-transform: uppercase; */
     /* color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')}; */

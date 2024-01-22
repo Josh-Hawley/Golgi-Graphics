@@ -10,7 +10,10 @@ export const HeroH1 = styled.h1`
     text-align: left;
     font-weight: ${theme.fontWeights.bold};
     max-width: 1200px;
-    font-family: 'seravek-web';
+    /* font-family: 'seravek-web'; */
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
+    /* font-style: normal; */
     
     /* text-transform: uppercase; */
     /* font-family: 'Title Font'; */

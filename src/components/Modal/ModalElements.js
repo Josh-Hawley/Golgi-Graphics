@@ -33,9 +33,11 @@ export const ImageTextWrap = styled.div`
 `
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
-    font-weight: ${theme.fontWeights.bold};
+    /* font-weight: ${theme.fontWeights.bold}; */
     font-size: 30px;
-    font-family: 'seravek-web';
+    /* font-family: 'seravek-web'; */
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
 
   
 `;

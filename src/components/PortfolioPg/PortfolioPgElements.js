@@ -68,7 +68,9 @@ export const Header = styled.h1`
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    font-weight: ${theme.fontWeights.bold};
+    /* font-weight: ${theme.fontWeights.bold}; */
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
     /* font-family: 'Title Font'; */
     /* text-transform: uppercase; */
 
