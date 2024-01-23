@@ -22,13 +22,13 @@ export const theme = {
     xsmall: '0.8rem',
     small: '1rem',
     medium: '2rem',
-    large: '3rem',
-    xlarge: '5rem',
+    large: '2.5rem',
+    xlarge: '4rem',
   },
 
   fontWeights: {
     light: 300,
-    normal: 300,
+    normal: 200,
     medium: 400,
     bold: 600,
     button: 500,
@@ -41,9 +41,8 @@ export const theme = {
   },
 
   font: {
-    // header: 'artifex-hand-cf', //font-weight: 900
     // header: 'joanna-nova', 
-    // header: "gill-sans-nova",
+    // header: "joanna-sans-nova",
     header: 'seravek-web'
   }
 };

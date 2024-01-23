@@ -15,7 +15,7 @@ export const HeroH1 = styled.h1`
     font-weight: ${theme.fontWeights.header};
     /* font-style: normal; */
     
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     /* font-family: 'Title Font'; */
 
     @media screen and (max-width: 1400px) {
