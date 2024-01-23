@@ -22,7 +22,7 @@ export const theme = {
     xsmall: '0.8rem',
     small: '1rem',
     medium: '2rem',
-    large: '2.5rem',
+    large: '3rem',
     xlarge: '4rem',
   },
 
