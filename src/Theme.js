@@ -23,7 +23,7 @@ export const theme = {
     small: '1rem',
     medium: '2rem',
     large: '3rem',
-    xlarge: '4rem',
+    xlarge: '4.2rem',
   },
 
   fontWeights: {
