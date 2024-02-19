@@ -8,6 +8,7 @@ import img11 from '../../images/Gallery/IMG_2482.jpeg';
 import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
 import img15 from '../../images/Gallery/PosterTheNotchMeeting.jpg';
+import img16 from '../../images/Gallery/Vesicle fusion.jpg';
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/potassium channel.mp4';
@@ -16,6 +17,15 @@ import vid2 from '../../videos/potassium channel.mp4';
 
 export const images = [
   
+  {
+    id: 16,
+    type: 'image',
+    src: img16,
+    title: 'Vesicle fusion',
+    tags: ['3D', 'Art'],
+    description: 'The fusion of a vesicle with a larger membrane.'
+  },
+
   {
     id: 14,
     type: 'image',
@@ -41,14 +51,7 @@ export const images = [
     tags: ['Figure', 'Developmental', 'Morphogenesis'],
     description: 'The process of neurulation. The ectoderm forms the spinal cord by first folding in on itself to form the neural tube, which is made up of neural progenitors that go on to form the neurons and glia of the spinal cord, brain, and retina.'
   },
-  {
-    id: 15,
-    type: 'image',
-    src: img15,
-    title: 'Conference Poster',
-    tags: ['Poster'],
-    description: 'Poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
-  },
+  
 
   {
     id: 13,
@@ -97,6 +100,14 @@ export const images = [
     description: 'Figure made for a grant application. The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
   },
 
+  {
+    id: 15,
+    type: 'image',
+    src: img15,
+    title: 'Conference Poster',
+    tags: ['Poster'],
+    description: 'Poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
+  },
 
 
   // {
