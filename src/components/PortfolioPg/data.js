@@ -1,22 +1,43 @@
 import img3 from '../../images/Gallery/Hes_interactions.jpg';
-import img2 from '../../images/Gallery/img3.png';
+// import img2 from '../../images/Gallery/img3.png';
 import img1 from '../../images/Gallery/Neurulation.jpg';
 import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
-import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
+// import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
 // import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
 import img11 from '../../images/Gallery/IMG_2482.jpeg';
 import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
-import img15 from '../../images/Gallery/PosterTheNotchMeeting.jpg';
+// import img15 from '../../images/Gallery/PosterTheNotchMeeting.jpg';
 import img16 from '../../images/Gallery/Vesicle fusion.jpg';
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/potassium channel.mp4';
+import vid3 from '../../videos/IKNM.mp4';
+import vid4 from '../../videos/Small bilayer.mp4';
 
 
 
 export const images = [
-  
+   {
+    id: 17,
+    src: vid3,
+    type: 'video',
+    title: 'Interkinetic nuclear migration in neuroepithelia.',
+    tags: ['3D', 'Animation'],
+    description: 'A proceedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
+  },
+
+  {
+    id: 18,
+    src: vid4,
+    type: 'video',
+    title: 'Phospholipid bilayer',
+    tags: ['3D', 'Animation'],
+    description: 'A short proceedural animation of a section of phospholipid bilayer. This uses molecular dynamics simulations to animate the motion of individual lipids.'
+  },
+
+ 
+
   {
     id: 16,
     type: 'image',
@@ -61,14 +82,14 @@ export const images = [
     tags: ['Grant figure'],
     description: 'Work done for the graphical abstract of a grant application.'
   },
-  {
-    id: 2,
-    src: img2,
-    type: 'image',
-    title: 'Schematic of the Notch-Hes signalling pathway',
-    tags: ["Figure", "Gene network"],
-    description: 'Notch signalling is a contact dependent signalling network utilised across many developmental processes as well as in adult tissue. Here, it is shown in the context of its regulation on Hes and proneural genes.'
-  },
+  // {
+  //   id: 2,
+  //   src: img2,
+  //   type: 'image',
+  //   title: 'Schematic of the Notch-Hes signalling pathway',
+  //   tags: ["Figure", "Gene network"],
+  //   description: 'Notch signalling is a contact dependent signalling network utilised across many developmental processes as well as in adult tissue. Here, it is shown in the context of its regulation on Hes and proneural genes.'
+  // },
   
 
   
@@ -100,14 +121,18 @@ export const images = [
     description: 'Figure made for a grant application. The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
   },
 
-  {
-    id: 15,
-    type: 'image',
-    src: img15,
-    title: 'Conference Poster',
-    tags: ['Poster'],
-    description: 'Poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
-  },
+  // {
+  //   id: 15,
+  //   type: 'image',
+  //   src: img15,
+  //   title: 'Conference Poster',
+  //   tags: ['Poster'],
+  //   description: 'Poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
+  // },
+
+
+
+
 
 
   // {
@@ -119,14 +144,14 @@ export const images = [
   //   description: 'Artistic 3D render of endogenous HES5::Venus reporter in neuroepithelia.'
   // },
 
-  {
-    id: 9,
-    type: 'image',
-    src: img9,
-    title: 'Mosaic membrane art',
-    tags: ['Art', '3D', 'Cells'],
-    description: 'Artistic 3D render of mosaically labelled neuroepithlial cells where bright cells represent a membrane-bound fluorescent protein.'
-  },
+  // {
+  //   id: 9,
+  //   type: 'image',
+  //   src: img9,
+  //   title: 'Mosaic membrane art',
+  //   tags: ['Art', '3D', 'Cells'],
+  //   description: 'Artistic 3D render of mosaically labelled neuroepithlial cells where bright cells represent a membrane-bound fluorescent protein.'
+  // },
 
   
 
