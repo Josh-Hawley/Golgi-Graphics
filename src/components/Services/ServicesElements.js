@@ -331,6 +331,7 @@ export const DarkOverlay = styled.div`
     height: 250px;
     width: 160px;
     
+    
 
     @media screen and (max-width: 768px) {
     height: 250px;
@@ -343,18 +344,19 @@ export const DarkOverlay = styled.div`
     }
 
     
-  `
+  `;
 
   export const ImgWrap = styled(LinkS)`
   display: flex;
   align-items: center;
   justify-content: center;
-    /* height: 200px; */
-    /* transition: 0.1s all ease-in-out; */
 
     &:hover{
         /* transform: translateY(-5px); */
         cursor: pointer;
     }
-
 `;
+
+// export const Image = styled.img`
+
+// ` 

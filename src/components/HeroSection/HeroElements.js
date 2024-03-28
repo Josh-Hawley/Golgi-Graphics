@@ -44,6 +44,7 @@ export const HeroContainer = styled.div`
     justify-content: center;
     width: 100%;
     overflow-x: hidden;
+    /* box-shadow: inset 10px 5px 5px red; */
     /* margin-left: auto;
     margin-right: auto; */
     

@@ -27,8 +27,11 @@ const Home = () => {
             
             <Navbar toggle={toggle} isOpen={isOpen}/>     
             <HeroSection />
+            {/* <HorzLine/> */}
             <Services {...servicesData}/>
+            {/* <HorzLine/> */}
             <InfoSection {...homeObjTwo}/>
+            {/* <HorzLine/> */}
             <About />
             <Footer />
         </PageContainer>

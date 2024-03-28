@@ -1,7 +1,8 @@
 export const theme = {
   colors: {
     lightestBg: 'white',
-    lightBg: '#FCFBFA',
+    // lightBg: '#FCFBFA',
+    lightBg: 'white',
     darkBg: '#36332F',
     superLightTxt: '#FFFFFF',
     lightTxt: '#86837D ',

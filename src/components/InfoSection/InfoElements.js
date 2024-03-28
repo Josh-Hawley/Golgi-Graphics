@@ -70,7 +70,7 @@ export const Column2 = styled.div`
     /* padding: 0 0px; */
     /* grid-area: col2; */
     /* width:120vw; */
-    width: 50vw;
+    width: 40vw;
     height: calc(100vh - 60px);
     /* border: solid 1px black; */
     
@@ -80,7 +80,11 @@ export const Column2 = styled.div`
         /* height: 70vh; */
         width: 100%;
         height: 60vh;
-    }
+    
+    /* @media screen and (max-width: 1000px) {
+        width: 80vw;
+    }} */
+
 `;
 
 export const TextWrapper = styled.div`
