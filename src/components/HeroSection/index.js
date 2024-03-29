@@ -10,6 +10,8 @@ import golgi from '../../images/Hero Background/golgi corner.png'
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
+import FramerMagnetic from '../FramerMagnetic';
+
 
 const HeroSection = () => {
     
@@ -25,45 +27,9 @@ const HeroSection = () => {
         restDelta: 0.001
     });
 
-    // const vesicle1Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
-    // const vesicle2Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
-    // const vesicle3Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
-    // const vesicle4Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
-    // const vesicle5Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
-    // const vesicle6Scale = useSpring(scrollYProgress, {
-    //     stiffness: 120,
-    //     damping: 40,
-    //     restDelta: 0.001
-    // });
-
 
     const golgiX = useTransform(scale, [0, 1], ['0vw', '8vw']);
-    const golgiY = useTransform(scale, [0, 1], ['99vh', '110vh']);
+    const golgiY = useTransform(scale, [0, 1], ['100vh', '110vh']);
 
     const vesicle1X = useTransform(scale, [0, 1], ['30vw', '65vw']);
     const vesicle1Y = useTransform(scale, [0, 1], ['80vh', '90vh']);
@@ -151,12 +117,19 @@ const HeroSection = () => {
                         
                         <HeroH1>Scientific illustration for publication</HeroH1>
                         <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
-                    
-                        
                         <HeroBtnWrapper>
-                            <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-60}>Illustrate my research</HeroBtnLink>
+                        {/* <motion.div
+                        whileHover={{ scale: 1.05 }} // Upward movement of 20 pixels on hover
+                        whileTap = {{ scale: 0.9}}
+                        transition={{ type: 'spring', stiffness: 1000, damping: 100, restDelta: 0.0001 }} // Adjust the transition as needed
+                        > */}
+                        <FramerMagnetic scalingX={0.3} scalingY={1}>
+                        <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-60}>Illustrate my research</HeroBtnLink>
+                        
+                        </FramerMagnetic>
+                            
+                        {/* </motion.div> */}
                         </HeroBtnWrapper>
-
                     </HeroContent>
                     
                 </HeroContainer>

@@ -8,7 +8,7 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Top
 import { useRef, useEffect, useState } from 'react';
 
 import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-
+import FramerMagnetic from '../FramerMagnetic';
 
 import layer0 from '../../images/portfolio background/Layer0.png'
 import layer1 from '../../images/portfolio background/Layer1.png'
@@ -100,7 +100,9 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkT
                     <Heading lightText={lightText}>{headline}</Heading>
                     <Subtitle darkText={darkText}>{description}</Subtitle>
                     <BtnWrap>
+                    <FramerMagnetic scalingX={0.3} scalingY={1}>
                         <Button to='gallery' smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1 : 0} dark={dark ? 1 : 0} dark2={dark2 ? 1: 0}>{buttonLabel}</Button>
+                    </FramerMagnetic>
                     </BtnWrap>
                 </TextWrapper>
                 </Column1>

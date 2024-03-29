@@ -53,24 +53,6 @@ export const NavLogoImage = styled.img`
   height: 90%;
 ` 
 
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-46%, 40%);
-    /* font-size: 2.3rem;
-    line-height: 2.5rem; */
-   
-    cursor: pointer;
-    color: #fff;
-    transition: 0.2s ease-in-out;
-    opacity: ${({ isOpen }) => (isOpen ? '0%' : '100%')};
-  }
-`;
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -141,7 +123,7 @@ export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
   background: ${theme.colors.accent};
   white-space: nowrap;
-  padding: 8px 18px;
+  padding: 6px 18px;
   color: ${theme.colors.superLightTxt};
   font-size: ${theme.fontSizes.small};
   font-weight: ${theme.fontWeights.button};
@@ -161,3 +143,53 @@ export const NavBtnLink = styled(LinkR)`
     color: ${theme.colors.darkTxt};
   }
 `
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    
+   
+    cursor: pointer;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '100%')};
+  }
+`;
+
+export const BurgerWrap = styled.div`
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ margin-top: auto;
+ margin-bottom: auto;
+
+`;
+
+export const BurgerBarLong = styled.div`
+  width: 35px;
+  height: 2.5px;
+  background-color: ${theme.colors.darkTxt};
+  margin: 4px 0;
+  border-radius: 4px;
+`;
+
+export const BurgerBarMid = styled.div`
+  width: 28px;
+  height: 2.5px;
+  background-color: ${theme.colors.darkTxt};
+  margin: 4px 0;
+  border-radius: 4px;
+`;
+
+export const BurgerBarShort = styled.div`
+  width: 22px;
+  height: 2.5px;
+  background-color: ${theme.colors.darkTxt};
+  margin: 4px 0;
+  border-radius: 4px;
+`;

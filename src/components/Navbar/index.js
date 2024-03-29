@@ -1,12 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 import { IconContext } from 'react-icons/lib';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, BurgerBarLong, BurgerBarMid, BurgerBarShort, BurgerWrap} from './NavbarElements';
 import { theme } from '../../Theme';
-// import logo_and_text from '../../images/logo and text 2.png'
 import {ReactComponent as LogoText} from '../../images/logo and text.svg'
-// import {ReactComponent as LogoText} from '../../images/Icons/infographics icon.svg'
+import FramerMagnetic from '../FramerMagnetic';
 
 const Navbar = ({ toggle, isOpen }) => {
     
@@ -44,7 +42,12 @@ const Navbar = ({ toggle, isOpen }) => {
                 
                 
                 <MobileIcon onClick={toggle} isOpen={isOpen}>
-                    <FaBars style={{fontSize: '1.7rem'}}/>
+                    
+                    <BurgerWrap>
+                        <BurgerBarLong/>
+                        <BurgerBarShort/>
+                        <BurgerBarMid/>
+                    </BurgerWrap>    
                
                 </MobileIcon>
 
@@ -67,7 +70,16 @@ const Navbar = ({ toggle, isOpen }) => {
                 </NavMenu>
 
                 <NavBtn>
+                    
+
+                    
+                <FramerMagnetic scalingX={0.4} scalingY={0.8}>
+                   
                     <NavBtnLink to="/contact">Contact</NavBtnLink>
+                
+                    
+                    </FramerMagnetic>
+                   
                 </NavBtn>
 
             </NavbarContainer>

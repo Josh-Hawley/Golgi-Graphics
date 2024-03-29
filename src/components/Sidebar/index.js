@@ -1,7 +1,6 @@
 import React from 'react'
 import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, SideBarBlackOut, ArrowIconStyling} from './SidebarElelments';
-// import { theme } from '../../Theme';
-// import { ReactComponent as RightArrow } from '../../images/Icons/right arrow.svg'
+import FramerMagnetic from '../FramerMagnetic';
 const Sidebar = ({isOpen, toggle}) => {
   return (
     <>
@@ -26,9 +25,11 @@ const Sidebar = ({isOpen, toggle}) => {
         </SidebarMenu>
 
         <SideBtnWrap>
+        <FramerMagnetic scalingX={0.3} scalingY={1}>
           <SidebarRoute to="/contact">
             Contact
           </SidebarRoute>
+          </FramerMagnetic>
         </SideBtnWrap>
 
       </SidebarWrapper>

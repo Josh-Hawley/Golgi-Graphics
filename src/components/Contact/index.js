@@ -3,6 +3,7 @@ import { Container, FormButton, FormContent, FormWrap, Form, Header, FormLabel, 
 import emailjs from '@emailjs/browser';
 import { useForm } from 'react-hook-form';
 
+
 const Contact = () => {
 
   const [loading, setLoading] = useState(false);
@@ -169,10 +170,12 @@ const Contact = () => {
                           
                           {/* <FormLabel>Send a sketch of your project (optional)</FormLabel>
                           <input type="file" name="my_file"/> */}
+                          
                         
                           <FormButton type='submit' loading={loading ? 1 : 0}>
                             {loading ? 'Sending...' : 'Submit'}
                           </FormButton>
+                       
 
                         </Form>
 

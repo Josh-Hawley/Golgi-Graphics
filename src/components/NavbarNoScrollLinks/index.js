@@ -6,6 +6,8 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink} 
 import { theme } from '../../Theme';
 // import logo_and_text from '../../images/logo and text 2.png'
 import {ReactComponent as LogoText} from '../../images/logo and text.svg'
+import FramerMagnetic from '../FramerMagnetic';
+
 const NavbarNoLinks = ({ toggle }) => {
     
     const [scrollNav, setScrollNav] = useState(false);
@@ -47,7 +49,9 @@ const NavbarNoLinks = ({ toggle }) => {
                 </NavMenu>
 
                 <NavBtn>
+                <FramerMagnetic scalingX={0.3} scalingY={1}>
                     <NavBtnLink to="/contact">Contact</NavBtnLink>
+                    </FramerMagnetic>
                 </NavBtn>
 
             </NavbarContainer>

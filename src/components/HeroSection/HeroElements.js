@@ -202,7 +202,7 @@ export const HeroBtnLink = styled(LinkS)`
   border-radius: 50px;
   
   /* white-space: nowrap; */
-  padding: 10px 22px;
+  padding: 6px 22px;
   /* font-family: 'Button font'; */
   font-size: ${theme.fontSizes.small};
   font-weight: ${theme.fontWeights.button};
