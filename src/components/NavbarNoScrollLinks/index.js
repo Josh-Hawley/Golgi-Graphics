@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {FaBars} from 'react-icons/fa';
+// import {FaBars} from 'react-icons/fa';
 
 import { IconContext } from 'react-icons/lib';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink} from '../Navbar/NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink, BurgerWrap, BurgerBarLong, BurgerBarMid, BurgerBarShort} from '../Navbar/NavbarElements';
 import { theme } from '../../Theme';
 // import logo_and_text from '../../images/logo and text 2.png'
 import {ReactComponent as LogoText} from '../../images/logo and text.svg'
@@ -41,7 +41,13 @@ const NavbarNoLinks = ({ toggle }) => {
                 
                 
                 <MobileIcon onClick={toggle}>
-                <FaBars style={{fontSize: '1.7rem'}}/>
+                    
+                    <BurgerWrap>
+                        <BurgerBarLong/>
+                        <BurgerBarShort/>
+                        <BurgerBarMid/>
+                    </BurgerWrap>    
+               
                 </MobileIcon>
 
                 <NavMenu>

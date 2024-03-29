@@ -1,6 +1,6 @@
 import React from 'react'
 import {SidebarContainer, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap, SideBarBlackOut, ArrowIconStyling} from './SidebarElelments';
-import FramerMagnetic from '../FramerMagnetic';
+// import FramerMagnetic from '../FramerMagnetic';
 const Sidebar = ({isOpen, toggle}) => {
   return (
     <>
@@ -25,11 +25,11 @@ const Sidebar = ({isOpen, toggle}) => {
         </SidebarMenu>
 
         <SideBtnWrap>
-        <FramerMagnetic scalingX={0.3} scalingY={1}>
+        {/* <FramerMagnetic scalingX={0.3} scalingY={1}> */}
           <SidebarRoute to="/contact">
             Contact
           </SidebarRoute>
-          </FramerMagnetic>
+          {/* </FramerMagnetic> */}
         </SideBtnWrap>
 
       </SidebarWrapper>
