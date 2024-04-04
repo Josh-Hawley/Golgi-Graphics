@@ -9,6 +9,7 @@ import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
 // import img15 from '../../images/Gallery/PosterTheNotchMeeting.jpg';
 import img16 from '../../images/Gallery/Vesicle fusion.jpg';
+import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/potassium channel.mp4';
@@ -18,8 +19,17 @@ import vid4 from '../../videos/Small bilayer.mp4';
 
 
 export const images = [
+  {
+    id: 12,
+    type: 'image',
+    src: img17,
+    title: 'The effects of radiotherapy on the tumour microenvironment',
+    tags: ['Blog illustration'],
+    description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
+  },
+  
    {
-    id: 17,
+    id: 10,
     src: vid3,
     type: 'video',
     title: 'Interkinetic nuclear migration in neuroepithelia.',
@@ -28,7 +38,7 @@ export const images = [
   },
 
   {
-    id: 18,
+    id: 11,
     src: vid4,
     type: 'video',
     title: 'Phospholipid bilayer',
@@ -36,10 +46,11 @@ export const images = [
     description: 'A short proceedural animation of a section of phospholipid bilayer. This uses molecular dynamics simulations to animate the motion of individual lipids.'
   },
 
+
  
 
   {
-    id: 16,
+    id: 1,
     type: 'image',
     src: img16,
     title: 'Vesicle fusion',
@@ -48,7 +59,7 @@ export const images = [
   },
 
   {
-    id: 14,
+    id: 2,
     type: 'image',
     src: img14,
     title: 'Graphical abstract',
@@ -57,7 +68,7 @@ export const images = [
   },
   
   {
-    id: 12,
+    id: 3,
     type: 'video',
     src: vid1,
     title: 'Lysosome cross-section 3D animation',
@@ -65,7 +76,7 @@ export const images = [
     description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
  },
   {
-    id: 1,
+    id: 4,
     src: img1,
     type: 'image',
     title: 'Neurulation: the developing spinal cord',
@@ -75,7 +86,7 @@ export const images = [
   
 
   {
-    id: 13,
+    id: 5,
     type: 'image',
     src: img13,
     title: 'Grant figure',
@@ -95,7 +106,7 @@ export const images = [
   
 
   {
-    id: 3,
+    id: 6,
     src: img3,
     type: 'image',
     title: 'Modes of transcription factor repression',
@@ -104,7 +115,7 @@ export const images = [
   },
 
   {
-    id: 4,
+    id: 7,
     src: vid2,
     type: 'video',
     title: 'Potassium channel',
@@ -158,7 +169,7 @@ export const images = [
   
 
   {
-    id: 11,
+    id: 9,
     type: 'image',
     src: img11,
     title: 'Lysosome V-ATPase',
