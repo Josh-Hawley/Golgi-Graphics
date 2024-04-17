@@ -1,15 +1,13 @@
 import img3 from '../../images/Gallery/Hes_interactions.jpg';
-// import img2 from '../../images/Gallery/img3.png';
 import img1 from '../../images/Gallery/Neurulation.jpg';
 import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
-// import img9 from '../../images/Gallery/Memrbane fluorescence art.jpg';
-// import img10 from '../../images/Gallery/HES neuroepithelia art.jpg';
 import img11 from '../../images/Gallery/IMG_2482.jpeg';
 import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
 // import img15 from '../../images/Gallery/PosterTheNotchMeeting.jpg';
 import img16 from '../../images/Gallery/Vesicle fusion.jpg';
 import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
+import img18 from '../../images/Gallery/UKSA 1.jpg';
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/potassium channel.mp4';
@@ -28,6 +26,7 @@ export const images = [
     description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
   },
   
+  
    {
     id: 10,
     src: vid3,
@@ -35,6 +34,15 @@ export const images = [
     title: 'Interkinetic nuclear migration in neuroepithelia.',
     tags: ['3D', 'Animation'],
     description: 'A proceedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
+  },
+
+  {
+    id: 13,
+    type: 'image',
+    src: img18,
+    title: 'UK Space Agency badge',
+    tags: ['UK Space Agency', 'Badge'],
+    description: 'A badge design for one of the research projects funded by the UK Space Agency. See list of all projects here: https://www.gov.uk/government/news/new-funding-to-support-space-exploration-using-moon-resources-and-nuclear-power'
   },
 
   {

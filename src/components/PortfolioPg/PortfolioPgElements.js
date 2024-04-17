@@ -204,7 +204,18 @@ export const ImageContainer = styled.div`
 
 
 
-
+export const PlayButtonContainer = styled.div`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    pointer-events: none; /* Prevents the overlay from blocking clicks on the video */
+    opacity: ${props => props.isSelected ? '1' : '0'};
+    transition: opacity 3s ease;
+    
+`
 
 
 
