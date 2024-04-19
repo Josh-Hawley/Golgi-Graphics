@@ -54,7 +54,7 @@ const Card = ({ setSelected, content }) => {
 >
   {/* Enclose both video and button in a motion.div */}
   <motion.video
-    src={`${content.src}#t=0.001`}
+    src={`${content.src}#t=15`}
     alt={content.title}
     layoutId={`card-${content.id}`}
     preload="metadata"
