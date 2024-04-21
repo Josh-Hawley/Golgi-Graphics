@@ -19,6 +19,33 @@ import vid3 from '../../videos/K-channel compressed.mp4';
 
 export const images = [
   {
+    id: 14,
+    src: vid3,
+    type: 'video',
+    title: 'Potassium ion channel',
+    tags: ['3D', 'Animation'],
+    description: ''
+  },
+
+  {
+    id: 4,
+    src: img1,
+    type: 'image',
+    title: 'Neurulation: the developing spinal cord',
+    tags: ['Figure', 'Developmental', 'Morphogenesis'],
+    description: 'The process of neurulation. The ectoderm forms the spinal cord by first folding in on itself to form the neural tube, which is made up of neural progenitors that go on to form the neurons and glia of the spinal cord, brain, and retina.'
+  },
+
+  {
+    id: 2,
+    type: 'image',
+    src: img14,
+    title: 'Graphical abstract',
+    tags: ['Graphical abstract'],
+    description: 'Graphical abstract for a paper soon to be published.'
+  },
+  
+  {
     id: 12,
     type: 'image',
     src: img17,
@@ -37,14 +64,7 @@ export const images = [
     description: 'A proceedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
   },
 
-  {
-    id: 14,
-    src: vid3,
-    type: 'video',
-    title: 'Potassium ion channel',
-    tags: ['3D', 'Animation'],
-    description: ''
-  },
+ 
  
 
   {
@@ -56,24 +76,10 @@ export const images = [
     description: 'The fusion of a vesicle with a larger membrane.'
   },
 
-  {
-    id: 2,
-    type: 'image',
-    src: img14,
-    title: 'Graphical abstract',
-    tags: ['Graphical abstract'],
-    description: 'Graphical abstract for a paper soon to be published.'
-  },
+
   
   
-  {
-    id: 4,
-    src: img1,
-    type: 'image',
-    title: 'Neurulation: the developing spinal cord',
-    tags: ['Figure', 'Developmental', 'Morphogenesis'],
-    description: 'The process of neurulation. The ectoderm forms the spinal cord by first folding in on itself to form the neural tube, which is made up of neural progenitors that go on to form the neurons and glia of the spinal cord, brain, and retina.'
-  },
+
   
 
   {
