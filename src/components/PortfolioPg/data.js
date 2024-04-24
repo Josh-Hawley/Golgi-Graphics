@@ -5,10 +5,11 @@ import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
 import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
-import img16 from '../../images/Gallery/Vesicle fusion.jpg';
+import img16 from '../../images/Gallery/synaptic vesicle.jpg';
 import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 import img18 from '../../images/Gallery/UKSA 1.jpg';
 import img19 from '../../images/Gallery/Glass bottles rough.jpg';
+
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 // import vid2 from '../../videos/potassium channel.mp4';
@@ -72,9 +73,9 @@ export const images = [
     id: 1,
     type: 'image',
     src: img16,
-    title: 'Vesicle fusion',
+    title: 'Acetylcholine released from a synaptic vesicle',
     tags: ['3D', 'Art'],
-    description: 'The fusion of a vesicle with a larger membrane.'
+    description: 'This image depicts the neurotransmitter acetylcholine being released from a synaptic vesicle. The number of acetylcholine molecules is based on concentrations found in the literature, and so this presents a fairly accurate representation of how much acetylcholine is released from an average synaptic vesicle.'
   },
 
 
