@@ -8,6 +8,7 @@ import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
 import img16 from '../../images/Gallery/Vesicle fusion.jpg';
 import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 import img18 from '../../images/Gallery/UKSA 1.jpg';
+import img19 from '../../images/Gallery/Glass bottles rough.jpg';
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 // import vid2 from '../../videos/potassium channel.mp4';
@@ -138,6 +139,15 @@ export const images = [
   title: 'UK Space Agency badge',
   tags: ['UK Space Agency', 'Badge'],
   description: 'A badge design for one of the research projects funded by the UK Space Agency. See list of all projects here: https://www.gov.uk/government/news/new-funding-to-support-space-exploration-using-moon-resources-and-nuclear-power'
+},
+
+{
+  id: 16,
+  type: 'image',
+  src: img19,
+  title: 'Abstract stem cells',
+  tags: ['Art', '3D'],
+  description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
 },
 
 
