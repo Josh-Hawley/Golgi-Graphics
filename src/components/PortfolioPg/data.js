@@ -75,7 +75,7 @@ export const images = [
     src: img16,
     title: 'Acetylcholine released from a synaptic vesicle',
     tags: ['3D', 'Art'],
-    description: 'This image depicts the neurotransmitter acetylcholine being released from a synaptic vesicle. The number of acetylcholine molecules is based on concentrations found in the literature, and so this presents a fairly accurate representation of how much acetylcholine is released from an average synaptic vesicle.'
+    description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
   },
 
 
