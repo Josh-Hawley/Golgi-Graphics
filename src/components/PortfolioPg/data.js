@@ -26,7 +26,7 @@ export const images = [
     type: 'video',
     title: 'Potassium ion channel',
     tags: ['3D', 'Animation'],
-    description: ''
+    description: 'An proceedural animation of a phospholipid bilayer, potassium ion channels and potassium ions passing through them.'
   },
 
   {
