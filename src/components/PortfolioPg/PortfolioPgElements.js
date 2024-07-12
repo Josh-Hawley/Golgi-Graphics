@@ -2,13 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../Theme';
 
 
-export const PageContainer = styled.div`
-
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
-    
+export const PageContainer = styled.div`  
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 50px;
@@ -62,17 +56,43 @@ export const GalleryWrap = styled.div`
         columns: 1;
     }
 `
+
+// export const GalleryWrap = styled.div`
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: flex-start;
+//     gap: 20px; /* Adjust the gap between items */
+
+//     @media screen and (max-width: 1600px) {
+//         justify-content: flex-start;
+//     }
+
+//     @media screen and (max-width: 1200px) {
+//         justify-content: flex-start;
+//     }
+
+//     @media screen and (max-width: 768px) {
+//         justify-content: center; /* Center items on smaller screens */
+//     }
+// `;
+
+// export const CardContainer = styled.div`
+//     flex: 0 0 calc(33.33% - 20px); /* Adjust for 3 columns with 20px gap */
+//     /* For 2 columns: flex: 0 0 calc(50% - 20px); */
+//     /* For 1 column: flex: 0 0 100%; */
+//     margin-bottom: 20px; /* Adjust spacing as needed */
+//     /* Additional styling for your card */
+// `;
+
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
     font-size: ${theme.fontSizes.xlarge};
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
-    /* font-weight: ${theme.fontWeights.bold}; */
     font-family: ${theme.font.header}, sans-serif;
     font-weight: ${theme.fontWeights.header};
-    /* font-family: 'Title Font'; */
-    /* text-transform: uppercase; */
+
 
 
     @media screen and (max-width: 768px) {
@@ -82,41 +102,12 @@ export const Header = styled.h1`
         font-size: calc(0.5 * ${theme.fontSizes.xlarge});
     }
 
-    /* @media screen and (max-width: 480px) {
-        font-size: 60px;
-    } */
 `;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const PortfolioPgContainer = styled.div`
-    /* background: ${theme.colors.lightestBg}; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 10px; */
     height: 400px;
     position: relative;
     z-index: 0;
@@ -124,47 +115,8 @@ export const PortfolioPgContainer = styled.div`
     
 `;
 
-export const ImageGalleryContainer = styled.div`
-    /* background: ${theme.colors.lightestBg}; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-     left: 0;
-     right: 0;
-     top: 0;
-    /* z-index: 0; */
-     overflow: hidden;
-    
-     padding-top: 0px;
-     padding-left: 40px;
-     padding-right: 40px;
-     width: 100%;
-     max-width: 1200px;
-     /* width: 80%; */
-     /* margin-bottom: 0px; */
-`;
-export const ImageGalleryWrap = styled.div`
-    /* background: ${theme.colors.lightBg}; */
-    /* background: red; */
-    padding-bottom: 100px;
-    /* margin-bottom: 50px; */
-    display: flex; 
-    justify-content: center;
-    /* align-items: center; */
-    
-     /* left: 0;
-     right: 0;
-     top: 0;
-    z-index: 0;
-     overflow: hidden;
-    
-     padding-top: 0px;
-     padding-left: 40px;
-     padding-right: 40px;
-     width: 100%;
-     margin-bottom: 50px; */ 
-`;
+
+
 
 export const PortfolioPgContent = styled.div`
     z-index: 3;
@@ -196,13 +148,6 @@ export const H1 = styled.h1`
     }
 `;
 
-export const ImageContainer = styled.div`
- width:300px;;
-`
-
-
-
-
 
 export const PlayButtonContainer = styled.div`
     position: absolute;
@@ -217,108 +162,4 @@ export const PlayButtonContainer = styled.div`
     
 `
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export const PortfolioPgContainer = styled.div`
-//     background: ${theme.colors.lightBg};
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     /* padding: 0 10px; */
-//     height: 400px;
-//     position: relative;
-//     z-index: 0;
-//     justify-content: center;
-    
-// `;
-
-// export const ImageGalleryContainer = styled.div`
-//     /* background: ${theme.colors.lightBg}; */
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-    
-//      left: 0;
-//      right: 0;
-//      top: 0;
-//     /* z-index: 0; */
-//      overflow: hidden;
-    
-//      padding-top: 0px;
-//      padding-left: 40px;
-//      padding-right: 40px;
-//      width: 100%;
-//      max-width: 1200px;
-//      /* width: 80%; */
-//      /* margin-bottom: 0px; */
-// `;
-// export const ImageGalleryWrap = styled.div`
-//     background: ${theme.colors.lightBg};
-//     /* background: red; */
-//     padding-bottom: 100px;
-//     /* margin-bottom: 50px; */
-//     display: flex; 
-//     justify-content: center;
-//     /* align-items: center; */
-    
-//      /* left: 0;
-//      right: 0;
-//      top: 0;
-//     z-index: 0;
-//      overflow: hidden;
-    
-//      padding-top: 0px;
-//      padding-left: 40px;
-//      padding-right: 40px;
-//      width: 100%;
-//      margin-bottom: 50px; */ 
-// `;
-
-// export const PortfolioPgContent = styled.div`
-//     z-index: 3;
-//     max-width: 1400px;
-//     position: absolute;
-//     padding: 8px 24px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: stretch;
-    
-    
-    
-// `;
-
-
-// export const PortfolioPgH1 = styled.h1`
-//     color: ${theme.colors.darkTxt};
-//     font-size: 70px;
-//     text-align: left;
-//     padding-top: 50px;
-
-
-//     @media screen and (max-width: 768px) {
-//         font-size: 60px;
-//     }
-
-//     @media screen and (max-width: 480px) {
-//         font-size: 40px;
-//     }
-// `;
 
