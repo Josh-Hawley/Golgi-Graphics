@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages';
 import ContactPage from './pages/contact';
 import GalleryPage from './pages/gallery';
+import GalleryPagePrivate from './pages/gallery-private';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path='/' element={<Home/>} />
           <Route path='/contact' element={<ContactPage/>}/>
           <Route path='/gallery' element={<GalleryPage/>}/>
+          <Route path='/gallery-private' element={<GalleryPagePrivate/>}/>
         </Routes>
       </Router>
   );

@@ -1,20 +1,23 @@
 import img3 from '../../images/Gallery/Hes_interactions.jpg';
 import img1 from '../../images/Gallery/Neurulation.jpg';
-import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
+// import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
 import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
-import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
+// import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
 import img16 from '../../images/Gallery/synaptic vesicle.jpg';
 import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 import img18 from '../../images/Gallery/PhD process.jpg';
 import img19 from '../../images/Gallery/Glass bottles rough.jpg';
+import img20 from '../../images/Gallery/Cytonemes.jpg';
+
+
 
 
 import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/IKNM.mp4';
 import vid3 from '../../videos/K-channel compressed.mp4';
 import vid4 from '../../videos/Ligand receptor.mp4';
-
+import vid5 from '../../videos/Dynamic material.mp4';
 
 
 export const images = [
@@ -24,7 +27,7 @@ export const images = [
     type: 'video',
     title: 'Potassium ion channel',
     tags: ['3D', 'Animation'],
-    description: 'An proceedural animation of a phospholipid bilayer, potassium ion channels and potassium ions passing through them.'
+    description: 'A procedural animation of a phospholipid bilayer, potassium ion channels and potassium ions passing through them.'
   },
 
   {
@@ -33,7 +36,7 @@ export const images = [
     type: 'video',
     title: 'Ligand binding to receptor',
     tags: ['3D', 'Animation'],
-    description: 'Text here'
+    description: 'Depicted are two cells, one with Notch receptors (red), and the other with Delta ligands (blue). This short animation uses data from the Protein Data Bank to show an accurate final binding position of the receptor and ligand. The membrane is procedurally animated.'
   },
 
   {
@@ -43,6 +46,15 @@ export const images = [
     title: 'Neurulation: the developing spinal cord',
     tags: ['Figure'],
     description: 'The process of neurulation. The ectoderm forms the spinal cord by first folding in on itself to form the neural tube, which is made up of neural progenitors that go on to form the neurons and glia of the spinal cord, brain, and retina.'
+  },
+
+  {
+    id: 101,
+    src: img20,
+    type: 'image',
+    title: 'Cytonemes in the Germarium Niche',
+    tags: ['Figure'],
+    description: 'Figure for a client which outlines ongoing research made for a conference talk presentation.'
   },
 
   {
@@ -70,7 +82,7 @@ export const images = [
     type: 'video',
     title: 'Interkinetic nuclear migration in neuroepithelia.',
     tags: ['3D', 'Animation'],
-    description: 'A proceedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
+    description: 'A procedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
   },
 
  
@@ -83,6 +95,16 @@ export const images = [
     title: 'Acetylcholine released from a synaptic vesicle',
     tags: ['3D', 'Art'],
     description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
+  },
+
+
+  {
+    id: 18,
+    src: vid5,
+    type: 'video',
+    title: 'Quiescent cells',
+    tags: ['3D', 'Animation'],
+    description: 'An experiment in physics simulation and dynamic materials.'
   },
 
 
@@ -113,23 +135,11 @@ export const images = [
 
  
 
- {
-    id: 8,
-    src: img8,
-    type: 'image',
-    title: 'Neuroepithelia',
-    tags: ['Figure'],
-    description: 'Figure made for a grant application. The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
-  },
 
-  {
-    id: 15,
-    type: 'image',
-    src: img15,
-    title: 'Investigating the neuroepithelia',
-    tags: ['Poster'],
-    description: 'A section of a conference poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
-  },
+
+  
+
+
 
   {
     id: 3,
@@ -165,3 +175,22 @@ export const images = [
   
   
 ];
+
+
+  // {
+  //   id: 15,
+  //   type: 'image',
+  //   src: img15,
+  //   title: 'Investigating the neuroepithelia',
+  //   tags: ['Poster'],
+  //   description: 'A section of a conference poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
+  // },
+
+  //  {
+//     id: 8,
+//     src: img8,
+//     type: 'image',
+//     title: 'Neuroepithelia',
+//     tags: ['Figure'],
+//     description: 'Figure made for a grant application. The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
+//   },
