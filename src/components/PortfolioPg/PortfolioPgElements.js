@@ -28,7 +28,7 @@ export const TagsWrap = styled.div`
 export const TagsContainer = styled.div`
     margin-right: 4px;
     margin-top: 2px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     padding: 3px 5px;
     line-height: 1;
     padding-bottom: ${theme.padding.tags};
@@ -56,33 +56,6 @@ export const GalleryWrap = styled.div`
         columns: 1;
     }
 `
-
-// export const GalleryWrap = styled.div`
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: flex-start;
-//     gap: 20px; /* Adjust the gap between items */
-
-//     @media screen and (max-width: 1600px) {
-//         justify-content: flex-start;
-//     }
-
-//     @media screen and (max-width: 1200px) {
-//         justify-content: flex-start;
-//     }
-
-//     @media screen and (max-width: 768px) {
-//         justify-content: center; /* Center items on smaller screens */
-//     }
-// `;
-
-export const CardContainer = styled.div`
-    flex: 0 0 calc(33.33% - 20px); /* Adjust for 3 columns with 20px gap */
-    /* For 2 columns: flex: 0 0 calc(50% - 20px); */
-    /* For 1 column: flex: 0 0 100%; */
-    margin-bottom: 20px; /* Adjust spacing as needed */
-    /* Additional styling for your card */
-`;
 
 export const Header = styled.h1`
     color: ${theme.colors.darkTxt};
