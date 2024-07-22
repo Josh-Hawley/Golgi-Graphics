@@ -10,7 +10,7 @@ const Card = ({ setSelected, content }) => {
   const isImage = content.type === 'image';
 
   return (
-    <div style={{ display: 'inline-block', marginTop: '20px' }}>
+    <div style={{ display: 'inline-block'}}>
       {isImage ? (
         <motion.img
           src={content.src}
