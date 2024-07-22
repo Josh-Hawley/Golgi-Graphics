@@ -39,6 +39,7 @@ export const images = [
     description: 'Depicted are two cells, one with Notch receptors (red), and the other with Delta ligands (blue). This short animation uses data from the Protein Data Bank to show an accurate final binding position of the receptor and ligand. The membrane is procedurally animated.'
   },
 
+  
   {
     id: 4,
     src: img1,
@@ -73,6 +74,15 @@ export const images = [
     title: 'The effects of radiotherapy on the tumour microenvironment',
     tags: ['Figure'],
     description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
+  },
+
+  {
+    id: 13,
+    type: 'image',
+    src: img18,
+    title: 'The PhD process',
+    tags: ['Art'],
+    description: 'Concept art for a PhD recruitment advert. This image depicts the journey of taking on a scientific research area during a PhD.'
   },
   
   
@@ -150,14 +160,7 @@ export const images = [
     description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
  },
 
- {
-  id: 13,
-  type: 'image',
-  src: img18,
-  title: 'The PhD process',
-  tags: ['Art'],
-  description: 'Concept art for a PhD recruitment advert. This image depicts the journey of taking on a scientific research area during a PhD.'
-},
+
 
 {
   id: 16,
