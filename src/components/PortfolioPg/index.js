@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PageContainer, GalleryWrap, Header, PlayButtonContainer} from './PortfolioPgElements';
+import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer} from './PortfolioPgElements';
 import { images } from './data';
 import { motion } from 'framer-motion';
 import { ReactComponent as PlayButton } from '../../images/playButton.svg';
@@ -10,7 +10,7 @@ const Card = ({ setSelected, content }) => {
   const isImage = content.type === 'image';
 
   return (
-    <div style={{ display: 'inline-block', marginBottom: '20px' }}>
+    <div style={{ display: 'inline-block', marginTop: '20px' }}>
       {isImage ? (
         <motion.img
           src={content.src}
@@ -71,11 +71,11 @@ const Card = ({ setSelected, content }) => {
         </motion.div>
       )}
 
-      {/* <TagsWrap>
+      <TagsWrap>
         {content.tags.map((tag) => (
           <TagsContainer key={tag}>{tag}</TagsContainer>
         ))}
-      </TagsWrap> */}
+      </TagsWrap>
     </div>
   );
 };
