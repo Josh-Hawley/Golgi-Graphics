@@ -28,7 +28,7 @@ export const TagsWrap = styled.div`
 export const TagsContainer = styled.div`
     margin-right: 4px;
     margin-top: 2px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     padding: 3px 5px;
     line-height: 1;
     padding-bottom: ${theme.padding.tags};
