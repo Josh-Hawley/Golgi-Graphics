@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer } from '../PortfolioPg/PortfolioPgElements';
+import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer, Paragraph } from '../PortfolioPg/PortfolioPgElements';
 import { images } from '../PortfolioPg/data';
 import { motion } from 'framer-motion';
 import { ReactComponent as PlayButton } from '../../images/playButton.svg';
@@ -90,6 +90,7 @@ const PortfolioPg = ({ setSelected }) => {
     <>
       <PageContainer>
         <Header>Portfolio</Header>
+        <Paragraph><i>This is a private portfolio and some of these images are from ongoing or recently completed projects. <b>Please do not reuse or repost any of these images without permission.</b></i> </Paragraph>
         <div style={{ marginBottom: '20px' }}>
           {uniqueTags.map((tag) => (
             <button

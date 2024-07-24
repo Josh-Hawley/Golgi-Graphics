@@ -9,7 +9,7 @@ import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 import img18 from '../../images/Gallery/PhD process.jpg';
 import img19 from '../../images/Gallery/Glass bottles rough.jpg';
 import img20 from '../../images/Gallery/Cytonemes.jpg';
-
+import img21 from '../../images/Gallery/SunTag system.jpg';
 
 
 
@@ -50,12 +50,12 @@ export const images = [
   },
 
   {
-    id: 101,
-    src: img20,
+    id: 16,
     type: 'image',
-    title: 'Cytonemes in the Germarium Niche',
-    tags: ['Figure'],
-    description: 'Figure for a client which outlines ongoing research made for a conference talk presentation.'
+    src: img19,
+    title: 'Abstract stem cells',
+    tags: ['Art', '3D'],
+    description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
   },
 
   {
@@ -68,13 +68,20 @@ export const images = [
   },
   
   {
-    id: 12,
+    id: 101,
+    src: img20,
     type: 'image',
-    src: img17,
-    title: 'The effects of radiotherapy on the tumour microenvironment',
+    title: 'Cytonemes in the Germarium Niche',
     tags: ['Figure'],
-    description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
+    description: 'Figure for a client which outlines ongoing research made for a conference talk presentation. Please do not re-use or repost this image.'
   },
+
+  
+
+
+
+  
+  
 
   {
     id: 13,
@@ -98,14 +105,7 @@ export const images = [
  
  
 
-  {
-    id: 1,
-    type: 'image',
-    src: img16,
-    title: 'Acetylcholine released from a synaptic vesicle',
-    tags: ['3D', 'Art'],
-    description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
-  },
+
 
 
   {
@@ -132,6 +132,32 @@ export const images = [
     description: 'A graphical abstract produced for a grant application. This depicts the potential effects of gene expression dynamics on downstream target genes, dependent on how quickly they can respond. On the right, the possible mechanisms that could underlye different response times are shown.'
   },
   
+  {
+    id: 3,
+    type: 'video',
+    src: vid1,
+    title: 'Lysosome cross-section 3D animation',
+    tags: ['3D', 'Animation'],
+    description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
+ },
+ 
+  {
+    id: 1,
+    type: 'image',
+    src: img16,
+    title: 'Acetylcholine released from a synaptic vesicle',
+    tags: ['3D', 'Art'],
+    description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
+  },
+
+  {
+    id: 102,
+    src: img21,
+    type: 'image',
+    title: 'SunTag system',
+    tags: ['Figure'],
+    description: 'Figure for a client which outlines ongoing research soon to be published. Please do not re-use or repost this image.'
+  },
   
 
   {
@@ -151,26 +177,20 @@ export const images = [
 
 
 
-  {
-    id: 3,
-    type: 'video',
-    src: vid1,
-    title: 'Lysosome cross-section 3D animation',
-    tags: ['3D', 'Animation'],
-    description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
- },
+
+
+
 
 
 
 {
-  id: 16,
+  id: 12,
   type: 'image',
-  src: img19,
-  title: 'Abstract stem cells',
-  tags: ['Art', '3D'],
-  description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
+  src: img17,
+  title: 'The effects of radiotherapy on the tumour microenvironment',
+  tags: ['Figure'],
+  description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
 },
-
 
  
   

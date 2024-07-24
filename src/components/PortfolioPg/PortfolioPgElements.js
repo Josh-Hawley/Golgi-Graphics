@@ -133,6 +133,23 @@ export const PlayButtonContainer = styled.div`
     opacity: ${props => props.isSelected ? '1' : '0'};
     transition: opacity 3s ease;
     
-`
+`;
+
+export const Paragraph = styled.p`
+    margin-top: 0px;
+    margin-bottom: 60px;
+    color: ${theme.colors.darkishTxt};
+    font-size: ${theme.fontSizes.small};
+    text-align: left;
+    max-width: 780px;
+    font-weight: ${theme.fontWeights.normal};
+    
+
+    /* @media screen and (max-width: 768px) {
+        font-size: ${theme.fontWeights.normal};;
+    } */
+
+
+`;
 
 
