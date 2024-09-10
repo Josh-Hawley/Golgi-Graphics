@@ -1,7 +1,7 @@
-import img3 from '../../images/Gallery/Hes_interactions.jpg';
+// import img3 from '../../images/Gallery/Hes_interactions.jpg';
 import img1 from '../../images/Gallery/Neurulation.jpg';
 // import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
-import img13 from '../../images/Gallery/grant figure.jpg';
+// import img13 from '../../images/Gallery/grant figure.jpg';
 import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
 // import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
 import img16 from '../../images/Gallery/synaptic vesicle.jpg';
@@ -10,7 +10,11 @@ import img18 from '../../images/Gallery/PhD process.jpg';
 import img19 from '../../images/Gallery/Glass bottles rough.jpg';
 import img20 from '../../images/Gallery/Cytonemes.jpg';
 import img21 from '../../images/Gallery/SunTag system.jpg';
-
+import img22 from '../../images/Gallery/BoneFinder.jpg';
+import img23 from '../../images/Gallery/Spatial translatomics.jpg';
+import img24 from '../../images/Gallery/Translational toolkit flyer.jpg';
+import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
+import img26 from '../../images/Gallery/Biocentric webpage.jpg';
 
 
 import vid1 from '../../videos/vesicle rotating.mp4';
@@ -121,16 +125,32 @@ export const images = [
   
   
 
-  
+  {
+    id: 104,
+    src: img23,
+    type: 'image',
+    title: 'Graphical abstract',
+    tags: ['Figure'],
+    description: 'Graphical abstract made for a grant.'
+  },
 
   {
-    id: 5,
+    id: 105,
+    src: img24,
     type: 'image',
-    src: img13,
-    title: 'Decoding gene expression dynamics',
-    tags: ['Figure'],
-    description: 'A graphical abstract produced for a grant application. This depicts the potential effects of gene expression dynamics on downstream target genes, dependent on how quickly they can respond. On the right, the possible mechanisms that could underlye different response times are shown.'
+    title: 'Leaflet',
+    tags: ['Promotional'],
+    description: 'Leaflet design for The University of Manchester to promote a soon to be released online tool.'
   },
+
+  // {
+  //   id: 5,
+  //   type: 'image',
+  //   src: img13,
+  //   title: 'Decoding gene expression dynamics',
+  //   tags: ['Figure'],
+  //   description: 'A graphical abstract produced for a grant application. This depicts the potential effects of gene expression dynamics on downstream target genes, dependent on how quickly they can respond. On the right, the possible mechanisms that could underlye different response times are shown.'
+  // },
   
   {
     id: 3,
@@ -140,15 +160,24 @@ export const images = [
     tags: ['3D', 'Animation'],
     description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
  },
- 
-  {
-    id: 1,
-    type: 'image',
-    src: img16,
-    title: 'Acetylcholine released from a synaptic vesicle',
-    tags: ['3D', 'Art'],
-    description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
-  },
+ {
+  id: 106,
+  src: img25,
+  type: 'image',
+  title: 'Translational toolkit logo',
+  tags: ['Promotional'],
+  description: 'Logo designed for a new toolkit at the The University of Manchester.'
+},
+ {
+  id: 1,
+  type: 'image',
+  src: img16,
+  title: 'Acetylcholine released from a synaptic vesicle',
+  tags: ['3D', 'Art'],
+  description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
+},
+
+
 
   {
     id: 102,
@@ -158,17 +187,15 @@ export const images = [
     tags: ['Figure'],
     description: 'Figure for a client which outlines ongoing research soon to be published. Please do not re-use or repost this image.'
   },
+
   
 
-  {
-    id: 6,
-    src: img3,
-    type: 'image',
-    title: 'Modes of transcription factor repression',
-    tags: ['Figure'],
-    description: 'Different types of repression that Hes genes exert on proneural genes. This influences the differentiation status of neural progenitor cells in the developing spinal cord.'
-  },
+  
 
+
+ 
+
+  
  
 
 
@@ -189,31 +216,39 @@ export const images = [
   src: img17,
   title: 'The effects of radiotherapy on the tumour microenvironment',
   tags: ['Figure'],
-  description: 'An illustration created for The University of Manchester Research Hive Blog. Article link: https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/'
+  description: 'An illustration created for The University of Manchester Research Hive Blog. <a href="https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/">Article link</a>'
 },
 
  
-  
+{
+  id: 103,
+  src: img22,
+  type: 'image',
+  title: 'Rollout banner',
+  tags: ['Promotional'],
+  description: 'Rollout banner designed for a conference.'
+},
+
+// {
+//   id: 107,
+//   src: img26,
+//   type: 'image',
+//   title: 'Webpage design',
+//   tags: ['Promotional'],
+//   description: 'Mock webpage design made in Figma.'
+// },
+{
+  id: 107,
+  src: img26,
+  type: 'image',
+  title: 'Webpage design',
+  tags: ['Promotional'],
+  description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Link to full webpage</a>.'
+}
 
   
   
 ];
 
 
-  // {
-  //   id: 15,
-  //   type: 'image',
-  //   src: img15,
-  //   title: 'Investigating the neuroepithelia',
-  //   tags: ['Poster'],
-  //   description: 'A section of a conference poster summarising my own research, presented at The Notch Meeting in Athens, 2023.'
-  // },
 
-  //  {
-//     id: 8,
-//     src: img8,
-//     type: 'image',
-//     title: 'Neuroepithelia',
-//     tags: ['Figure'],
-//     description: 'Figure made for a grant application. The structure of the neuroepithelia that make up the neural tube, and the patterned gene expression within it.'
-//   },

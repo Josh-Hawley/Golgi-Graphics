@@ -129,7 +129,8 @@ function Modal({ selected, setSelected }) {
                 <TagsContainer key={tag}>{tag}</TagsContainer>
               ))}
             </TagsWrap>
-            <Paragraph>{selected.description}</Paragraph>
+            <Paragraph dangerouslySetInnerHTML={{ __html: selected.description }} />
+            {/* <Paragraph>dangerouslySetInnerHTML={{ __html: selected.description }}</Paragraph> */}
           </motion.div>
         </ImageTextWrap>
       </Backdrop>

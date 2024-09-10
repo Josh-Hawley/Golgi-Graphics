@@ -1,4 +1,110 @@
+// import FramerMagnetic from '../FramerMagnetic';import React, { useEffect } from 'react';
+// import Goo from 'gooey-react';
+// import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle } from './HeroElements';
+// import vesicle1 from '../../images/Hero Background/vesicle1.png';
+// import vesicle2 from '../../images/Hero Background/vesicle2.png';
+// import vesicle3 from '../../images/Hero Background/vesicle3.png';
+// import vesicle4 from '../../images/Hero Background/vesicle4.png';
+// import vesicle5 from '../../images/Hero Background/vesicle5.png';
+// import vesicle6 from '../../images/Hero Background/vesicle6.png';
+// import golgi from '../../images/Hero Background/golgi corner.png';
+// import { motion } from 'framer-motion';
+
+// const HeroSection = () => {
+//     return (
+//         <HeroContainer id="home">
+//             <HeroBg>
+//                 <Goo>
+//                     {/* Basic positioning to check visibility */}
+//                     <motion.div
+//                         initial={{ x: '80vw', y: '80vh' }}
+//                         animate={{ x: '0vw', y: '30vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle1} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '60vw', y: '85vh' }}
+//                         animate={{ x: '5vw', y: '25vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle2} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '100vw', y: '60vh' }}
+//                         animate={{ x: '70vw', y: '30vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle3} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '95vw', y: '95vh' }}
+//                         animate={{ x: '35vw', y: '35vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle4} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '70vw', y: '70vh' }}
+//                         animate={{ x: '10vw', y: '10vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle5} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '75vw', y: '75vh' }}
+//                         animate={{ x: '15vw', y: '15vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageVesicle src={vesicle6} />
+//                     </motion.div>
+
+//                     <motion.div
+//                         initial={{ x: '95vw', y: '95vh' }}
+//                         animate={{ x: '90vw', y: '90vh' }}
+//                         transition={{ duration: 10, repeat: Infinity, repeatType: 'mirror' }}
+//                         style={{ position: 'absolute' }}
+//                     >
+//                         <ImageGolgi src={golgi} />
+//                     </motion.div>
+//                 </Goo>
+//             </HeroBg>
+
+//             <HeroContent>
+//                 <HeroH1>Scientific illustration for publication</HeroH1>
+//                 <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
+//                 <HeroBtnWrapper>
+//                     <FramerMagnetic scalingX={0.3} scalingY={1}>
+//                         <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-60}>
+//                             Illustrate my research
+//                         </HeroBtnLink>
+//                     </FramerMagnetic>
+//                 </HeroBtnWrapper>
+//             </HeroContent>
+//         </HeroContainer>
+//     );
+// }
+
+// export default HeroSection;
+
+
+
+
+
+
 import React from 'react';
+// import Goo from 'gooey-react';
 import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, HeroBg, ImageGolgi, ImageVesicle} from './HeroElements';
 import vesicle1 from '../../images/Hero Background/vesicle1.png'
 import vesicle2 from '../../images/Hero Background/vesicle2.png'
@@ -48,7 +154,7 @@ const HeroSection = () => {
 
     const vesicle6X = useTransform(scale, [0, 1], ['55vw', '70vw']);
     const vesicle6Y = useTransform(scale, [0, 1], ['75vh', '85vh']);
-
+   
 
     return (
         
@@ -61,41 +167,55 @@ const HeroSection = () => {
 
                         {/* <ImageBgBackground src={noiseBackground}/> */}
 
-                 
+                    {/* <Goo> */}
          
                       <motion.div style = {{ x: vesicle1X}}>
                         <motion.div style = {{ y: vesicle1Y }}>     
                                 <ImageVesicle src={vesicle1} />  
+                                
+                                  {/* <svg width="192" height="192">
+                                    <circle cx="34%" cy="34%" fill="orchid" r="320" />
+                                  </svg> */}
+                                
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle2X}}>
                         <motion.div style = {{ y: vesicle2Y }}>     
                                 <ImageVesicle src={vesicle2} />  
+                                
+                   
+                              
+                                
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle3X}}>
                         <motion.div style = {{ y: vesicle3Y }}>     
                                 <ImageVesicle src={vesicle3} />  
+                                
+                               
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle4X}}>
                         <motion.div style = {{ y: vesicle4Y }}>     
                                 <ImageVesicle src={vesicle4} />  
+                               
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle5X}}>
                         <motion.div style = {{ y: vesicle5Y }}>     
                                 <ImageVesicle src={vesicle5} />  
+                                
                         </motion.div>
                       </motion.div>
 
                       <motion.div style = {{ x: vesicle6X}}>
                         <motion.div style = {{ y: vesicle6Y }}>     
                                 <ImageVesicle src={vesicle6} />  
+                                
                         </motion.div>
                       </motion.div>
                         
@@ -107,7 +227,7 @@ const HeroSection = () => {
 
                       
                         
-
+                      {/* </Goo> */}
                         
 
                     </HeroBg>
@@ -137,93 +257,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection
-
-
-
-// // import React, {useState} from 'react';
-// import React from 'react';
-// // import {Button} from '../ButtonElements';
-// // import { Parallax } from 'react-parallax';
-// // import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-// import { HeroContainer, HeroContent, HeroP, HeroH1, HeroBtnLink, HeroBtnWrapper, ImageVesicles, HeroBg, ImageGolgi} from './HeroElements';
-// // import Video from '../../videos/video.mp4';
-// // import astrocyte from '../../images/astrocyte.svg'
-// // import cellArt from '../../images/cell art 2 compressed.jpg'
-// // import artBackground from '../../images/Hero Background/cell art background.jpg';
-// import artVesicles from '../../images/Hero Background/vesicles.png';
-// import artGolgi from '../../images/Hero Background/golgi.png';
-// import vesicle1 from '../../images/Hero Background'
-
-// // import { Parallax} from 'react-scroll-parallax';
-// import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
-// import { useRef } from 'react';
-
-
-// const HeroSection = () => {
-    
-//     let ref = useRef(null);
-//     let {scrollYProgress} = useScroll({
-//         target: ref,
-//         offset: ["end end", "end start"]
-//     });
-//     const vesiclesSpring = useSpring(scrollYProgress, {
-//         stiffness: 50,
-//         damping: 30,
-//         restDelta: 0.001
-//     });
-//     const golgiSpring = useSpring(scrollYProgress, {
-//         stiffness: 100,
-//         damping: 30,
-//         restDelta: 0.001
-//     });
-//     // const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
-//     const vesiclesY = useTransform(vesiclesSpring, [0, 1], ['0%', '60%']);
-//     const golgiY = useTransform(golgiSpring, [0, 1], ['0%', '60%']);
-//     // const backgroundRotate = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
-//     // const vesiclesRotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
-//     // const golgiRotate = useTransform(scrollYProgress, [0, 1], [0, 180]);
-//     // const vesiclesX = useTransform(scaleX, [0, 1], ['0%', '30%']);
-
-//     return (
-        
-
-            
-//                 <HeroContainer ref={ref} id="home">
-                
-                    
-//                     <HeroBg>
-         
-//                         {/* <motion.div style={{ y: backgroundY }} >
-//                                 <ImageBgBackground src={artBackground} />   
-//                         </motion.div> */}
-//                         <motion.div style = {{ y: vesiclesY }}>
-//                             {/* <motion.div style={{ x: vesiclesX }} >  */}
-//                                     <ImageVesicles src={artVesicles} />  
-//                             {/* </motion.div> */}
-//                         </motion.div>
-                        
-
-//                         <motion.div style={{ x: golgiY }} >
-//                                 <ImageGolgi src={artGolgi} />   
-//                         </motion.div>
-
-//                     </HeroBg>
-
-                
-//                     <HeroContent>
-                        
-//                         <HeroH1>Scientific illustration for publication</HeroH1>
-//                         <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
-                    
-                        
-//                         <HeroBtnWrapper>
-//                             <HeroBtnLink to="services" smooth={true} duration={800} spy={true} exact="true" offset={-80}>Illustrate my research</HeroBtnLink>
-//                         </HeroBtnWrapper>
-
-//                     </HeroContent>
-                    
-//                 </HeroContainer>
-//     )
-// }
-
-// export default HeroSection

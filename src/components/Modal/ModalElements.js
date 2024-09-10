@@ -19,6 +19,7 @@ export const ImageTextWrap = styled.div`
   margin-right: auto;
   width:90%;
   /* height: 700px; */
+  /* background-color: red; */
   max-width: 800px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -45,6 +46,7 @@ export const Header = styled.h1`
 export const Paragraph = styled.p`
 max-width: 800px;
     margin-top: 20px;
+    
     font-size: calc(0.85*${theme.fontSizes.normal});
     line-height: 24px;
     font-weight: ${theme.fontWeights.normal};
