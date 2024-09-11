@@ -17,7 +17,7 @@ import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
 import img26 from '../../images/Gallery/Biocentric webpage.jpg';
 
 
-import vid1 from '../../videos/vesicle rotating.mp4';
+// import vid1 from '../../videos/vesicle rotating.mp4';
 import vid2 from '../../videos/IKNM.mp4';
 import vid3 from '../../videos/K-channel compressed.mp4';
 import vid4 from '../../videos/Ligand receptor.mp4';
@@ -152,14 +152,14 @@ export const images = [
   //   description: 'A graphical abstract produced for a grant application. This depicts the potential effects of gene expression dynamics on downstream target genes, dependent on how quickly they can respond. On the right, the possible mechanisms that could underlye different response times are shown.'
   // },
   
-  {
-    id: 3,
-    type: 'video',
-    src: vid1,
-    title: 'Lysosome cross-section 3D animation',
-    tags: ['3D', 'Animation'],
-    description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
- },
+//   {
+//     id: 3,
+//     type: 'video',
+//     src: vid1,
+//     title: 'Lysosome cross-section 3D animation',
+//     tags: ['3D', 'Animation'],
+//     description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
+//  },
  {
   id: 106,
   src: img25,
