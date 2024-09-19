@@ -12,9 +12,11 @@ import img20 from '../../images/Gallery/Cytonemes.jpg';
 import img21 from '../../images/Gallery/SunTag system.jpg';
 import img22 from '../../images/Gallery/BoneFinder.jpg';
 import img23 from '../../images/Gallery/Spatial translatomics.jpg';
-import img24 from '../../images/Gallery/Translational toolkit flyer.jpg';
-import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
+// import img24 from '../../images/Gallery/Translational toolkit flyer.jpg';
+// import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
 import img26 from '../../images/Gallery/Biocentric webpage.jpg';
+import img27 from '../../images/Gallery/Tech platform logos.jpg';
+
 
 
 // import vid1 from '../../videos/vesicle rotating.mp4';
@@ -71,21 +73,21 @@ export const images = [
     description: 'Graphical abstract for a paper soon to be published.'
   },
   
+ 
+  
+
+
+
+  
   {
-    id: 101,
-    src: img20,
+    id: 102,
+    src: img21,
     type: 'image',
-    title: 'Cytonemes in the Germarium Niche',
+    title: 'SunTag system',
     tags: ['Figure'],
-    description: 'Figure for a client which outlines ongoing research made for a conference talk presentation. Please do not re-use or repost this image.'
+    description: 'Figure for a client which outlines ongoing research soon to be published. Please do not re-use or repost this image.'
   },
 
-  
-
-
-
-  
-  
 
   {
     id: 13,
@@ -110,6 +112,14 @@ export const images = [
  
 
 
+  {
+    id: 101,
+    src: img20,
+    type: 'image',
+    title: 'Cytonemes in the Germarium Niche',
+    tags: ['Figure'],
+    description: 'Figure for a client which outlines ongoing research made for a conference talk presentation. Please do not re-use or repost this image.'
+  },
 
 
   {
@@ -134,14 +144,14 @@ export const images = [
     description: 'Graphical abstract made for a grant.'
   },
 
-  {
-    id: 105,
-    src: img24,
-    type: 'image',
-    title: 'Leaflet',
-    tags: ['Promotional'],
-    description: 'Leaflet design for The University of Manchester to promote a soon to be released online tool.'
-  },
+  // {
+  //   id: 105,
+  //   src: img24,
+  //   type: 'image',
+  //   title: 'Leaflet',
+  //   tags: ['Promotional'],
+  //   description: 'Leaflet design for The University of Manchester to promote a soon to be released online tool.'
+  // },
 
   // {
   //   id: 5,
@@ -160,13 +170,23 @@ export const images = [
 //     tags: ['3D', 'Animation'],
 //     description: 'An animated cross-section of a lysosome, rendered in 3D. A phospholipid bilayer is depicted in white.'
 //  },
+
+{
+  id: 12,
+  type: 'image',
+  src: img17,
+  title: 'The effects of radiotherapy on the tumour microenvironment',
+  tags: ['Figure'],
+  description: 'An illustration created for The University of Manchester Research Hive Blog. <a href="https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/">Article link</a>'
+},
+
  {
   id: 106,
-  src: img25,
+  src: img27,
   type: 'image',
-  title: 'Translational toolkit logo',
+  title: 'Technology platform logo concepts',
   tags: ['Promotional'],
-  description: 'Logo designed for a new toolkit at the The University of Manchester.'
+  description: 'Logos concept designs for a research technology platform.'
 },
  {
   id: 1,
@@ -177,47 +197,6 @@ export const images = [
   description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
 },
 
-
-
-  {
-    id: 102,
-    src: img21,
-    type: 'image',
-    title: 'SunTag system',
-    tags: ['Figure'],
-    description: 'Figure for a client which outlines ongoing research soon to be published. Please do not re-use or repost this image.'
-  },
-
-  
-
-  
-
-
- 
-
-  
- 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-{
-  id: 12,
-  type: 'image',
-  src: img17,
-  title: 'The effects of radiotherapy on the tumour microenvironment',
-  tags: ['Figure'],
-  description: 'An illustration created for The University of Manchester Research Hive Blog. <a href="https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/">Article link</a>'
-},
 
  
 {
