@@ -104,7 +104,7 @@ export const images = [
     id: 10,
     src: vid2,
     type: 'video',
-    title: 'Interkinetic nuclear migration in neuroepithelia.',
+    title: 'Interkinetic nuclear migration in neuroepithelia',
     tags: ['3D', 'Animation'],
     description: 'A procedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
   },
@@ -178,7 +178,7 @@ export const images = [
   src: img17,
   title: 'The effects of radiotherapy on the tumour microenvironment',
   tags: ['Figure'],
-  description: 'An illustration created for The University of Manchester Research Hive Blog. <a href="https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/">Article link</a>'
+  description: 'An illustration created for The University of Manchester Research Hive Blog. <a href="https://manchesterresearchhive.wordpress.com/2024/04/03/the-game-changing-effects-of-radiotherapy-on-breast-cancer-beyond-killing-cancer-cells/" style="font-size: 0.8rem;">Article link</a>'
 },
 
  {
@@ -201,7 +201,7 @@ export const images = [
 
  
 {
-  id: 103,
+  id: 30,
   src: img22,
   type: 'image',
   title: 'Rollout banner',
@@ -223,7 +223,7 @@ export const images = [
   type: 'image',
   title: 'Webpage design',
   tags: ['Promotional'],
-  description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Link to full webpage</a>.'
+  description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" style="font-size: 0.8rem;">Link to full webpage</a>.'
 },
 
 {
@@ -232,16 +232,16 @@ export const images = [
   type: 'image',
   title: 'Webpage banner',
   tags: ['Promotional'],
-  description: ''
+  description: 'Webpage banner designed for the Translational Toolkit at The University of Manchester.'
 },
 
 {
   id: 109,
   src: img29,
   type: 'image',
-  title: 'Webpage banner',
+  title: 'BMP signalling',
   tags: ['Figure'],
-  description: ''
+  description: 'Paper figure depicting modifications to BMP signalling.'
 }
 
   

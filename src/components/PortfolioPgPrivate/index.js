@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer, Paragraph } from '../PortfolioPg/PortfolioPgElements';
+import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer, Paragraph, CardParagraph, CardHeader } from '../PortfolioPg/PortfolioPgElements';
 import { images } from '../PortfolioPg/data';
 import { motion } from 'framer-motion';
 import { ReactComponent as PlayButton } from '../../images/playButton.svg';
@@ -8,8 +8,13 @@ import { ReactComponent as PlayButton } from '../../images/playButton.svg';
 const Card = ({ setSelected, content }) => {
   const isImage = content.type === 'image';
 
+  
   return (
-    <div style={{ display: 'inline-block', marginTop: '50px' }}>
+    <div style={{ display: 'inline-block', paddingBottom: '10px' }}>
+
+      <CardHeader>{content.title}</CardHeader>
+      <CardParagraph dangerouslySetInnerHTML={{ __html: content.description }} />
+
       {isImage ? (
         <motion.img
           src={content.src}

@@ -153,3 +153,30 @@ export const Paragraph = styled.p`
 `;
 
 
+
+export const CardHeader = styled.h1`
+    color: ${theme.colors.darkTxt};
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: ${theme.font.header}, sans-serif;
+    font-weight: ${theme.fontWeights.header};
+`;
+
+export const CardParagraph = styled.p`
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: ${theme.colors.darkishTxt};
+    font-size: ${theme.fontSizes.xsmall};
+    text-align: left;
+    max-width: 780px;
+    font-weight: ${theme.fontWeights.normal};
+    
+
+    /* @media screen and (max-width: 768px) {
+        font-size: ${theme.fontWeights.normal};;
+    } */
+
+
+`;

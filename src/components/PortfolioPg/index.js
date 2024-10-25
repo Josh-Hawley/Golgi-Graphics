@@ -1,16 +1,21 @@
 import React, { useState } from 'react';
-import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer} from './PortfolioPgElements';
+import { PageContainer, TagsContainer, TagsWrap, GalleryWrap, Header, PlayButtonContainer, CardHeader, CardParagraph} from './PortfolioPgElements';
 import { images } from './data';
 import { motion } from 'framer-motion';
 import { ReactComponent as PlayButton } from '../../images/playButton.svg';
+
 
 const MAX_ID_VALUE = 100; // Any IDs above 100 won't be included
 
 const Card = ({ setSelected, content }) => {
   const isImage = content.type === 'image';
-
+  // const theme = useTheme();
   return (
-    <div style={{ display: 'inline-block', marginTop: '50px' }}>
+    <div style={{ display: 'inline-block', marginTop: '0px', paddingBottom: '10px' }}>
+
+      <CardHeader>{content.title}</CardHeader>
+      <CardParagraph dangerouslySetInnerHTML={{ __html: content.description }} />
+
       {isImage ? (
         <motion.img
           src={content.src}
