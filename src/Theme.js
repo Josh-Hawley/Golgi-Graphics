@@ -45,5 +45,8 @@ export const theme = {
     // header: 'joanna-nova', 
     // header: "joanna-sans-nova",
     header: 'seravek-web'
+    // header: 'cronos-pro-display'
+    
+
   }
 };

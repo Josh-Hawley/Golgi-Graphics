@@ -16,7 +16,8 @@ import img23 from '../../images/Gallery/Spatial translatomics.jpg';
 // import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
 import img26 from '../../images/Gallery/Biocentric webpage.jpg';
 import img27 from '../../images/Gallery/Tech platform logos.jpg';
-
+import img28 from '../../images/Gallery/Banner.jpg';
+import img29 from '../../images/Gallery/BMP signalling.jpg';
 
 
 // import vid1 from '../../videos/vesicle rotating.mp4';
@@ -223,6 +224,24 @@ export const images = [
   title: 'Webpage design',
   tags: ['Promotional'],
   description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1">Link to full webpage</a>.'
+},
+
+{
+  id: 108,
+  src: img28,
+  type: 'image',
+  title: 'Webpage banner',
+  tags: ['Promotional'],
+  description: ''
+},
+
+{
+  id: 109,
+  src: img29,
+  type: 'image',
+  title: 'Webpage banner',
+  tags: ['Figure'],
+  description: ''
 }
 
   
