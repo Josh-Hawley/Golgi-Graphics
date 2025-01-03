@@ -218,7 +218,7 @@ export const images = [
 //   description: 'Mock webpage design made in Figma.'
 // },
 {
-  id: 107,
+  id: 33,
   src: img26,
   type: 'image',
   title: 'Webpage design',
