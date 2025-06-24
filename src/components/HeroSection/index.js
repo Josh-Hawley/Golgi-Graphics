@@ -236,7 +236,8 @@ const HeroSection = () => {
                     <HeroContent>
                         
                         <HeroH1>Scientific illustration for publication</HeroH1>
-                        <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP>
+                        {/* <HeroP>Communicate your research with clear, accurate, and visually pleasing graphics.</HeroP> */}
+                        <HeroP>Scientific illustration services for researchers in academia and biotech — pairing scientific accuracy with engaging design.</HeroP>
                         <HeroBtnWrapper>
                         {/* <motion.div
                         whileHover={{ scale: 1.05 }} // Upward movement of 20 pixels on hover

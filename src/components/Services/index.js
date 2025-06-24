@@ -30,8 +30,10 @@ const Services = ({lightBg, id, imgStart, topLine, lightText, headline, darkText
                 <TextWrapper>
                     <TopLine>{topLine}</TopLine>
                     <Heading lightText={lightText}>{headline}</Heading>
-                    <Subtitle darkText={darkText}>I provide illustration services to visually represent and communicate scientific research. I specialise in biology, but also illustrate across other scientific disciplines.</Subtitle>
-                    <Subtitle darkText={darkText}>My aim is to promote scientific understanding and foster collaboration by transforming complex data into intuitive visual elements, providing accurate and insightful summaries.</Subtitle>
+                    {/* <Subtitle darkText={darkText}>I provide illustration services to visually represent and communicate scientific research. I specialise in biology, but also illustrate across other scientific disciplines.</Subtitle>
+                    <Subtitle darkText={darkText}>My aim is to promote scientific understanding and foster collaboration by transforming complex data into intuitive visual elements, providing accurate and insightful summaries.</Subtitle> */}
+                    <Subtitle>I provide visual communication services tailored to scientific researchers, specialising in illustration and animation. With a background in scientific research and expertise in graphic design, I work across disciplines, particularly in biology, to translate complex ideas into clear, compelling visuals. </Subtitle>
+                    <Subtitle>Every project begins with a deep understanding of the science. I collaborate closely with researchers to identify the core messages, then apply graphic design principles to bring these ideas to life.</Subtitle>
 
                     <BtnWrap>
                     <FramerMagnetic scalingX={0.3} scalingY={1}>

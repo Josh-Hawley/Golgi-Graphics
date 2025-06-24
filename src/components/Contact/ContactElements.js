@@ -63,6 +63,8 @@ export const FormLabel = styled.label`
     font-size: ${theme.fontSizes.small};
     line-height: 24px;
     font-weight: ${theme.fontWeights.bold};
+    font-family: greycliff-cf;
+    font-weight: 700;
  
     color: ${theme.colors.darkishTxt};
 `

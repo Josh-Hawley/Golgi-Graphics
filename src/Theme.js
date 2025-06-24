@@ -33,7 +33,7 @@ export const theme = {
     medium: 400,
     bold: 600,
     button: 500,
-    header: 600,
+    header: 700,
   },
 
   padding: {
@@ -44,7 +44,8 @@ export const theme = {
   font: {
     // header: 'joanna-nova', 
     // header: "joanna-sans-nova",
-    header: 'seravek-web'
+    // header: 'seravek-web'
+    header: 'greycliff-cf, sans-serif;'
     // header: 'cronos-pro-display'
     
 
