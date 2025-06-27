@@ -81,6 +81,10 @@ const Card = ({ setSelected, content }) => {
           <TagsContainer key={tag}>{tag}</TagsContainer>
         ))}
       </TagsWrap>
+
+      {/* <CardHeader>{content.title}</CardHeader>
+      <CardParagraph dangerouslySetInnerHTML={{ __html: content.description }} /> */}
+
     </div>
   );
 };

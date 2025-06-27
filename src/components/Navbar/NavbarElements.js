@@ -44,7 +44,7 @@ export const NavLogo = styled(LinkR)`
   padding: 0;
   display: block;
   box-sizing: border-box;
-  max-width:154px;
+  max-width:130px;
   /* flex-grow: 1; */
   /* justify-self: right; */
 `;
@@ -90,13 +90,14 @@ export const NavLinks = styled(LinkS)`
   /* width: 110px; */
   /* text-transform: uppercase; */
   cursor: pointer;
-  transition: ease-in-out 0.08s;
+  transition: ease-in-out 0.2s;
 
 
 
   &.active {
 
     color:${theme.colors.darkTxt};
+    font-weight: ${theme.fontWeights.bold};
 
   }
 

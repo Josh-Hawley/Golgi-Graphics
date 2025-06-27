@@ -227,7 +227,7 @@ export const Paragraph = styled.p`
 
     margin-top: 26px;
     font-size: ${theme.fontSizes.small};
-    line-height: 24px;
+    line-height: ${theme.lineheight.paragraph};
     font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxt}
     

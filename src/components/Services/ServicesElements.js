@@ -98,19 +98,18 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    /* color: ${theme.colors.accentLight}; */
     color: ${theme.colors.lightTxt};
-    font-size: 16px;
-    font-weight: ${theme.fontWeights.light};
-    letter-spacing: 2px;
+    font-weight: ${theme.fontWeights.bold};
+    letter-spacing: 3.5px;
     text-transform: uppercase;
 
-    margin-bottom: 16px;
+    margin-bottom: ${theme.margin.topline};
+    font-family: ${theme.font.topline};
 `;
 
 export const Heading = styled.h1`
     color: ${theme.colors.darkTxt};
-    margin-bottom: 24px;
+    margin-bottom: ${theme.margin.header};
     font-size: ${theme.fontSizes.large};
     line-height: 1.1;
     /* font-weight: ${theme.fontWeights.bold}; */
@@ -136,9 +135,9 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: ${theme.margin.paragraph};
     font-size: ${theme.fontSizes.small};
-    line-height: 24px;
+    line-height: ${theme.lineheight.paragraph};
     font-weight: ${theme.fontWeights.normal};
     color: ${theme.colors.darkishTxt};
     /* color: ${({darkText}) => (darkText ? '#010606' : '#fff')}; */

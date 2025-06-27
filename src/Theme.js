@@ -1,26 +1,20 @@
 export const theme = {
   colors: {
     lightestBg: 'white',
-    // lightBg: '#FCFBFA',
     lightBg: 'white',
     darkBg: '#36332F',
     superLightTxt: '#FFFFFF',
     lightTxt: '#86837D ',
     darkTxt: '#323130',
-    // darkTxt: '#1D1C1C',
-    // darkishTxt: '#636363',
     darkishTxt: '#323130',
-    // darkishTxt: '#000000',
-    // accent: '#FF9E36',
     accent: '#FF7262',
-    // accentLight: '#FFC689',
     accentLight: '#FFBFA9',
     accentSuperLight: '#FFFAF7',
     accentDark: '#421800',
   },
 
   fontSizes: {
-    xsmall: '0.8rem',
+    xsmall: '.9rem',
     small: '1rem',
     medium: '2rem',
     large: '3rem',
@@ -28,8 +22,8 @@ export const theme = {
   },
 
   fontWeights: {
-    light: 300,
-    normal: 200,
+    light: 200,
+    normal: 300,
     medium: 400,
     bold: 600,
     button: 500,
@@ -37,17 +31,29 @@ export const theme = {
   },
 
   padding: {
-    button: '11px',
+    button: '9px',
     tags: '4px',
   },
 
-  font: {
+  margin: {
+    paragraph: '20px',
+    topline: '8px',
+    header: '18px'
+  },
+
+  lineheight: {
+    paragraph: '1.4rem'
+  },
+
+  //Title font
+  font: { 
     // header: 'joanna-nova', 
     // header: "joanna-sans-nova",
     // header: 'seravek-web'
-    header: 'greycliff-cf, sans-serif;'
+    header: 'greycliff-cf, sans-serif;',
+    topline: 'greycliff-cf, sans-serif;'
     // header: 'cronos-pro-display'
-    
-
   }
+
+
 };

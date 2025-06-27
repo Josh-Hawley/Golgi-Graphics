@@ -1,50 +1,14 @@
-
-/* @import url("https://use.typekit.net/qdd8iso.css"); */
-
-
-/* @font-face {
-  font-family: 'Joanna Sans Nova';
-  src: local('Joanna Sans Nova Regular'),
-  url('../public/fonts/Joanna Sans Nova/Joanna Sans Nova Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Joanna Sans Nova';
-  src: local('Joanna Sans Nova Italic'),
-  url('../public/fonts/Joanna Sans Nova/Joanna\ Sans\ Nova\ Italic.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Joanna Sans Nova';
-  src: local('Joanna Sans Nova Bold'),
-  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaMedium.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Joanna Sans Nova';
-  src: local('Joanna Sans Nova Light'),
-  url('../public/fonts/Joanna Sans Nova/JoannaSansNovaLight.woff2') format('woff2');
-  font-weight: lighter;
-  font-style: normal;
-} */
-
 *{
   box-sizing: border-box;
-  font-size: 17.5px;
+  font-size: 16px;
   margin: 0;
   padding: 0;
-  /* font-family: 'seravek-web', sans-serif; */
-  font-family: 'joanna-sans-nova', sans-serif;
+  font-family: 'seravek-web', sans-serif;
+}
+
+  /* font-family: 'joanna-sans-nova', sans-serif; */
   /* font-family: 'cronos-pro-display', sans-serif; */
   /* font-weight: 200; */
 
   /* font-family: "gill-sans-nova", sans-serif; */
 
-
-}

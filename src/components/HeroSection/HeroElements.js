@@ -165,7 +165,7 @@ export const HeroContent = styled.div`
 
 
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin-top: 12px;
     color: ${theme.colors.darkishTxt};
     font-size: ${theme.fontSizes.small};
     text-align: left;

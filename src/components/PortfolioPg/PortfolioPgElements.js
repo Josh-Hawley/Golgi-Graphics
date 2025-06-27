@@ -158,7 +158,7 @@ export const CardHeader = styled.h1`
     color: ${theme.colors.darkTxt};
     font-size: 1.5rem;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 10px;
     font-family: ${theme.font.header}, sans-serif;
     font-weight: ${theme.fontWeights.header};

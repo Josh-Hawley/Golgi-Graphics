@@ -20,7 +20,7 @@ export const ImageTextWrap = styled.div`
   width:90%;
   /* height: 700px; */
   /* background-color: red; */
-  max-width: 800px;
+  max-width: 1000px;
   margin-top: 100px;
   margin-bottom: 100px;
   display: flex;

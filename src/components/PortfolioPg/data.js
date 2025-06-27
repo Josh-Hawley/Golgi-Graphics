@@ -22,8 +22,9 @@ import img30 from '../../images/Gallery/ISRU-logo.jpg';
 import img31 from '../../images/Gallery/FBMH Technology Platforms Logo.jpg';
 // import img32 from '../../images/Gallery/The Basement Membrane at a Glance.jpg';
 import img33 from '../../images/Gallery/SunTag system.jpg';
-import img34 from '../../images/Gallery/Spatial translatomics.jpg';
+// import img34 from '../../images/Gallery/Spatial translatomics.jpg';
 import img35 from '../../images/Gallery/Helices-all-the-way-down.jpg';
+import img36 from '../../images/Gallery/Matrix-centre-posters.jpg';
 
 
 // import vid1 from '../../videos/vesicle rotating.mp4';
@@ -39,7 +40,7 @@ export const images = [
   id: 1,
   type: 'image',
   src: img16,
-  title: 'Acetylcholine released from a synaptic vesicle',
+  title: 'Synaptic popcorn',
   tags: ['3D', 'Art'],
   description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
 },
@@ -52,6 +53,8 @@ export const images = [
     tags: ['3D', 'Animation'],
     description: 'A procedural animation of a phospholipid bilayer, potassium ion channels and potassium ions passing through them.'
   },
+
+
 
   {
     id: 17,
@@ -85,8 +88,34 @@ export const images = [
   },
 
 
+   
   
-  
+{
+    id: 16,
+    type: 'image',
+    src: img19,
+    title: 'Spinal cord stem cells',
+    tags: ['Art', '3D'],
+    description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
+  },
+
+  {
+  id: 34,
+  src: img30,
+  type: 'image',
+  title: 'UK In-Situ Resource Utilisation logo',
+  tags: ['Logo'],
+  description: 'A logo developed for the UK In-Situ Resource Utilisation (ISRU UK) group who are funded by the UK Space Agency. They represent research in the UK that concerns space exploration resource utilisation.'
+},
+
+    {
+  id: 44,
+  src: img36,
+  type: 'image',
+  title: 'Wellcome Trust Cell-Matrix Centre 30th anniversary posters',
+  tags: ['Poster'],
+  description: 'This set of posters was designed for the Wellcome Trust Cell-Matrix Centre\'s 30th anniversary event that took place at The University of Manchester on the 25th June 2025. The Cell-Matrix centre is comprised of 30 research groups that broadly work on three distinct research areas: Mechano-matrix, Immuno-matrix, and Chrono-matrix. Therefore the idea behind the posters was to highlight these three areas in a visually compelling way while also providing more technical depth by the inclusion of graphical abstracts describing a selection of the research that has been carried out by the groups at the centre.'
+},
   
    {
     id: 10,
@@ -108,27 +137,13 @@ export const images = [
   description: 'Paper figure depicting modifications to BMP signalling.'
 },
 
-  {
-    id: 39,
-    src: img20,
-    type: 'image',
-    title: 'Cytonemes in the germarium niche',
-    tags: ['Figure'],
-    description: 'How cytonemes influence signalling in the germarium niche.'
-  },
 
 
 
 
 
-{
-  id: 34,
-  src: img30,
-  type: 'image',
-  title: 'UK In-Situ Resource Utilisation logo',
-  tags: ['Logo'],
-  description: 'A logo developed for the UK In-Situ Resource Utilisation (ISRU UK) group who are funded by the UK Space Agency. They represent research in the UK that concerns space exploration resource utilisation.'
-},
+
+
 
 // {
 //   id: 37,
@@ -145,7 +160,7 @@ export const images = [
   type: 'image',
   title: 'FBMH Technology Platforms logo',
   tags: ['Logo'],
-  description: 'A logo designed for the Faculty of Biology, Medicine and Health (FBMH) Technology Platforms at the University of Manchester. <a href="https://www.bmh.manchester.ac.uk/research/platforms/" style="font-size: 0.8rem;">Link to FBMH Technology Platforms.</a>'
+  description: 'A logo designed for the Faculty of Biology, Medicine and Health (FBMH) Technology Platforms at the University of Manchester. <a href="https://www.bmh.manchester.ac.uk/research/platforms/" style="font-size: 0.9rem;">Link to FBMH Technology Platforms.</a>'
 },
 
 
@@ -163,23 +178,23 @@ export const images = [
 
 
 
-{
-  id: 42,
-  src: img34,
-  type: 'image',
-  title: 'Transcription/translation factories',
-  tags: ['Figure'],
-  description: 'Section of a figure outling the relationship between transcription and translation factories.'
-},
+// {
+//   id: 42,
+//   src: img34,
+//   type: 'image',
+//   title: 'Transcription/translation factories',
+//   tags: ['Figure'],
+//   description: 'Section of a figure outling the relationship between transcription and translation factories.'
+// },
 
-{
-    id: 16,
-    type: 'image',
-    src: img19,
-    title: 'Spinal cord stem cells',
-    tags: ['Art', '3D'],
-    description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
-  },
+  {
+  id: 38,
+  src: img28,
+  type: 'image',
+  title: 'Webpage banner',
+  tags: ['Promotional'],
+  description: 'Webpage banner designed for the Translation Toolkit at The University of Manchester. <a href="https://translation-toolkit.manchester.ac.uk/" style="font-size: 0.9rem;">Link to Translation Toolkit.</a>'
+},
   
   {
     id: 13,
@@ -190,14 +205,16 @@ export const images = [
     description: 'Concept art for a PhD recruitment advert. This image depicts the journey of taking on a scientific research area during a PhD.'
   },
 
-  {
-  id: 38,
-  src: img28,
-  type: 'image',
-  title: 'Webpage banner',
-  tags: ['Promotional'],
-  description: 'Webpage banner designed for the Translation Toolkit at The University of Manchester. <a href="https://translation-toolkit.manchester.ac.uk/" style="font-size: 0.8rem;">Link to Translation Toolkit.</a>'
-},
+   {
+    id: 39,
+    src: img20,
+    type: 'image',
+    title: 'Cytonemes in the germarium niche',
+    tags: ['Figure'],
+    description: 'How cytonemes influence signalling in the germarium niche.'
+  },
+
+
 
 
 
@@ -225,7 +242,7 @@ export const images = [
   type: 'image',
   title: 'Webpage design',
   tags: ['Promotional'],
-  description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" style="font-size: 0.8rem;">Link to full webpage</a>.'
+  description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" style="font-size: 0.9rem;">Link to full webpage</a>.'
 },
 ];
 
