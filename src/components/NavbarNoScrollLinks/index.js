@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 // import {FaBars} from 'react-icons/fa';
 
 import { IconContext } from 'react-icons/lib';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink, BurgerWrap, BurgerBarLong, BurgerBarMid, BurgerBarShort} from '../Navbar/NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavBtn, NavBtnLink, BurgerWrap, BurgerBarMid} from '../Navbar/NavbarElements';
 import { theme } from '../../Theme';
 // import logo_and_text from '../../images/logo and text 2.png'
-import {ReactComponent as LogoText} from '../../images/logo and text.svg'
+import {ReactComponent as LogoSVG} from '../../images/logo_and_text.svg';
 import FramerMagnetic from '../FramerMagnetic';
 
 const NavbarNoLinks = ({ toggle }) => {
@@ -36,15 +36,16 @@ const NavbarNoLinks = ({ toggle }) => {
             <NavbarContainer scrollNav = {scrollNav}>
                 <NavLogo to='/'>
                     {/* <NavLogoImage src={logo_and_text} /> */}
-                    <LogoText />
+                    <LogoSVG style={{ width: 'auto', height: '100%', display: 'block', padding: '8px 8px 8px 0'}}/>
                 </NavLogo>
                 
                 
                 <MobileIcon onClick={toggle}>
                     
                     <BurgerWrap>
-                        <BurgerBarLong/>
-                        <BurgerBarShort/>
+                        {/* <BurgerBarLong/>
+                        <BurgerBarShort/> */}
+                        <BurgerBarMid/>
                         <BurgerBarMid/>
                     </BurgerWrap>    
                

@@ -1,38 +1,18 @@
-// import img3 from '../../images/Gallery/Hes_interactions.jpg';
 import img1 from '../../images/Gallery/Neurulation.jpg';
-// import img8 from '../../images/Gallery/HES5 pattern neural tube.jpg';
-// import img13 from '../../images/Gallery/grant figure.jpg';
-// import img14 from '../../images/Gallery/AnzyGraphicalAbstract.jpg';
-// import img15 from '../../images/Gallery/Investigating the neuroepithelia.jpg';
 import img16 from '../../images/Gallery/synaptic vesicle.jpg';
-// import img17 from '../../images/Gallery/The tumour microenvironment.jpg';
 import img18 from '../../images/Gallery/PhD process.jpg';
-// import img19 from '../../images/Gallery/Glass bottles rough.jpg';
 import img20 from '../../images/Gallery/Cytonemes.jpg';
-// import img21 from '../../images/Gallery/SunTag system.jpg';
-// import img22 from '../../images/Gallery/BoneFinder.jpg';
-// import img23 from '../../images/Gallery/Spatial translatomics.jpg';
-// import img24 from '../../images/Gallery/Translational toolkit flyer.jpg';
-// import img25 from '../../images/Gallery/Translation toolkit logo.jpg';
 import img26 from '../../images/Gallery/Biocentric webpage.jpg';
-// import img27 from '../../images/Gallery/Tech platform logos.jpg';
 import img28 from '../../images/Gallery/Banner.jpg';
 import img29 from '../../images/Gallery/BMP signalling.jpg';
 import img30 from '../../images/Gallery/ISRU-logo.jpg';
-// import img31 from '../../images/Gallery/FBMH Technology Platforms Logo.jpg';
-// import img32 from '../../images/Gallery/The Basement Membrane at a Glance.jpg';
-// import img33 from '../../images/Gallery/SunTag system.jpg';
-// import img34 from '../../images/Gallery/Spatial translatomics.jpg';
-// import img35 from '../../images/Gallery/Helices-all-the-way-down.jpg';
 import img36 from '../../images/Gallery/Matrix-centre-posters.jpg';
 
-
-// import vid1 from '../../videos/vesicle rotating.mp4';
 import vid1 from '../../videos/Vesicle_fusion.mp4';
 import vid2 from '../../videos/IKNM.mp4';
 import vid3 from '../../videos/K-channel compressed.mp4';
 import vid4 from '../../videos/Ligand receptor.mp4';
-// import vid5 from '../../videos/Dynamic material.mp4';
+import vid5 from '../../videos/Cell Division.mp4';
 
 
 export const images = [
@@ -67,7 +47,14 @@ export const images = [
   },
   
 
-
+{
+    id: 51,
+    src: vid5,
+    type: 'video',
+    title: 'Cell division',
+    tags: ['3D', 'Animation'],
+    description: 'A short physics-based cell division animation. The animation was not made to portray a particular process, but in my mind it is reminiscent of embryo development, spheroid growth of suspended cells in culture, or tumour growth.'
+  },
 
 
   {

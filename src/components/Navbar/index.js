@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { IconContext } from 'react-icons/lib';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, BurgerBarLong, BurgerBarMid, BurgerBarShort, BurgerWrap} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink, BurgerBarMid, BurgerWrap} from './NavbarElements';
 import { theme } from '../../Theme';
-import {ReactComponent as LogoText} from '../../images/logo and text.svg'
+// import {ReactComponent as LogoSVG} from '../../images/logo_and_text.svg';
+import {ReactComponent as LogoSVG} from '../../images/logo_and_text.svg';
 import FramerMagnetic from '../FramerMagnetic';
 
 const Navbar = ({ toggle, isOpen }) => {
@@ -37,15 +38,19 @@ const Navbar = ({ toggle, isOpen }) => {
         <Nav scrollNav = {scrollNav}>
             <NavbarContainer scrollNav = {scrollNav}>
                 <NavLogo to='/' onClick={toggleHome}>
-                    <LogoText style={{ padding: '0', margin: '0'}}/>
+                    {/* <LogoSVG style={{ padding: '0', margin: '0'}}/> */}
+                    <LogoSVG style={{ width: 'auto', height: '100%', display: 'block', padding: '8px 8px 8px 0'}}/>
+                    {/* <img src={require('../../images/logo_and_text.svg')} alt="Logo" style={{width: '200px', height: 'auto'}} /> */}
+
                 </NavLogo>
                 
                 
                 <MobileIcon onClick={toggle} isOpen={isOpen}>
                     
                     <BurgerWrap>
-                        <BurgerBarLong/>
-                        <BurgerBarShort/>
+                        {/* <BurgerBarLong/> */}
+                        {/* <BurgerBarShort/> */}
+                        <BurgerBarMid/>
                         <BurgerBarMid/>
                     </BurgerWrap>    
                

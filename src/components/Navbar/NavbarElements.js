@@ -179,11 +179,19 @@ export const BurgerBarLong = styled.div`
   border-radius: 4px;
 `;
 
+// export const BurgerBarMid = styled.div`
+//   width: 28px;
+//   height: 2.5px;
+//   background-color: ${theme.colors.darkTxt};
+//   margin: 4px 0;
+//   border-radius: 4px;
+// `;
+
 export const BurgerBarMid = styled.div`
-  width: 28px;
-  height: 2.5px;
-  background-color: ${theme.colors.darkTxt};
-  margin: 4px 0;
+  width: 25px;
+  height: 2px;
+  background-color: ${theme.colors.lightTxt};
+  margin: 5px 0;
   border-radius: 4px;
 `;
 
