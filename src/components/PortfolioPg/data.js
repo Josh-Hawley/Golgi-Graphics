@@ -7,16 +7,16 @@ import img28 from '../../images/Gallery/Banner.jpg';
 import img29 from '../../images/Gallery/BMP signalling.jpg';
 import img30 from '../../images/Gallery/ISRU-logo.jpg';
 import img36 from '../../images/Gallery/Matrix-centre-posters.jpg';
+import img37 from '../../images/Gallery/The Basement Membrane at a Glance.jpg';
 
 import vid1 from '../../videos/Vesicle_fusion.mp4';
-import vid2 from '../../videos/IKNM.mp4';
+// import vid2 from '../../videos/IKNM.mp4';
 import vid3 from '../../videos/K-channel compressed.mp4';
 import vid4 from '../../videos/Ligand receptor.mp4';
 import vid5 from '../../videos/Cell Division.mp4';
-
+import vid6 from '../../videos/Multiscale Organisation of Neurogenesis.mp4';
 
 export const images = [
-
 
   {
     id: 50,
@@ -26,7 +26,7 @@ export const images = [
     tags: ['3D', 'Animation'],
     description: 'An animation showing vesicles fusing to a cellular membrane. This was a personal project with the aim of highlighting the merging and displacement of lipids when fusion occurs (highlighted with the various colours of lipids).'
   },
-
+//
   {
   id: 1,
   type: 'image',
@@ -35,7 +35,6 @@ export const images = [
   tags: ['3D', 'Art'],
   description: 'Synaptic vesicles are absolutely packed with glutamate - around 8000 molecules on average - this concentration is depicted here in a 40nm diameter vesicle. Also shown are some of the main vesicle proteins present in their reported average abundance, such as V-ATPase, glutamate transporters and SNARE complexes.'
 },
-
 
   {
     id: 39,
@@ -56,7 +55,6 @@ export const images = [
     description: 'A short physics-based cell division animation. The animation was not made to portray a particular process, but in my mind it is reminiscent of embryo development, spheroid growth of suspended cells in culture, or tumour growth.'
   },
 
-
   {
     id: 17,
     src: vid4,
@@ -75,6 +73,16 @@ export const images = [
   description: 'This set of posters was designed for the Wellcome Trust Cell-Matrix Centre\'s 30th anniversary event that took place at The University of Manchester on the 25th June 2025. The Cell-Matrix centre is comprised of 30 research groups that broadly work on three distinct research areas: Mechano-matrix, Immuno-matrix, and Chrono-matrix. Therefore the idea behind the posters was to highlight these three areas in a visually compelling way while also providing more technical depth by the inclusion of graphical abstracts describing a selection of the research that has been carried out by the groups at the centre.'
 },
   
+
+{
+    id: 53,
+    src: vid6,
+    type: 'video',
+    title: 'Multiscale organisation of neurogenesis',
+    tags: ['3D', 'Animation'],
+    description: 'This animation explores how dynamic gene expression drives the spatial and temporal organisation of neurogenesis in the developing mouse embryo. Produced for the <a href="https://papalopululab.wordpress.com/" style="font-size: 0.9rem;">Papalopulu lab.</a>'
+  },
+
   {
     id: 4,
     src: img1,
@@ -83,45 +91,6 @@ export const images = [
     tags: ['Figure'],
     description: 'The process of neurulation. The ectoderm forms the spinal cord by first folding in on itself to form the neural tube, which is made up of neural progenitors that go on to form the neurons and glia of the spinal cord, brain, and retina.'
   },
-
-  
-
-
-  // {
-  //   id: 102,
-  //   src: img21,
-  //   type: 'image',
-  //   title: 'SunTag system',
-  //   tags: ['Figure'],
-  //   description: 'Figure for a client which outlines ongoing research soon to be published. Please do not re-use or repost this image.'
-  // },
-
-
-   
-  
-// {
-//     id: 16,
-//     type: 'image',
-//     src: img19,
-//     title: 'Spinal cord stem cells',
-//     tags: ['Art', '3D'],
-//     description: 'An abstract still of the 3D file used to make the neuroepithelia animation featured on this page. The desired effect was backlit frosted glass.'
-//   },
-
-
-
-
-  
-   {
-    id: 10,
-    src: vid2,
-    type: 'video',
-    title: 'Interkinetic nuclear migration in neuroepithelia',
-    tags: ['3D', 'Animation'],
-    description: 'A procedural animation of neuroepithelia, with a focus on visualising interkinetic nuclear migration.'
-  },
-
- 
  
     {
     id: 14,
@@ -141,6 +110,15 @@ export const images = [
     description: 'Concept art for a PhD recruitment advert. This image depicts the journey of taking on a scientific research area during a PhD.'
   },
 
+  {
+  id: 52,
+  src: img37,
+  type: 'image',
+  title: 'The basement membrane at a glance',
+  tags: ['Poster', 'Figure'],
+  description: 'This poster was made for a review article published as part of the At a Glance series in the Journal of Cell Science. <a href="https://doi.org/10.1242/jcs.263947" style="font-size: 0.9rem;">Link to review article</a>.'
+},
+
 {
   id: 36,
   src: img29,
@@ -150,57 +128,7 @@ export const images = [
   description: 'Paper figure depicting modifications to BMP signalling.'
 },
 
-
-
-
-
-
-
-
-
-// {
-//   id: 37,
-//   src: img32,
-//   type: 'image',
-//   title: 'Review article poster',
-//   tags: ['Poster'],
-//   description: 'A poster designed for an article submitted to '
-// },
-
-// {
-//   id: 35,
-//   src: img31,
-//   type: 'image',
-//   title: 'FBMH Technology Platforms logo',
-//   tags: ['Logo'],
-//   description: 'A logo designed for the Faculty of Biology, Medicine and Health (FBMH) Technology Platforms at the University of Manchester. <a href="https://www.bmh.manchester.ac.uk/research/platforms/" style="font-size: 0.9rem;">Link to FBMH Technology Platforms.</a>'
-// },
-
-
-
-
-// {
-//   id: 41,
-//   src: img33,
-//   type: 'image',
-//   title: 'SunTag system',
-//   tags: ['Figure'],
-//   description: 'A figure describing the SunTag System.'
-// },
-
-
-
-
-// {
-//   id: 42,
-//   src: img34,
-//   type: 'image',
-//   title: 'Transcription/translation factories',
-//   tags: ['Figure'],
-//   description: 'Section of a figure outling the relationship between transcription and translation factories.'
-// },
-
-  {
+{
   id: 38,
   src: img28,
   type: 'image',
@@ -208,35 +136,8 @@ export const images = [
   tags: ['Promotional'],
   description: 'Webpage banner designed for the Translation Toolkit at The University of Manchester. <a href="https://translation-toolkit.manchester.ac.uk/" style="font-size: 0.9rem;">Link to Translation Toolkit.</a>'
 },
-  
-  
 
- 
-
-
-
-
-
-// {
-//   id: 43,
-//   src: img35,
-//   type: 'image',
-//   title: 'Helices all the way down',
-//   tags: ['Art'],
-//   description: 'Stylised helical structures found in cells: microtubules, DNA, actomyosin, collagen, and alpha helices.'
-// },
-
-
-// {
-//   id: 30,
-//   src: img22,
-//   type: 'image',
-//   title: 'Rollout banner',
-//   tags: ['Promotional'],
-//   description: 'Rollout banner designed for a conference.'
-// },
-
-  {
+{
   id: 34,
   src: img30,
   type: 'image',
@@ -253,7 +154,9 @@ export const images = [
   tags: ['Promotional'],
   description: 'Mock webpage design made in Figma. <a href="https://www.figma.com/proto/JX12zq1hzEelMb9fRbNlSn/Biocentric-mock-website-design?node-id=1-2&node-type=canvas&t=CieayW2W7DXDIbxo-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" style="font-size: 0.9rem;">Link to full webpage</a>.'
 },
+
+
+
+
 ];
-
-
 
